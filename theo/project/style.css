@@ -1,0 +1,99 @@
+	body{
+			background-image: url('sketch.jpg');
+			background-size: cover;
+			text-align: center;
+			color: whitesmoke;
+
+		}
+		h1{
+			padding-top: 60px;
+			padding-left: 60px;
+		}
+		.div1{
+		position: relative;		
+		width: 100%;
+		}
+		.blockdiv{
+			position: relative;
+			top: 30px;
+		    left: 10px;
+
+		}
+		.greydiv{		
+			position: absolute;
+			top: 20px;
+			right: 0;
+			width: 100%;
+
+		}
+			.block:hover {
+
+	        transform: translate(10px, 10px);
+	        transition: ease-in-out 0.4s;
+	    }
+	    .block{
+	      transition: ease-in-out 0.4s;
+
+	    }
+	    .navbar{
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: inline-block;
+
+		}
+		.navbar a{
+			float: left;
+			display: block;
+			color: whitesmoke;
+			text-align: center;
+			padding: 4px 16px;
+			text-decoration: none;
+			transition: ease-in-out 0.3s;
+	
+		
+
+		}
+		.navbar a:hover{
+
+			background-color : grey;
+			transition:  ease-in-out 0.3s;
+
+		}
+		.navbar p{
+			text-align: center;
+		}
+		
+		.aspecial{
+			display: block;
+			color: whitesmoke;
+			text-align: center;
+			padding: 4px 16px;
+			text-decoration: none;
+						transition: ease-in-out 1s;
+
+		}
+		.aspecial:hover{
+			color: #333;
+			transition: ease-in-out 1s;
+		}
+
+		.grey{
+
+		}
+
+		.block{
+			opacity: 0.9;
+		}
+
+		.block:hover{
+								  box-shadow: -8px -8px  grey;
+								  opacity: 1;
+								  transition: ease-in-out 0.4s;
+
+		}
+
+

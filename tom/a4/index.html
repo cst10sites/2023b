@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<p></p>
+	<p>Click <a href="cookie.html">here</a> to go back to Cookie Clicker</p>
+		<form>
+	    <label>Who is making the Web standards?</label>
+	    <select id="WebStandards"><!--no input for dropdown-->
+	        <option value="Google">Google</option>
+	        <option value="TheWorldWideWebConsortium">The World Wide Web Consortium</option>
+	        <option value="Mozilla">Mozilla</option>
+	        <option value="Microsoft">Microsoft</option>
+	    </select>
+	    <br>
+	    <input type="button" value="OK" onclick="Submit1();">
+	    <input type="reset"><br> 
+	</form>
+	<p id="Submit2">2022&copy;</p>
+ 	<form>
+	    <label>Which character is used to indicate an end tag:</label><br>
+	    <input id="correctLang" type="radio" value="*" name="group">
+	    <label>*</label><br>
+	    <input type="radio" value="<" name="group">
+	    <label><</label><br>
+	    <input type="radio" value="/" name="group">
+	    <label>/</label><br>
+	    <input type="radio" value="^" name="group">
+	    <label>^</label><br>
+	    <input type="button" value="Submit" onclick="checkLang();"><br> 
+		<input type="reset"><br> 
+	</form>
+
+
+	<script>
+		function Submit1() {
+    		var chosenWebStandard = document.getElementById('WebStandards').value;
+    		// id in select, value in option
+
+    		document.getElementById('Submit2').innerHTML = 
+    			"The web standards are not made by " + chosenWebStandard;
+    		}
+
+	</script>
+</body>
+</html>

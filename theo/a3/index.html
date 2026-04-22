@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 3</title>
+	<style>
+	</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425">
+
+
+</head>
+<body>
+
+
+
+<div class="topnav">
+    <a href="index.html">Body</a>
+    <div id="moreLinks">
+      <a href="head.html">Head</a>
+   
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <hr>
+
+<h1>HTML/CSS GUIDE</h1>
+<h2>Common HTML tags inside &lt;body&gt;</h2>
+
+<div class="table1">
+  <table>
+  <tr>
+    <th style="width: 30%;">Tag</th>
+    <th style="width: 40%;">Definition</th>
+    <th style="width: 30%;">Example</th>
+  </tr>
+  <tr>
+    <td>&lt;p&gt;...&lt;/p&gt;</td>
+    <td>Creates a new paragraph on a page.</td>
+    <td>This is a paragraph.</td>
+  </tr>
+<tr>
+  <td>&lt;br&gt;</td>
+  <td>Adds a line of blank space between elements.</td>
+  <td>&lt;p&gt;&lt;/p&gt;&lt;<strong>br</strong>&gt;<br>&lt;p&gt;&lt;/p&gt;</td>
+</tr>
+
+<tr>
+  <td>&lt;hr&gt;</td>
+  <td>Adds a horozontal ruler or a line to devide elements.</td>
+  <td>&lt;p&gt;&lt;/p&gt;&lt;<strong>hr</strong>&gt;<hr>&lt;p&gt;&lt;/p&gt;</td>
+</tr>
+<tr>
+  <td>&lt;h1&gt;...&lt;/h1&gt;</td>
+  <td>Used to create a header/title, the largest of 6 sizes of heading.</td>
+  <td><h2> This is a heading.</h2></td>
+</tr>
+<tr>
+  <td>&lt;img&gt;</td>
+  <td>Adds an image to the page.</td>
+  <td><img style="width:50%;"  alt="image1" src="https://scx2.b-cdn.net/gfx/news/2017/theoreticala.jpg"></td>
+</tr>
+<tr>
+  <td>&lt;a&gt;...&lt;/a&gt;</td>
+  <td>Creates a hyperlink to another website/page.</td>
+  <td><a target="_blank" href="https://www.apple.com">link</a></td>
+</tr>
+<tr>
+  <td>&lt;span&gt;...&lt;/span&gt;</td>
+  <td>It selects a section of text to add css.</td>
+  <td><span style="color: maroon ;">paragraph with inline css.</span> </td>
+
+</tr>
+<tr>
+  <td>&lt;div&gt;...&lt;/div&gt;</td>
+  <td>Devides the page into sections that act diffrently than the page as a whole.</td>
+  <td><div class="smalldiv">This text is inside a div.</div></td>
+</tr>
+<tr>
+  <td>&lt;table&gt;...&lt;/table&gt;</td>
+  <td>Creates a table.</td>
+  <td><div class="smalltable"><table><tr><th>left</th><th>Right</th> </tr> </table> </div> </td>
+</tr>
+<tr>
+  <td>&lt;em&gt;&lt;/em&gt;</td>
+  <td>italicises your text and adds emphesis during text to speech.</td>
+  <td><em>This sentence has emphesis. </em> </td>
+</tr>
+<tr>
+  <td>&lt;strong&gt;&lt;/strong&gt;</td>
+  <td>italicises your text and adds emphesis during text to speech.</td>
+  <td><strong>This sentence is strong. </strong> </td>
+</tr>
+
+
+
+</table>
+</div>
+
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+</script>
+<br>
+<br>
+
+
+</body>
+</html>

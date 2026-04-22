@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="icon" type="image/x-icon" href="question.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style></style>
+
+</head>
+<body>
+	<div>
+  <div class="topnav">
+    <a href="index.html">Stray Kids Members</a>
+    <div id="moreLinks">
+      <a href="./info.html">Subunits</a>
+      <a href="./history.html">Music & TV-Shows</a>
+      <a href="./quiz.html">Stray Kids Quiz</a>
+  </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  <div class="content">
+  </div>
+</div>
+<div class="content">
+<h1>Stray Kids Quiz</h1>
+<p>Time to test your knowledge. Everything you need to know for this quiz is on other pages of this website. I hope you have been paying attention!</p>
+
+
+ <form>
+        <label>What year did Stray Kids debut?</label><br>
+        <input type="radio" value="2016" name="group">
+        <label>2016</label><br>
+        <input type="radio" value="2017" name="group">
+        <label>2017</label><br>
+        <input id="correctLang" type="radio" value="2018" name="group">
+        <label>2018</label><br>
+        <input type="radio" value="2019" name="group">
+        <label>2019</label><br>
+        <input type="radio" value="2020" name="group">
+        <label>2020</label><br>
+        <input type="button" value="Submit" onclick="checkLang();"><br> 
+        <input type="reset"><br> 
+    </form>
+<br>
+     <form>
+        <label>What different sub-units are in Stray Kids?</label><br>
+        <input id="racha1" type="checkbox" value="Visual Racha">
+        <label>Visual Racha</label>
+        <input id="racha2" type="checkbox" value="3Racha">
+        <label>3Racha</label><br>
+        <input id="racha3" type="checkbox" value="Vocal Racha">
+        <label>Vocal Racha</label>
+        <input id="racha4" type="checkbox" value="Dance Racha">
+        <label>Dance Racha</label><br>
+        <input type="button" value="Check" onclick="racha();"><br> 
+        <input type="reset"><br> 
+    </form>
+<br>
+    <form>
+        <label>How many members were originally in Stray Kids?</label><br>
+        <input type="radio" value="8" name="group">
+        <label>8</label><br>
+        <input type="radio" value="5" name="group">
+        <label>5</label><br>
+        <input type="radio" value="7" name="group">
+        <label>7</label><br>
+        <input id="correctNumber" type="radio" value="9" name="group">
+        <label>9</label><br>
+        <input type="radio" value="6" name="group">
+        <label>6</label><br>
+        <input type="button" value="Submit" onclick="checkNumber();"><br> 
+        <input type="reset"><br> 
+    </form>
+
+    <br>
+     <form>
+        <label>Who is a part of the Hyung line? Choose 4 (Hyung = Oldest)</label><br>
+        <input id="choice1" type="checkbox" value="Bang Chan">
+        <label>Bang Chan</label>
+        <input id="choice2" type="checkbox" value="Han">
+        <label>Han</label><br>
+        <input id="choice3" type="checkbox" value="I.N">
+        <label>I.N</label>
+        <input id="choice4" type="checkbox" value="Lee Know">
+        <label>Lee Know</label><br>
+        <input id="choice5" type="checkbox" value="Changbin">
+        <label>Changbin</label>
+        <input id="choice6" type="checkbox" value="Felix">
+        <label>Felix</label><br>
+        <input id="choice7" type="checkbox" value="Hyunjin">
+        <label>Hyunjin</label>
+        <input id="choice8" type="checkbox" value="Seungmin">
+        <label>Seungmin</label><br>
+        <input type="button" value="Check" onclick="member();"><br> 
+        <input type="reset"><br> 
+    </form>
+
+    <br>
+    <form>
+        <label>What was Stray Kids' latest comeback as of June 14, 2023? Comeback means album release.</label><br>
+        <input type="radio" value="Oddinary" name="group">
+        <label>Oddinary</label><br>
+        <input type="radio" value="The Sound" name="group">
+        <label>The Sound</label><br>
+        <input type="radio" value="Maxident" name="group">
+        <label>Maxident</label><br>
+        <input type="radio" value="NoEasy" name="group">
+        <label>NOEASY</label><br>
+        <input id="correctAlbum" type="radio" value="5-Star" name="group">
+        <label>5-STAR</label><br>
+        <input type="button" value="Submit" onclick="checkAlbum();"><br> 
+        <input type="reset"><br> 
+    </form>
+    <br>
+
+  <h2>Bonus</h2>
+
+   <form>
+        <label>Who is your Stray Kids Bias? Only answer if you happen to already be familiar with the group.</label>
+        <select id="biasValue"><!--no input for dropdown-->
+            <option value="Bang Chan">Bang Chan</option>
+            <option value="Lee Know">Lee Know</option>
+            <option value="Changbin">Changbin</option>
+            <option value="Hyunjin">Hyunjin</option>
+            <option value="Han">Han</option>
+            <option value="Felix">Felix</option>
+            <option value="Seungmin">Seungmin</option>
+            <option value="I.N">I.N</option>
+            <!-- id in select, value in option-->
+        </select>
+        <br>
+        <input type="button" value="OK" onclick="checkBias();">
+        <input type="reset"><br> 
+    </form>
+    <p id="biasDisplay"></p>
+
+
+</div>
+
+<script>
+
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+function checkLang() {
+            var correctAns = document.getElementById("correctLang").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("2018 is the correct answer!");
+            }
+
+            else {
+              alert("Oops! Wrong answer.");
+            }
+         
+            
+            
+        }
+
+        function racha() {
+            var racha1 = document.getElementById("racha1").checked; // Visual Racha
+            var racha2 = document.getElementById("racha2").checked; // 3Racha
+            var racha3 = document.getElementById("racha3").checked; // Vocal Racha
+            var racha4 = document.getElementById("racha4").checked; // Dance Racha
+            if (racha1 == false && racha2 == true && racha3 == true && racha4 == true) {
+                alert("Yes! Those are the correct Rachas.");
+            }
+            else {
+                alert("Oh no! Try again.");
+            }
+        }
+
+function checkNumber() {
+            var correctAns = document.getElementById("correctNumber").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("9 is the correct answer!");
+            }
+
+            else {
+              alert("Oops! Wrong answer.");
+            }
+         
+            
+            
+        }
+
+
+        function member() {
+            var choice1 = document.getElementById("choice1").checked; // Bang Chan 
+            var choice2 = document.getElementById("choice2").checked; // Han
+            var choice3 = document.getElementById("choice3").checked; // I.N
+            var choice4 = document.getElementById("choice4").checked; // Lee Know
+             var choice5 = document.getElementById("choice5").checked; // Changbin
+            var choice6 = document.getElementById("choice6").checked; // Felix
+            var choice7 = document.getElementById("choice7").checked; // Hyunjin
+            var choice8 = document.getElementById("choice8").checked; // Seungmin
+            if (choice1 == true && choice2 == false && choice3 == false && choice4 == true && choice5 == true && choice6 == false && choice7 == true && choice8 == false) {
+                alert("Yes! Those are the correct members.");
+            }
+            else {
+                alert("Oh no! Try again.");
+            }
+        }
+
+        function checkAlbum() {
+            var correctAns = document.getElementById("correctAlbum").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("5-STAR is their latest comeback! Make sure to stream S-Class!");
+            }
+
+            else {
+              alert("Oops! Wrong answer.");
+            }
+         
+            
+            
+        }
+
+         function checkBias() {
+            var chosenBias = document.getElementById('biasValue').value;
+            // id in select, value in option
+            document.getElementById('biasDisplay').innerHTML = 
+                 chosenBias + " is an amazing bias. Hope no one takes his place.";
+        }
+
+
+</script>
+</body>
+</html>

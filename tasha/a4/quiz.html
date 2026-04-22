@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="question.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+<style></style>
+
+</head>
+<body>
+	<div>
+  <div class="topnav">
+    <a href="index.html">Cookie Clicker</a>
+    <div id="moreLinks">
+      <a href="./quiz.html">HTML/CSS/JS Quiz</a>
+  </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  <div class="content">
+  </div>
+	<h1>HTML/CSS/JS Quiz</h1>
+</div>
+
+ <form>
+        <label>Which language controls the style of your website?:</label><br>
+        <input type="radio" value="HTML" name="group">
+        <label>HTML</label><br>
+        <input id="correctLang" type="radio" value="CSS" name="group">
+        <label>CSS</label><br>
+        <input type="radio" value="JavaScript" name="group">
+        <label>JavaScript</label><br>
+        <input type="button" value="Submit" onclick="checkLang();"><br> 
+        <input type="reset"><br> 
+    </form>
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+ function checkLang() {
+            var correctAns = document.getElementById("correctLang").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("CSS is the correct answer!");
+            }
+
+          	else {
+            	alert("Oops! Wrong answer.");
+          	}
+         
+            
+            
+        }
+</script>
+</body>
+</html>

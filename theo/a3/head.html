@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 3</title>
+  <style>
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425">
+
+
+</head>
+<body>
+
+
+
+<div class="topnav">
+    <a href="head.html">Head</a>
+    <div id="moreLinks">
+      <a href="index.html">Body</a>
+   
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <hr>
+
+<h1>HTML/CSS GUIDE</h1>
+<h2>Common HTML tags outside &lt;body&gt;</h2>
+
+<div class="table1">
+  <table>
+  <tr>
+    <th style="width: 30%;">Tag</th>
+    <th style="width: 40%;">Definition</th>
+    <th style="width: 30%;">Example</th>
+  </tr>
+  <tr>
+    <td> &lt;meta charset="UTF-8"&gt;</td> 
+    <td>Specifies a universal set of lanugages to be used.</td>
+    <td>!@#$%^&*()_+♣◘♀</td>
+  </tr>
+   <tr>
+    <td> &lt;!DOCTYPE html&gt;</td> 
+    <td>It tells your browser what document type is being used.</td>
+    <td>This website is &lt;!DOCTYPE html&gt;</td>
+  </tr> <tr>
+    <td> &lt;html lang="en"&gt;</td> 
+    <td>From UTF-8 selects the english language.</td>
+    <td>This is in english.</td>
+  </tr> <tr>
+    <td> &lt;title&gt;... &lt;/title&gt;</td> 
+    <td>Makes the title of you webpage</td>
+    <td>The title of this website is "assignment 3". </td>
+  </tr> <tr>
+    <td> &lt;style&gt;... &lt;/style&gt;</td> 
+    <td>Creates a section in the head where you can add internal css.</td>
+    <td>  <div class="smalldiv1">This was modified with internal css.</div>   </td>
+  </tr> <tr>
+    <td> &lt;link rel="stylesheet" type="text/css";&gt;</td> 
+    <td>Selects a seperate document to be used as external css.</td>
+    <td><div class="smalldiv2">This was modified with external css.</div>  </td>
+  </tr> <tr>
+    <td> &lt;link rel="icon" type="image/x-icon";&gt;</td> 
+    <td>Selects a favicon for your website.</td>
+    <td>This is the favicon for my website...  <img alt="favicon"  style="width:25%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425">  </td>
+  </tr>
+
+
+</table>
+</div>
+
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+</script>
+<br>
+<br>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/free/png-256/free-css-logo-3002030-2496146.png">
+
+<style>
+	
+body{
+	background: dimgray;
+	color: lightgray;
+	margin: 15px;
+	font-family: Georgia ;
+}
+
+input{
+	background-color: lightgray;
+	color: dimgray;
+
+}
+select{
+	background-color: lightgray;
+	color: dimgray;
+}
+
+a{
+	color: whitesmoke;
+
+}
+
+
+a:hover{
+
+		color: darkmagenta;
+}
+/* a:active (click and hold), a:link(unvisited)*/
+a.btn:hover{
+
+	background-color: darkgoldenrod;
+	box-shadow: 5px 8px black;
+}
+
+.btn{
+/* <a class="btn"...> */
+float: center;
+background-color: black;
+text-decoration: none;
+padding: 5px 8px;
+border: solid thin whitesmoke;
+border-radius: 25px;
+display: inline-block;
+font-size: 1.3em;
+}
+h2:hover{
+ color: whitesmoke;
+}
+
+form{
+	text-align: center;
+}
+
+#link{
+	text-align: center;
+}
+
+a:hover{
+	color: black;
+}
+
+hr{
+	width: 95%;
+
+}
+
+#submit:hover, #submit1:hover, #submit2:hover{
+	background-color: black;
+	color: darkgray;
+}
+#submit:active, #submit1:active, #submit2:active{
+	background-color: black;
+	color: gray;
+}
+
+
+
+
+</style>
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+<h2>HTML/CSS QUIZ</h2>
+<br>
+<form>
+	<label>	What does the tag &lt;br&gt; mean?</label>
+	<select id ="college"> 
+		<option value="UBC">Horizontal Ruler</option>
+		<option value="Harvard">Iframe</option>
+		<option value="Washington">Line Break</option>
+		<option value="Yale">CSS</option>
+	</select>
+	<br>
+<!--ask at least one question related to HTML/CSS/JS-->
+	<input id="submit" type="button" value="submit" onclick="submitQuiz();">
+<!--button onclick="college();">SubmitL</button-->
+</form>
+<br>
+
+<form>
+	<label>Where should the style tag for CSS go?</label><br>
+		<input type="checkbox" id="check1" value="body">
+			<label>Body</label>
+		<input type="checkbox" id="check2" value="head">
+			<label>Head</label>
+		<input type="checkbox" id="check3" value="title">
+			<label>Title</label>
+		<input type="checkbox" id="check4" value="favicon">
+			<label>Favicon</label> <br>
+			<input type="button" id="submit2" value="submit" onclick="submitQuiz1();"> <br><br>
+			
+</form>
+
+
+<!--<button onclick="resetQuiz();">Reset</button>-->
+<hr>
+<br>
+<h2>COOKIE CLICKER</h2>
+<!--possibly replace quiz.html with index.html-->
+<p id="link">Click on the cookie clicker button to play the cookie clicker.</p>
+
+
+<br>
+
+<p style="text-align: center;">
+<a class="btn" href="cookie.html" >Cookie Clicker</a>
+</p>
+<br>
+<form><input id="submit1" type="button" value="reset" onclick="resetQuiz();"></form>
+
+<script>
+
+
+
+function submitQuiz(){
+	var correct = document.getElementById("college").value;
+
+
+
+	if ( correct == "Washington") {
+		alert("correct");
+	}
+	else{
+		alert("WRONG");
+	}
+}
+
+function submitQuiz1(){
+	var choice1 = document.getElementById('check1').checked
+	
+	var choice2 = document.getElementById('check2').checked
+
+	var choice3 = document.getElementById('check3').checked
+
+	var choice4 = document.getElementById('check4').checked
+
+	if(choice1 == false && choice2 == true && choice3 == false && choice4 == false){
+		alert("Correct");
+
+	}
+
+	else{
+		alert("Incorrect");
+	}
+}
+
+function resetQuiz(){
+	location.reload();
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<button onclick="updateCPS();"><img src="https://static.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png"></button>
+<br>
+<button onclick="reset();">Reset</button>
+<p id="cpsDisplay"></p>
+
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+  if (nClicks == 0) {
+    startTime = new Date();
+    // first click
+    // 1. reset startTime
+    // 2. increase nClicks by 1
+    nClicks += 1
+  }
+  else {
+    // subsequent clicks:
+    // 1. create variable currentTime
+    // 2. create variable timeElapsed and subtract start and currentTime
+    // 3. calculate CPS = nClicks ÷ timeElapsed 
+    //    BUT timeElapsed be measured in seconds (not milliseconds)
+    // 4. display CPS using id
+    // 5. increase nClicks by 1
+    var currentTime = new Date();
+    var timeElapsed = (currentTime - startTime) / 1000;
+    var cps = nClicks / timeElapsed
+    document.getElementById('cpsDisplay').innerHTML =
+      "<br>cps " +cps;
+      nClicks += 1;
+ }
+ nClicks - nClicks + 1;
+}
+  function reset(){
+     location.reload();
+   }
+
+</script>
+</body>
+</html>

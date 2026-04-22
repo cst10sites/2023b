@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 3</title>
+	<link rel="stylesheet" href="styles.css">
+	<style></style>
+</head>
+<body>
+	<div>
+  <div class="topnav">
+    <a href="index.html">Body Tags</a>
+    <div id="moreLinks">
+      <a href="./head.html">Head Tags</a>
+  </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+    <div class="content">
+    <h1>HTML Tags</h1>
+    <h2>Common html Tags Inside &lt;head&gt;</h2>
+    <table style="width: 100%;">
+      <tr>
+        <th>Tags</th>
+        <th>Definition</th>
+        <th>Examples</th>
+      </tr>
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>Tells the browser what type of file the website is.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;html lang="en"&gt;</td>
+        <td>Tells the browser that the original website is english.</td>
+        <td></td>
+      </tr>
+      <tr>
+       <td>&lt;meta charset="UTF-8"&gt;</td>
+       <td>Allows the website to be translated into almost all languages.</td>
+       <td></td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;&lt;/title&gt;</td>
+        <td>Title of website.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;style&gt;&lt;/style&gt;</td>
+        <td>Internal CSS. Designing the look of the website within the same code file.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;link rel="stylesheet" href="file"&gt; &lt;style&gt;&lt;/style&gt;</td>
+        <td>External CSS. Designing the look of the website on a seperate file. Connects to the code of the website through &lt;style&gt;&lt;/style&gt;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;link rel="icon" type="image/x-icon" href="file"&gt;</td>
+        <td>Favicon is the image next to the title.</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>

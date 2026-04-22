@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+
+	<meta charset="utf-8">
+	<title>Menu</title>
+<style>
+		body{
+						background: url(0.jpg);
+background-size: cover;
+			text-align: center;
+			color: whitesmoke;
+			box-sizing: border-box;
+			opacity: 0;
+   transition: opacity .5s;
+   background-color: grey;
+   animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+
+
+
+		}
+
+
+
+		/*h1:hover{
+			color: darkgrey;
+		}*/
+		section {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+background-color: grey;
+			justify-content: center;
+			align-items: center;
+		}
+		section{
+			background-size: cover;
+			opacity: 0.5;
+
+
+
+		}
+				h1{
+			padding-top: 250px;
+			padding-left: 100px;
+			font-size: 5em;
+			color: darkgrey;
+		}
+		
+
+		
+		.greydiv{		
+			position: absolute;
+			
+
+		}
+			.block:hover {
+
+	        transform: translate(10px, 10px);
+	        transition: ease-in-out 0.4s;
+	    }
+	    .block{
+	      transition: ease-in-out 0.4s;
+
+	    }
+	    .navbar{
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: inline-block;
+
+		}
+		.navbar a{
+			float: left;
+			display: block;
+			color: whitesmoke;
+			text-align: center;
+			padding: 4px 16px;
+			text-decoration: none;
+			transition: ease-in-out 0.3s;
+	
+		
+
+		}
+		.navbar a:hover{
+
+			background-color : grey;
+			transition:  ease-in-out 0.3s;
+
+		}
+		.navbar p{
+			text-align: center;
+		}
+		
+		.aspecial{
+			display: block;
+			color: whitesmoke;
+			text-align: center;
+			padding: 4px 16px;
+			text-decoration: none;
+						transition: ease-in-out 1s;
+
+		}
+		.aspecial:hover{
+			color: #333;
+			transition: ease-in-out 1s;
+		}
+
+	
+
+		.block{
+			opacity: 0.9;
+		}
+
+		.block:hover{
+								  box-shadow: -8px -8px  grey;
+								  opacity: 1;
+								  transition: ease-in-out 0.4s;
+
+		}
+		.column{
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+		}
+		.menu:hover{
+			background-color: grey;
+		}
+		.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a{
+	text-decoration: none;
+
+}
+.list{
+color: whitesmoke;
+	padding-top: 200px;
+			padding-left: 120px;
+			font-size: 2em;
+}
+.list:hover {
+	color: darkslategrey;
+}
+li:hover{
+	color: darkgrey;
+}
+
+li{
+	list-style: none;
+	font-size: 2em;
+	padding-top: 60px;
+}
+a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+</style>	
+</head>
+<body>
+	<section>
+
+<div class="navbar"> 
+	<a href="index.html" class="menu">Home</a>
+	<div class="aspecial">  Frank Lloyd Wright</div>
+
+</div>
+
+<br><br>
+<ul>
+<a href="Dorothy Turkel.html">	<li  >Dorothy Turkel</li></a>
+	<br><br><br>
+<a href="Norman Lykes.html">		<li >Norman Lykes</li></a>
+	<br ><br><br>
+<a href="Fallingwater.html">		<li >Fallingwater</li></a>
+	<br><br><br>
+<a href="bibliography3.html">		<li >Bibliography</li></a>
+
+</ul>
+
+
+	<br><br>
+	<br>
+	
+	<br>
+<br><br>
+
+</section>
+<script>
+
+
+
+
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0.1
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+</script>
+
+
+</body>
+</html>

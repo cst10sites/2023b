@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+ <link rel="icon" type="image/x-icon" href="cookie.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+<style></style>
+
+</head>
+<body>
+	<div>
+  <div class="topnav">
+    <a href="index.html">Cookie Clicker</a>
+    <div id="moreLinks">
+      <a href="./quiz.html">HTML/CSS/JS Quiz</a>
+  </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  <div class="content">
+  </div>
+</div>
+<h2>Cookie Clicker</h2>
+<button onclick="updateCPS();"><img alt="Cookie" style="width:200px;" src="https://th.bing.com/th/id/R.c8609cf01b5c2c5be2546c12e2a2c740?rik=cCuEPFJCQawl3w&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2fdTr%2fLLe%2fdTrLLe5Lc.jpg&ehk=Fh22rPIxO4xTR5V4hp76aURE%2bTRyxb6gVLqSqkK0%2b3g%3d&risl=&pid=ImgRaw&r=0"></button>
+<button onclick="resetWatch()">Reset</button>
+<p>Time: <span id="timeDisplay">0</span></p>
+<p>Clicks: <span id="totalClicks">0</span></p>
+<p> CPS: <span id="cpsDisplay">0</span></p>
+
+
+
+
+<script>
+
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+
+setInterval(updateTime, 100);
+// run update time every 0.1 seconds
+
+function updateTime() {
+	if (nClicks > 0) {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000 // in seconds
+		document.getElementById('timeDisplay').innerHTML = timeElapsed;
+	}
+}
+
+
+var nClicks = 0;
+var startTime = new Date();
+
+
+
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// first click
+		// 1. reset startTime
+		// 2. increase nClicks by 1
+			startTime = new Date();
+			nClicks = nClicks + 1;
+				document.getElementById('totalClicks').innerHTML = nClicks;
+		nClicks = nClicks + 1;
+			
+	}
+	else {
+		// subsequent clicks:
+		// 1. create variable currentTime
+		// 2. create variable timeElapsed and subtract start and currentTime
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+		// 5. increase nClicks by 1
+			document.getElementById('totalClicks').innerHTML = nClicks;
+		nClicks = nClicks + 1;
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000;
+		document.getElementById('cpsDisplay').innerHTML =  nClicks/timeElapsed;
+
+	
+		}
+}
+
+function resetWatch() {
+	location.reload();
+}
+
+</script>
+</body>
+</html>
+
+

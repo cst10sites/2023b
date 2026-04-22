@@ -1,0 +1,55 @@
+body {
+  background-color: grey;
+  margin: 0px 100px;
+}
+div.topnav {
+  overflow: hidden;
+  background-color: darkblue;
+  position: relative;
+}
+
+div.topnav #moreLinks {
+  display: none;
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lavenderblush;
+}
+
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.content {
+  padding: 25px;
+  color: white;
+  background: rgba(0, 0, 80, 0.5);
+  }
+ table, th, td {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+a {
+  color: white;
+}

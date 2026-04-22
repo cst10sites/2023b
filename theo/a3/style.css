@@ -1,0 +1,119 @@
+body{
+
+	background-color: black;
+}
+
+div.topnav{
+overflow: hidden;
+background-color: darkgray;
+color: gray;
+position: relative;
+
+}
+div.topnav #moreLinks{
+
+	display: none;
+}
+
+
+div.topnav a{
+	color: gray;
+	font-size: 17px;
+	padding: 15px 15px;
+text-decoration: none;
+display: block;
+
+}
+
+div.topnav a:hover{
+
+	color: maroon;
+	background-color: lightgoldenrodyellow;
+}
+div.topnav a.icon{
+
+	background-color: gray;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+div.topnav a.icon:hover{
+color: maroon;
+	background-color: lightgoldenrodyellow;
+
+
+}
+div.smalldiv1:hover{
+
+	color: maroon;
+	background-color: lightgoldenrodyellow;
+}
+div.smalldiv2:hover{
+
+	color: magenta;
+	background-color: maroon;
+}
+a:hover
+{
+color: gray;
+
+}
+a{
+	color: maroon;
+}
+
+h1{
+
+	color: gray;
+text-align: center;}
+
+h2{
+
+	color: gray;
+	text-align: center;
+}
+body{
+	font-family:Arial, Helvetica ;
+	color: gray;
+
+}
+
+table, th, td{
+		border: 2px solid gray;
+
+}
+table{
+			
+		align-self: center;
+}
+
+td{
+
+	text-align: center;
+}
+.table1{
+
+	margin: auto;
+	width: 50%;	
+	padding: 10px;
+	display: block;
+}
+tr:hover{
+	color: lightgoldenrodyellow;
+}
+.smalldiv:hover{
+	background-color: maroon;
+
+}
+.smalldiv{
+
+	padding: 20px ;	
+}
+
+.smalltable{
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	display: block;
+
+}	
