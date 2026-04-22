@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+  <style>
+  </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+  <body>
+  <div>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="myLinks">
+      <a href="head.html">Head</a>
+     
+    </div>
+    <a  class="icon" onclick="myFunction()">...</a>
+
+     </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML tags inside &lt;body&gt;</h2>
+  
+    </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function myFunction() {
+  var links = document.getElementById("myLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";
+  } else {
+    links.style.display = "block";
+  }
+}
+</script>
+
+<div class="table">
+
+ <table class="center"  style="width: 75%">
+      <tr><!--Table row-->
+        <th style="width: 25%;">Tags</th><!--Table header-->
+        <th style="width: 25%;">Definitions</th>
+        <th style="width: 25%;">Examples</th>
+      </tr>
+ 
+      <tr>
+        <td>&lt;ul&gt;</td><!--Table data-->
+        <td>Creates an unordered list</td>
+        <td><ul><li>This is an</li>
+          <li>unordered list</li>
+      </ul></td>
+    </tr>
+    
+      <tr>
+        <td>&lt;h1...h6&gt; &lt;/h1...h6&gt;</td><!--Table data-->
+        <td>Header</td>
+        <td><h3>This is an &lt;h3&gt; header</h3> <h6>This is an &lt;h6&gt; header</h6></td>
+      </tr>
+
+      <tr>
+        <td>&lt;a&gt; &lt;/a&gt;</td><!--Table data-->
+        <td>Defines a hyperlink</td>
+        <td>This is a <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">hyperlink</a></td>
+      </tr>
+ 
+
+
+      <tr>
+       <td>&lt;div&gt; &lt;/div&gt;</td>
+       <td>Section/Divide</td>
+       <td><div class="example">This is text</div>
+  <div>divided by a &lt;div&gt;</div></td>
+     </tr>
+
+     <tr>
+        <td>&lt;ol&gt;</td><!--Table data-->
+        <td>Creates an ordered list</td>
+        <td><ol>
+          <li>This is an</li>
+          <li>ordered list</li>
+        </ol></td>
+      </tr>
+      
+      <tr>
+        <td>&lt;em&gt; &lt;/em&gt;</td><!--Table data-->
+        <td>Emphasize text</td>
+        <td><em>This text is emphasized</em></td>
+      </tr>
+      <tr>
+
+        <td>&lt;p&gt; &lt;/p&gt;</td><!--Table data-->
+        <td>Paragraph</td>
+        <td><p>This is a paragraph</p><p>This is another paragraph</p></td>
+      </tr>
+
+<tr>
+        <td>&lt;img&gt; &lt;/img&gt;</td><!--Table data-->
+        <td>Shows image</td>
+        <td>This an <img src="image.png" alt="image"> of the word   <img src="image.png" alt="image"> </td>
+      </tr>
+
+      <tr>
+        <td>&lt;br&gt;</td><!--Table data-->
+        <td>Line break</td>
+        <td>This is a
+          <br>
+          line
+          <br>
+          break</td>
+      </tr>
+
+      
+      
+    
+    <tr>
+        <td>&lt;strong&gt; &lt;/strong&gt;</td><!--Table data-->
+        <td>Defines text with strong importance</td>
+        <td><strong>This is &lt;strong&gt; text</strong></td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</body>
+</html>

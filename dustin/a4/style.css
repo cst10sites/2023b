@@ -1,0 +1,37 @@
+body.Quiz {
+	text-align: center;
+	color: black;
+	font-family: Garamond;
+	margin: 50px 100px;
+	background-image: url('https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg');
+	background-size: cover;
+}
+
+label {
+	font-size: 200;
+}
+
+div.Quiz {
+	background-color: rgba(237, 231, 225, .9);
+	padding:20px;
+			border-color:white;
+			border-width: thick; 
+			border-style:solid; 
+			box-shadow:10px 10px rgba(169, 169, 169, 0.7);
+			
+}
+
+body.Cookie {
+	background-image: url('https://i.pinimg.com/originals/98/10/72/981072c1046a6ce2eab30f6036ce0666.jpg');
+	background-size: cover;
+	text-align: center;
+}
+
+div.Cookie {
+	background-color: rgba(237, 231, 225, .3);
+	padding:5px;
+			border-color:rgba(256, 256, 256, .4);
+			border-width: thick; 
+			border-style:solid; 
+			
+

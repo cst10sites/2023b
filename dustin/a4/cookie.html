@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="Cookie">
+	
+
+  <div class="Cookie">
+
+<h1>Cookie Clicker</h1>
+<button style="background-color: rgba(0, 0, 0, 0.0); border: none;" onclick="updateCPS()"><img src="https://pngimg.com/uploads/cookie/cookie_PNG13659.png"></button>
+<p id="cpsDisplay"></p>
+<p id="clickDisplay"></p>
+
+<hr>
+
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+
+</div>
+
+  
+
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// first click
+		// 1. reset startTime
+		// 2. increase nClicks by 1
+		 startTime = new Date();
+		 nClicks = nClicks + 1;
+	}
+	else {
+		// subsequent clicks:
+		// 1. create variable currentTime
+		// 2. create variable timeElapsed and subtract start and currentTime
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+		// 5. increase nClicks by 1
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000
+		var cps = (nClicks / timeElapsed)
+		 nClicks = nClicks + 1;
+
+		document.getElementById("cpsDisplay").innerHTML = cps;
+		document.getElementById("clickDisplay").innerHTML = nClicks;
+	}
+
+	
+
+
+
+	
+
+	
+
+
+}
+</script>
+
+</body>
+</html>

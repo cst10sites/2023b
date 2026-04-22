@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="questionmark1.png">
+</head>
+<body class="Quiz">
+    <div class="Quiz">
+
+<h2>HTML/CSS/JS Quiz</h2>
+<h5>Click <a href="cookie.html">here</a> to return to the cookie clicker.</h5>
+<h3>Which tag is used to start an HTML document?</h3>
+
+<form>
+
+    <select id="htmlValue">
+        <option value="!DOCTYPE html">&lt;!DOCTYPE html&gt;</option>
+        <option value="html lang=en">&lt;html lang="en"&gt;</option>
+        <option value="title">&lt;title&gt;</option>
+        <option value="startDocument=html">&lt;startDocument="html"&gt;</option>
+       
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkHtml();">
+    <input type="reset"><br> 
+
+</form>
+     <p id="htmlDisplay"></p>
+
+<br>
+    <h3>Which language is used to change the style of a webpage?</h3>
+
+<form>
+    
+    <input type="radio" value="HTML" name="group">
+    <label>HTML</label><br>
+    <input id="correctLang" type="radio" value="CSS" name="group">
+    <label>CSS</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>JavaScript</label>
+    <br>
+    <input type="button" value="Submit" onclick="checkLang();">
+    <br> 
+    <input type="reset"><br> 
+</form>
+<br>
+        <h3>Which of these tags are found in the &lt;head&gt; of an HTML document?</h3>
+<form>
+    
+    <input id="choice1" type="checkbox" value="&lt;p&gt;">
+    <label>&lt;p&gt;</label>
+    <input id="choice2" type="checkbox" value="&lt;meta&gt;">
+    <label>&lt;meta&gt;</label><br>
+    <input id="choice3" type="checkbox" value="&lt;title&gt;">
+    <label>&lt;title&gt;</label>
+    <input id="choice4" type="checkbox" value="&lt;img&gt;">
+    <label>&lt;img&gt;</label><br>
+    <input type="button" value="Submit" onclick="headTags();"><br> 
+    <input type="reset"><br> 
+</form>
+
+</div>
+
+
+
+<script>
+	function checkHtml() {
+        var chosenHtml = document.getElementById('htmlValue').value;
+        
+
+        if (chosenHtml == "!DOCTYPE html") {
+            document.getElementById('htmlDisplay').innerHTML = "HTML documents do start with !DOCTYPE html.";
+            alert("Correct!")
+            }
+
+            else {
+                 document.getElementById('htmlDisplay').innerHTML =
+        "HTML documents don't start with " + chosenHtml;
+        alert("WRONG! TRY AGAIN!")
+            }
+
+       
+        } 
+        //end of function checkHtml
+
+    function checkLang() {
+        var correctAns = document.getElementById("correctLang").checked;
+        
+        if (correctAns == true) {
+            alert("CSS is correct!")
+        }
+        else {
+            alert("WRONG! TRY AGAIN!")
+        }
+    }//end of checkLang
+
+    function headTags() {
+        var choice1 = document.getElementById("choice1").checked; // milk
+        var choice2 = document.getElementById("choice2").checked; // juice
+        var choice3 = document.getElementById("choice3").checked; // eggs
+        var choice4 = document.getElementById("choice4").checked; // pork
+
+        if (choice1 == false && choice2 == true && choice3 == true && choice4 == false) {
+            alert("Correct!");
+        }
+        else {
+            alert("WRONG! TRY AGAIN!");
+        }
+
+        if (choice1 == false && choice2 == false && choice3 == true && choice4 == false) {
+            alert("This is not the only tag that fits in <head>")
+        }
+        if (choice1 == false && choice2 == true && choice3 == false && choice4 == false) {
+            alert("This is not the only tag that fits in <head>")
+        }
+
+    } // end of headTags
+
+        
+
+
+
+
+        
+    
+</script>
+
+
+
+</body>
+</html>

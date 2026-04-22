@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>portfolio</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+	body {
+		background-color: #ffd11a;
+	}
+	
+</style>
+</head>
+<body>
+	
+
+<div class="topnav">
+    <a href="index.html">Geography and language</a>
+      <a class="btn" href="index2.html">Common dishes and sports</a> 
+      <a class="btn" href="index3.html">Landscapes</a>
+      <a class="btn" href="index4.html">Quiz</a>
+      
+
+    </div>
+
+	<h2>QUIZ</h2>
+
+
+
+    <!--Example 2-->
+  
+    <form>
+        <label>How many champions does Real Madrid have?</label><br>
+        <input type="radio" value="13" name="group">
+        <label>13</label><br>
+        <input type="radio" value="16" name="group">
+        <label>16</label><br>
+        <input id="correctLang" type="radio" value="14" name="group">
+        <label>14</label><br>
+        <input type="button" value="Submit" onclick="checkLang();"><br> 
+        <input type="reset"><br> 
+      
+    </form>
+
+
+
+    <!--Example 3-->
+ 
+    <form>
+        <label>Which countries share a border with Spain?</label><br>
+        <input id="choice1" type="checkbox" value="France">
+        <label>France</label>
+        <input id="choice2" type="checkbox" value="Italy">
+        <label>Italy</label><br>
+        <input id="choice3" type="checkbox" value="Andorra">
+        <label>Andorra</label>
+        <input id="choice4" type="checkbox" value="Portugal">
+        <label>Portugal</label><br>
+        <input type="button" value="Check" onclick="eggsAndHam();"><br> 
+        <input type="reset"><br> 
+    </form>
+
+    <!--Example 2-->
+    
+    <form>
+        <label>What climates would Madrid and Barcelona respectively have? (Look at the picture below)</label><br>
+        <input type="radio" value="Continental;Alpine" name="group">
+        <label>Continental;Alpine</label><br>
+        <input id="correctName" type="radio" value="Continental;Mediterranean" name="group">
+        <label>Continental;Mediterranean</label><br>
+        <input type="radio" value="Alpine;Mediterranean" name="group">
+        <label>Alpine;Mediterranean</label><br>
+        <input type="radio" value="Oceanic;Mediterranean" name="group">
+        <label>Oceanic;Mediterranean</label><br>
+        <input type="button" value="Submit" onclick="checkName();"><br> 
+        <input type="reset"><br> 
+    </form>
+
+<script>
+    //Example 2
+        function checkLang() {
+            var correctAns = document.getElementById("correctLang").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("Congratulations! That is the correct answer");
+              }
+            else {
+              alert("Wrong! Try again!")
+            
+            }
+        } // end of Example 2
+        // Example 3 
+        function eggsAndHam() {
+            var choice1 = document.getElementById("choice1").checked; // milk
+            var choice2 = document.getElementById("choice2").checked; // juice
+            var choice3 = document.getElementById("choice3").checked; // eggs
+            var choice4 = document.getElementById("choice4").checked; // pork
+            if (choice1 == true && choice2 == false && choice3 == true && choice4 == true) {
+                alert("Congratulations! That is the correct answer!");
+            }
+            else {
+                alert("Wrong! Try again!");
+            }
+        } // end of Example 3
+
+        function checkName() {
+            var correctAns = document.getElementById("correctName").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("Congratulations! That is the correct answer");
+              }
+            else {
+              alert("Wrong! Try again!")
+            
+            }
+        }
+      </script>
+      <br>
+      <img src="https://www.espanaguide.com/images/maps/mapa-clima-espana-con-ciudades.jpg" alt="different climates in spain" style="width:40%">
+
+      <h3>I hope you liked my website and I hope you learnt a lot of things about Spain!</h3>
+
+	</body>
+</html>

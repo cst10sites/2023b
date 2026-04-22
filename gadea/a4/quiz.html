@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<p>Click <a href="index.html">here</a> to play the cookie game.</p>
+</head>
+<body>
+	
+	<h3>Radio Buttons</h3>
+<form>
+    <label>Select the correct form to put comments on html</label><br>
+    <input id="correctLang" type="radio" value="&lt;!-- ... --&gt;" name="group">
+    <label>&lt;!-- ... --&gt;</label><br>
+    <input type="radio" value="// " name="group">
+    <label>// </label><br>
+    <input type="radio" value="/* ... */" name="group">
+    <label>/* ... */</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	<input type="reset"><br> 
+
+	<h3>Checkboxes</h3>
+<form>
+    <label>Which of these tags are table tags?</label><br>
+    <input id="choice1" type="checkbox" value="milk">
+    <label>&lt; trd &gt;</label>
+    <input id="choice2" type="checkbox" value="juice">
+    <label>&lt; section &gt;</label><br>
+    <input id="choice3" type="checkbox" value="eggs">
+    <label>&lt; table &gt;</label>
+    <input id="choice4" type="checkbox" value="pork">
+    <label>&lt; td &gt;</label><br>
+    <input type="button" value="Submit" onclick="tableTags();"><br> 
+	<input type="reset"><br> 
+</form>
+
+
+
+
+</form>
+  <script>
+    	   // Example 2
+        function checkLang() {
+            var correctAns = document.getElementById("correctLang").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+            if (correctAns == true) {
+                alert("Congratulations! This is the correct answer.");
+            }
+            else {
+                alert("Incorrect!");
+            }
+           
+        } // end of Example 2
+        // Example 3 
+        function tableTags() {
+            var choice1 = document.getElementById("choice1").checked; // milk
+            var choice2 = document.getElementById("choice2").checked; // juice
+            var choice3 = document.getElementById("choice3").checked; // eggs
+            var choice4 = document.getElementById("choice4").checked; // pork
+            if (choice1 == false && choice2 == false && choice3 == true && choice4 == true) {
+                alert("Congratulations! This is the correct answer!");
+            }
+            else {
+                alert("Incorrect!");
+            }
+        } // end of Example 3
+
+
+    	
+    </script>
+</body>
+</html>

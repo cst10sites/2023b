@@ -1,0 +1,106 @@
+
+body {
+  color: white;
+  background-color: black;
+  background-image: url("https://images5.alphacoders.com/121/1217525.png");
+font-family: Garamond;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+  position: relative;
+}
+
+div.topnav #myLinks {
+  display: none;
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lightgrey;
+}
+
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+  table, th, td {
+  border: 2px solid white;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+th, td {
+  padding: 0px;
+  text-align: left;
+} 
+
+a {
+  color: cyan;
+}
+a:hover {
+  color: orangered;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.example {
+  background-color: orangered;
+}
+
+table.center {
+margin-left: auto;
+margin-right: auto;
+}
+
+div.table {
+  padding: 10px;
+}
+
+th  {
+  color: cyan;
+  font-size: 19px;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+
+
+div.content {
+  padding: 20px;
+
+}
+
+img.style {
+  margin: 10px;
+  border: solid cyan;
+}
+
+table.center {
+  padding: 10px;
+}

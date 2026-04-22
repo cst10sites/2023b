@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<!--Internal CSS-->
+<style>
+</style>
+<!--external CSS-->
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+<div>
+
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="myLinks">
+      <a href="head.html">Head</a>
+    </div>
+    <a  class="icon" onclick="myFunction()">...</a>
+
+     </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1>HTML Guide</h1>
+    <h2>Common HTML tags outside &lt;body&gt;</h2>
+  
+    </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function myFunction() {
+  var links = document.getElementById("myLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";
+  } else {
+    links.style.display = "block";
+  }
+}
+</script>
+
+  <div>
+ <table class="center" style="width: 75%">
+      <tr><!--Table row-->
+        <th style="width: 25%;">Tags</th><!--Table header-->
+        <th style="width: 25%;">Definitions</th>
+        <th style="width: 25%;">Examples</th>
+
+      </tr>
+
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td><!--Table data-->
+        <td>Defines document type</td>
+        <td>&lt;!DOCTYPE html&gt;</td>
+      </tr>
+ <tr>
+        <td>&lt;html lang="en"&gt;</td><!--Table data-->
+        <td>Defines the language of the document</td>
+        <td>&lt;html lang="en"&gt;</td>
+</tr>
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;
+</td><!--Table data-->
+        <td>Defines which Unicode is used to encode characters</td>
+        <td>All of the characters I use in this sentence and anywhere else on this site are part of UTF-8.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;title&gt; &lt;/title&gt;</td><!--Table data-->
+        <td>Defines the title of the document</td>
+        <td><img src="title.png" alt="title"></td>
+      </tr>
+
+      <tr>
+       <td>&lt;link&gt;</td>
+       <td>Used to define external CSS</td>
+       <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+     </tr>
+
+      <tr>
+        <td>&lt;link&gt;</td><!--Table data-->
+        <td>Defines a favicon</td>
+        <td>&lt;link rel="icon" type="image/x-icon" href="dizzy.ico"&gt;
+        </td>
+      </tr>
+
+      <tr class="trstyle">
+        <td>&lt;style&gt; &lt;/style&gt;</td><!--Table data-->
+        <td>Used to define internal CSS</td>
+        <td><img class="style" src="style.png" alt="style"></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

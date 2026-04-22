@@ -1,0 +1,55 @@
+body {
+  font:georgia;
+  margin: 0px 100px;
+  background-color: #e62e00;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0px 400px;
+  font-family:serif;
+}
+
+h2 {
+  font-size: 30px;
+
+} 
+
+div.topnav {
+  border:10px solid orange;
+  box-shadow:5px 10px black;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+div.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  display: block;
+}
+
+table, th, td {
+  border:2px solid purple;
+  border-collapse:collapse;
+}
+
+th, td {
+  padding:5px;
+  text-align:center;
+}
+
+div {
+      background-color:lightgoldenrodyellow;
+      padding:10px;
+      border-color:black
+      border-width:thick; /*thick*/
+      border-style:solid; /*dashed*/
+      box-shadow:5px 10px darkgrey;
+    }
+
+h3 {
+  color:orangered;
+}
