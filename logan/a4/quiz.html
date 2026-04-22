@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link rel="icon" href="Favicon.ico">
+</head>
+<body>
+<h1>Click <a href="index.html">here</a> to play Cookie Clicker game</h1>
+<h2>Single-Question Quiz</h2>
+<form>
+    <label>&lt;meta charset = "______"&gt;</label>
+    <select id="answer">
+        <option value="UFT-8">UFT-8</option>
+        <option value="UTF-9">UTF-9</option>
+        <option value="UTF-8">UTF-8</option>
+        <option value="UFT-9">UFT-9</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkAnswer();">
+    <input type="reset" onclick="resetWatch();"><br> 
+</form>
+<p id="answerDisplay"></p>
+
+<script>
+function resetWatch() {
+    location.reload();
+}
+
+function checkAnswer() {
+    var chosenAnswer = document.getElementById('answer').value;
+    if (chosenAnswer == "UTF-8") {
+        document.getElementById('answerDisplay').innerHTML = "The answer is " + chosenAnswer;
+    } else {
+        document.getElementById('answerDisplay').innerHTML = "The answer is not " + chosenAnswer;
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Favicon.ico">
+</head>
+<body>
+    <h1>Click <a href="quiz.html">here</a> to play the quiz</h1>
+    <h2>Cookie Clicker Game</h2>
+    <button onclick="updateCPS();">
+        <img style="width: 500px;" src="https://cdn.pixabay.com/photo/2020/11/28/11/25/cookie-5784367_960_720.png">
+    </button>
+    <button onclick="resetWatch()">Reset</button>
+    <p id="cpsDisplay"></p>
+    <p id="clickCount">Clicks: 0</p>
+    <p id="timeDisplay">Time: 0 seconds</p>
+
+    <script>
+        function resetWatch() {
+            location.reload();
+        }
+
+        var nClicks = 0;
+        var startTime = new Date();
+
+        function updateCPS() {
+            nClicks += 1;
+            document.getElementById("clickCount").innerHTML = "Clicks: " + nClicks;
+
+            if (nClicks == 1) {
+                startTime = new Date();
+            } else {
+                var currentTime = new Date();
+                var timeElapsed = (currentTime - startTime) / 1000;
+                var cps = nClicks / timeElapsed;
+                document.getElementById("cpsDisplay").innerHTML = "Clicks per second (CPS): " + cps;
+            }
+        }
+        setInterval(updateTime, 10);
+
+        function updateTime() {
+            if (nClicks >= 1) {
+                var currentTime = new Date();
+                var timeElapsed = (currentTime - startTime) / 1000;
+                document.getElementById('timeDisplay').innerHTML = timeElapsed;
+                document.getElementById("timeDisplay").innerHTML = "Time: " + timeElapsed + " seconds";
+            }
+        };
+    </script>
+</body>
+</html>

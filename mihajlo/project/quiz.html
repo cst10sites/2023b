@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>FC Red Star Belgrade</title>
+	<link rel="icon" type="image/x-icon" href="fkcz.ico">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="top">
+				<a href="index.html"><img src="fkcz_logo.png"></a>
+		<h1>FC Red Star Belgrade</h1>
+	</div>
+
+		<div class="nav">
+			<a href="index.html"><button class="i">Introduction</button></a>
+			<a href="players.html"><button class="p">Players</button></a>
+			<a href="stats&achievements.html"><button class="s">Stats & Achievements</button></a>
+			<a href="#cetvrti"><button class="q">Quiz</button></a>
+		</div>
+	
+
+	<div class="content_q">
+		<h2><a id="cetvrti"></a>Red Star Belgrade Quiz</h2>
+		
+		<p><strong>1. What year was Red Star Belgrade founded?</strong></p>
+<input type="radio" name="question1">1934<br>
+<input type="radio" name="question1" id="correct1">1945<br>
+<input type="radio" name="question1">1952<br>
+<input type="radio" name="question1">1961<br>
+
+	<br>
+
+<p><strong>2. Which season did Red Star win the UEFA Champions League?</strong></p>
+<input type="radio" name="question2">1983-84<br>
+<input type="radio" name="question2">2003-04<br>
+<input type="radio" name="question2" id="correct2">1990-91<br>
+<input type="radio" name="question2">2015-16<br>
+
+	<br>
+	
+<p><strong>3. Which club is Crvena Zvezda's biggest rival?</strong></p>
+<input type="radio" name="question3">FK Vojvodina<br>
+<input type="radio" name="question3">FK Metalac<br>
+<input type="radio" name="question3">FK Čukarički<br>
+<input type="radio" name="question3" id="correct3">FK Partizan<br>
+
+	<br>
+	
+<p><strong>4. What are Crvena Zvezda's fans called?</strong></p>
+<input type="radio" name="question4" id="correct4">Delije<br>
+<input type="radio" name="question4">Grobari<br>
+<input type="radio" name="question4">Invalidi<br>
+<input type="radio" name="question4">Torčida<br>
+
+	<br>
+	
+<p><strong>5. Which player is displayed on the picture?</strong></p>
+<input type="radio" name="question5">Aleksandar Vučić<br>
+<input type="radio" name="question5">Darko Pančev<br>
+<input type="radio" name="question5" id="correct5">Nemanja Vidić<br>
+<input type="radio" name="question5">Saša Matić<br>
+
+	<br>
+
+<input class="submit_b" type="submit" name="submit" value="Submit" onclick="result()">
+<button class="reset_q" onClick="window.location.reload();">Reset</button>
+
+<img class="q_vidic" src="vidic.jpg" alt="vidic_nemanja" 
+	width="170" 
+	height="120">
+
+<script type="text/javascript">
+	function result(){
+		var score=0;
+		if (document.getElementById('correct1').checked)
+		{
+			score++;
+		}
+		
+		if (document.getElementById('correct2').checked)
+		{
+			score++;
+		}
+	
+	if (document.getElementById('correct3').checked)
+		{
+			score++;
+		}
+	
+	if (document.getElementById('correct4').checked)
+		{
+			score++;
+		}
+		
+	if (document.getElementById('correct5').checked)
+		{
+			score++;
+		}
+		alert("You got " + score + "/5 questions right!")
+	}
+	
+
+</script>
+		
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

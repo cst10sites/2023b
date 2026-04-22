@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+
+<!--External CSS-->
+<link rel="stylesheet" href="styles.css">
+<!--Internal CSS: moved to style.css-->
+
+<link rel="icon" type="image/x-icon" href="HTML5_ICON.png">
+
+<style>
+  p.StyleTag {
+    color: orange;
+  }
+</style>
+
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("morelinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+  </script>
+
+</head>
+
+
+<body>
+	<div>
+		  <!-- navbar -->
+	   <div class="topnav">
+    	<a href="index.html">Home</a>
+    	<div id="morelinks">
+      	<a href="index.html">Common HTML Tags inside &lt;body&gt;</a>
+      </div>
+    	<a class="icon" onclick="showHideMenu()">...</a>
+  	</div>	
+	
+  <!--content-->
+  <div class="content">
+	   <h1><u>HTML Guide</u></h1>
+     <h2>Common HTML Tags outside &lt;body&gt;</h2>
+    <table style="width: 100%">
+      <tr>
+        <th style="width: 20%;">Tag</th>
+        <th style="width: 40%;">Definition</th>
+        <th style="width: 40%;">Example</th>
+      </tr>  
+
+      <tr> <!--<!DOCTYPE> tag-->
+        <td>&lt;!DOCTYPE&gt;</td>
+        <td><p>Information to browser about what document type to expect</p></td>
+        <td><p>&lt;!DOCTYPE html&gt;</p></td>      
+      </tr>
+
+      <tr> <!--<html lang=""> tag-->
+        <td>&lt;html lang=""&gt;</td>
+        <td>Declares language of web page</td>
+        <td><p>&lt;html lang="en"&gt;</p></td>
+      </tr>
+
+      <tr> <!--<meta charset=""> tag-->
+        <td>&lt;meta charset=""&gt;</td>      
+        <td>Specifies character encoding for HTML document</td>
+        <td><p>&lt;meta charset="UTF-8"</p></td>
+      </tr>
+
+      <tr> <!--<title> tag-->
+        <td>&lt;title&gt;</td>        
+        <td>Creates title on the tab on the browser</td>
+        <td><p>Title for this page:<em> Assignment 3</em></p></td>
+      </tr>
+
+      <tr> <!--<style> tag-->
+        <td>&lt;style&gt;</td>
+        <td>Defines the style for a single HTML page (Internal CSS)</td>
+        <td><p class="StyleTag">This sentence is coloured orange with internal CSS.</p></td>
+      </tr>
+
+      <tr> <!--<link-ext_css> tag-->
+        <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+        <td>Defines the style for many HTML pages (External CSS)</td>
+        <td><p class="LinkTagExCSS">This sentence is coloured yellow with external CSS.</p></td>
+      </tr>
+
+      <tr> <!--<link-favicon> tag-->
+        <td>&lt;link rel="icon" type="image/x-icon" href="..."&gt;</td>
+        <td>Adds little picture (Favicon) next to page title on the browser tab</td>
+        <td><p>Favicon for this page:</p><img src="HTML5_ICON.png" alt="html5_picture" width="40" height="40"></td>
+        
+      <tr> <!--<script> tag-->
+        <td>&lt;script&gt;</td>
+        <td>Embeds a client-side script (JavaScript)</td>
+        <td><p>The navigation bar on this page is coded with JavaScript</p></td>
+      </tr>
+
+      <tr> <!--<noscript> tag-->
+        <td>&lt;noscript&gt;</td>
+        <td><p>Displays alternate content to users that have disabled scripts in their browser or have a browser that doesn't support script</p></td>
+        <td><p>I.e. if scripts disabled this message is shown:<em>Your browser does not support JavaScript!</em></p> </td>
+      </tr>
+
+      <tr> <!--<base>tag-->
+        <td>&lt;base&gt;</td>
+        <td><p>Specifies the base URL and/or target for all relative URLs in a document</p></td>
+        <td><p>&lt;base href="..." target="..."&gt;</p></td>
+      </tr>
+
+    </table> 
+
+  </div>
+    </div>
+
+
+
+  </body>
+    </html>

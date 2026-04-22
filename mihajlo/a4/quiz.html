@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p><a class="btn" href="index.html">Cookie Clicker</a></p>
+	<h1>Quiz</h1>
+	<hr>
+	
+	<h3>HTML Quiz</h3>
+
+<form>
+    <label>Choose the correct HTML element to define important text</label><br>
+    <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>&lt;strong&gt;</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>&lt;i&gt;</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>&lt;important&gt;</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+	<input type="reset"><br> 
+</form>
+	
+
+<script>
+	
+function checkLang(){
+			var correctAns = document.getElementById("correctLang").checked
+			// .checked --> get T/F value for radio buttons
+			alert(correctAns);
+
+			if (correctAns == true) {
+				alert("<strong> is the only correct answer!");
+			}
+
+
+		}
+
+</script>
+
+</body>
+</html>

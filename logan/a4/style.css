@@ -1,0 +1,21 @@
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+}
+h2 {
+    color: black;
+    margin-top: 30px;
+}
+button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+p {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: gray;
+}

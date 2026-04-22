@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assignment 3</title>
+	<style>
+	</style>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="matrixfavicon.ico">
+</head>
+<body>
+	<div>
+		<div Class="topnav">
+			<a href="index.html">Home</a>
+			<div id="myLinks">
+				<a href="head.html">Head</a>
+			</div>
+			<a class="icon" onclick="myFunction()">...</a>
+		</div>
+	</div>
+	<h1>HTML Guide</h1>
+	<h2>Common HTML Tags outside &lt;body&gt;</h2>
+	<table>
+		<tr class="header">
+			<th>Tags</th>
+			<th>Definitions</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>&lt;!DOCTYPE html&gt;</td>
+			<td>States that this document is and HTML 5 document</td>
+			<td><img style="width: 50%" alt="!DOCTYPEexample" src="!DOCTYPEexample2.png"></td>
+		</tr>
+		<tr>
+			<td>&lt;html lang="en"&gt;</td>
+			<td>The root element of an HTML page</td>
+			<td><img style="width: 50%" alt="htmllangexample" src="htmllangexample.png"></td>
+		</tr>
+		<tr>
+			<td>&lt;meta charset="UTF-8"&gt;</td>
+			<td>Specifies character style to use in document. UTF-8 encompasses most characters & symbols</td>
+			<td>&copy; &nbsp; &reg; &nbsp; &euro; &nbsp; &trade; &nbsp; &gamma; &nbsp; &delta; &nbsp; &lambda; &nbsp; &infin;</td>
+		</tr>
+		<tr>
+			<td>&lt;title&gt;</td>
+			<td>Gives a title to the webpage</td>
+			<td>The title of this document is Assignment 3, shown on the tab bar
+				<br>
+				<img class="tabbar" style="width: 40%;" alt="title" src="tabbara3.png"></td>
+		</tr>
+		<tr>
+			<td>&lt;style&gt;</td>
+			<td>Defines the style and look of the webpage</td>
+			<td><img style="width: 40%" alt="styleexample" src="styleexample.png"><img alt="styleexample2" src="styleexample2.png"></td>
+		</tr>
+		<tr>
+			<td>External CSS &lt;link&gt;</td>
+			<td>Uses a separate document with only CSS for the webpage to link to</td>
+			<td><img style="width: 80%" alt="styleexample3" src="externalcssexample.png"></td>
+		</tr>
+		<tr>
+			<td>Favicons &lt;link&gt;</td>
+			<td>Icon of webpage on tab bar</td>
+			<td>This webpage has a favicon shown on the tab bar<img class="tabbar" alt="favicon" src="tabbara3.png"><img alt="example" src="faviconexample.png"></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<script>
+		function myFunction() {
+  			var links = document.getElementById("myLinks");
+  			if (links.style.display == "block") {
+   				links.style.display = "none";  // hide
+  			}
+  			else {
+   				links.style.display = "block"; // show
+  			}
+		}
+	</script>
+</body>
+</html>

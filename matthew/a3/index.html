@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 3</title>
+	<style>
+	</style>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="matrixfavicon.ico">
+</head>
+<body>
+	<div>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<div id="myLinks">
+				<a href="head.html">Head</a>
+			</div>
+			<a class="icon" onclick="myFunction()">...</a>
+		</div>
+	</div>
+	<h1>HTML/CSS Guide</h1>
+	<h2>Common HTML Tags inside &lt;body&gt;</h2>
+	<table>
+		<tr>
+			<th>Tag</th>
+			<th>Definition</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>&lt;p&gt;</td>
+			<td>Paragraph text</td>
+			<td><p>This is a paragraph</p></td>
+		</tr>
+		<tr>
+			<td>&lt;h1&gt;...&lt;h6&gt;</td>
+			<td>Headings (varying sizes)</td>
+			<td><h1>This is an h1 heading</h1><h6>This is an h6 heading</h6></td>
+		</tr>
+		<tr>
+			<td>&lt;ul&gt;</td>
+			<td>Lists information in bullets</td>
+			<td>
+				<div>
+				<ul>
+					<li>This</li>
+					<li>is</li>
+					<li>an</li>
+					<li>unordered</li>
+					<li>list</li>
+				</ul>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>&lt;ol&gt;</td>
+			<td>Lists information numerically</td>
+			<td>
+				<div>
+				<ol>
+					<li>This</li>
+					<li>is</li>
+					<li>an</li>
+					<li>ordered</li>
+					<li>list</li>
+				</ol>
+				</div>
+				<ol style="list-style-type: upper-roman;">
+					<li>And</li>
+					<li>this</li>
+					<li>is</li>
+					<li>another</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>&lt;img&gt;</td>
+			<td>Shows an image</td>
+			<td><img alt="image" style="width: 100%;" src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"></td>
+		</tr>
+		<tr>
+			<td>&lt;iframe&gt;</td>
+			<td>Embed images and videos into webpage</td>
+			<td><iframe style="width: 100%; height: 80%;" src="https://www.vsb.bc.ca/kitsilano"></iframe></td>
+		</tr>
+		<tr>
+			<td>&lt;em&gt;</td>
+			<td>Italicize text</td>
+			<td><em>This text is emphasized (italicized)</em></td>
+		</tr>
+		<tr>
+			<td>&lt;strong&gt;</td>
+			<td>Bolds text</td>
+			<td><strong>This text is strong (bold)</strong></td>
+		</tr>
+		<tr>
+			<td>&lt;hr&gt;</td>
+			<td>Adds a break between sections with a line</td>
+			<td>This text<hr>is separated<hr>by lines</td>
+		</tr>
+		<tr>
+			<td>&lt;a&gt;</td>
+			<td>Hyperlink text</td>
+			<td><a target="_blank" href="https://www.google.com/search?q=cats&client=opera-gx&hs=9bK&sxsrf=AJOqlzXi4dIxFz1FE3MdUwaYpy4WdZ1OTA:1678130734262&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKqbWShMj9AhXOATQIHWwKBkAQ_AUoAXoECAEQAw&biw=1399&bih=759&dpr=1">This</a> is a hyperlink</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<script>
+		function myFunction() {
+  			var links = document.getElementById("myLinks");
+  			if (links.style.display == "block") {
+   				links.style.display = "none";  // hide
+  			}
+  			else {
+   				links.style.display = "block"; // show
+  			}
+		}
+	</script>
+</body>
+</html>

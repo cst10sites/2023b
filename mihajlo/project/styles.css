@@ -1,0 +1,467 @@
+body {
+	text-align: center;
+	margin: 0px;
+	background-image: url("https://img.freepik.com/premium-vector/abstract-white-grey-background_528453-7.jpg?w=2000");
+	overflow-x: hidden;
+}
+
+h1 {
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 3.3em;
+	position:relative;
+	left: -50px;
+	top: -155px;
+	width: 50%;
+}
+
+h2 {
+	color: black;
+	text-decoration: underline;
+	font-family: Helvetica;
+	font-size: 2em;
+	text-align: left;
+}
+
+h3 {
+	color: black;
+	font-family: Helvetica;
+	text-align: left;
+}
+
+p {
+	color: black;
+	font-family: Helvetica;
+	text-align: left;
+}
+
+.prva_slika {
+	text-align: center;
+	font-size: 0.8em;
+	position: relative;
+	top: -13px;
+}
+
+.druga_slika {
+	text-align: center;
+	font-size: 0.8em;
+	position: relative;
+	top: -13px;
+}
+
+.top {
+	background: #CB1717;
+	color: #CB1717;
+	width: 100%;
+	height: 165px;
+	border-top: 5px solid #EAA738;
+	border-bottom: 5px solid #EAA738;
+}
+
+.nav {
+	background: #B11212;
+	color: #B11212;
+	width: 44%;
+	height: 40px;
+	margin: auto;
+	text-align: left;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+
+}
+
+.content_i {
+	background: #DEDEDE   ;
+	color: #DEDEDE   ;
+	width: 80%;
+	height: 1300px;
+	margin: auto;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	padding: 20px;
+}
+
+.content_p {
+	background: #DEDEDE   ;
+	color: #DEDEDE   ;
+	width: 80%;
+	height: 1055px;
+	margin: auto;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	padding: 20px;
+}
+
+.content_s {
+	background: #DEDEDE   ;
+	color: #DEDEDE   ;
+	width: 80%;
+	height: 3200px;
+	margin: auto;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	padding: 20px;
+}
+
+.content_q {
+	background: #DEDEDE   ;
+	color: #DEDEDE   ;
+	width: 80%;
+	height: 950px;
+	margin: auto;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	padding: 20px;	
+	text-align: left;
+	color: black;
+	font-family: Helvetica;
+}
+
+.i {
+	color: white;
+	background-color: #B11212;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	border-left: none;
+	border-right: 2px solid black;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+	top: 3px;
+}
+
+.p {
+	color: white;
+	background-color: #B11212;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	border-left: none;
+	border-right: 2px solid black;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+	top: 3px;
+}
+
+.s {
+	color: white;
+	background-color: #B11212;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	border-left: none;
+	border-right: 2px solid black;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+	top: 3px;
+}
+
+.q {
+	color: white;
+	background-color: #B11212;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+	top: 3px;
+}
+
+button:hover {
+	color: #EAA738;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.darko {
+	text-align: left;
+	height: 290px;
+}
+
+.darko_text {
+	position: relative;
+	top: -223px;
+	right: -380px;
+	width: 700px;
+}
+
+.treca_slika {
+	position: relative;
+	top: -160px;
+	left: 46px;
+	font-size: 0.8em;
+}
+
+.nemanja {
+	text-align: left;
+	height: 318px;
+}
+
+.nemanja_text {
+	position: relative;
+	top: -250px;
+	right: -380px;
+	width: 700px;
+}
+
+.cetvrta_slika {
+	position: relative;
+	top: -141px;
+	left: 45px;
+	font-size: 0.8em;
+}
+
+.sinisa {
+	text-align: left;
+	height: 318px;
+}
+
+.sinisa_text {
+	position: relative;
+	top: -250px;
+	right: -380px;
+	width: 700px;
+}
+
+.peta_slika {
+	position: relative;
+	top: -195px;
+	left: 41px;
+	font-size: 0.8em;
+}
+
+.jpl {
+	width: 700px;
+}
+
+ul {
+color: black;
+font-family: Helvetica;
+width: 700px;
+text-align: left;
+}
+
+.jpl90 {
+	position: relative;
+	top: 220px;
+	right: 408px;
+}
+
+.sesta_slika {
+	position: relative;
+	text-align: right;
+	top: 206px;
+	right: 870px;
+	font-size: 0.8em;
+}
+
+.srbmne04 {
+	position: relative;
+	top: -125px;
+}
+
+.srbmnediv {
+	position: relative;
+	top: -250px;
+}
+
+.sedma_slika {
+	text-align: right;
+	font-size: 0.8em;
+	position: relative;
+	top: -138px;
+	right: 464px;
+}
+
+.srbsl {
+	position: relative;
+	top: -495px;
+}
+
+.srbsl23_slika {
+	position: relative;
+	left: 407px;
+	top: -478px;
+}
+
+.osma_slika {
+	position: relative;
+	font-size: 0.8em;
+	left: 872px;
+	top: -492px;
+}
+
+.hr1 {
+	position: relative;
+	top: -460px;
+}
+
+.cups {
+	position: relative;
+	top: -430px;
+}
+
+.kupsfrj {
+	position: relative;
+	top: -430px;
+}
+
+.kupsrbmne {
+	position: relative;
+	top: -395px;
+}
+
+.kupsrb {
+	position: relative;
+	top: -355px;
+}
+
+.kupsfrj_slika {
+	position: relative;
+	top: -325px;
+	right: 407px;
+}
+
+.kupsrbmne_slika {
+	position: relative;
+	top: -545px;
+}
+
+.kupsrb_slika {
+	position: relative;
+	top: -768px;
+	left: 407px;
+}
+
+.deseta_slika {
+	position: relative;
+	font-size: 0.8em;
+	top: -787px;
+	left: 64px;
+}
+
+.jedanaesta_slika {
+	position: relative;
+	font-size: 0.8em;
+	top: -816px;
+	left: 468px;
+}
+
+.dvanaesta_slika {
+	position: relative;
+	font-size: 0.8em;
+	top: -838px;
+	left: 875px;
+}
+
+.hr2 {
+	position: relative;
+	top: -805px;
+}
+
+.int_comp {
+	position: relative;
+	top: -773px;
+}
+
+.ucl {
+	position: relative;
+	top: -774px;
+}
+
+.icnc {
+	position: relative;
+	top: -735px;
+}
+
+.mic {
+	position: relative;
+	top: -693px;
+}
+
+.ucl_slika {
+	position: relative;
+	top: -650px;
+	right: 407px;
+}
+
+.icnc_slika {
+	position: relative;
+	top: -870px;
+}
+
+.mic_slika {
+	position: relative;
+	top: -1095px;
+	right: -407px;
+}
+
+.trinaesta {
+	position: relative;
+	font-size: 0.8em;
+	top: -1110px;
+	left: 5px;
+}
+
+.cetrnaesta {
+	position: relative;
+	font-size: 0.8em;
+	top: -1139px;
+	left: 412px;
+} 
+
+.petnaesta {
+	position: relative;
+	font-size: 0.8em;
+	top: -1163px;
+	left: 820px;
+}
+
+.submit_b {
+	position: relative;
+	top: -105px;
+	background-color: #B11212;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Helvetica;
+	cursor: pointer;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.submit_b:hover {
+	color: #EAA738;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.reset_q {
+	position: relative;
+	right: 90px;
+	top: -68px;
+	background-color: #B11212;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Helvetica;
+	cursor: pointer;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.q_vidic {
+	position: relative;
+	left: 10px;
+	top: -98px;
+}

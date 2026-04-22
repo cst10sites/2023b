@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<style>
+		body {
+			background-image: url('https://t3.ftcdn.net/jpg/02/66/33/82/360_F_266338299_wTr8tcMGNmjFbEJVnrkKXrrsHABMlqXY.jpg');
+			background-size: cover;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="question.ico">
+</head>
+<body>
+	<div class="quiz">
+	<h1>QUIZ</h1>
+	<p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+	<h2>Which tag should be used to create a link?</h2>
+	<form>
+		<input type="radio" value="link" name="group">
+		<label>&lt;link&gt;</label><br>
+		<input type="radio" value="l" name="group">
+		<label>&lt;l&gt;</label><br>
+		<input type="radio" value="href" name="group">
+		<label>&lt;href&gt;</label><br>
+		<input id="correctTag" type="radio" value="a" name="group">
+		<label>&lt;a&gt;</label><br>
+		<input type="button" value="Submit" onclick="checkTag();">
+		<input type="reset"><br>
+	</form>
+	<br>
+	<h2>What is the best system of CSS?</h2>
+	<form>
+		
+		<select id="cssValue">
+			<option value="Inline">Inline</option>
+			<option value="Internal">Internal</option>
+			<option value="External">External</option>
+		</select>
+		<br>
+		<input type="button" value="Submit" onclick="checkCSS();">
+		<input type="reset"><br>
+	</form>
+	<br>
+	<h2>How do you make the background colour yellow using CSS?</h2>
+	<form>
+		<input id="choice1" type="checkbox" value="choice1">
+		<label>&lt;body style="background-color: yellow;&gt;</label><br>
+		<input id="choice2" type="checkbox" value="choice2">
+		<label>&lt;body style="color: yellow:&gt;</label><br>
+		<input id="choice3" type="checkbox" value="choice3">
+		<label>body {color: yellow;}</label><br>
+		<input id="choice4" type="checkbox" value="choice4">
+		<label>body {background-color: yellow;}</label><br>
+		<input type="button" value="Submit" onclick="checkBackground();">
+		<input type="reset"><br>
+	</form>
+	</div>
+	<script>
+		function checkTag() {
+			var correctTag = document.getElementById("correctTag").checked
+			if (correctTag == true) {
+				alert("Correct!");
+			}
+			else {
+				alert("Incorrect");
+			}
+		}
+
+		function checkCSS() {
+			var chosenCSS = document.getElementById("cssValue").value;
+			if (chosenCSS == "External") {
+				alert("Correct!");
+			}
+			else {
+				alert("Incorrect");
+			}
+		}
+
+		function checkBackground() {
+			var choice1 = document.getElementById("choice1").checked;
+			var choice2 = document.getElementById("choice2").checked;
+			var choice3 = document.getElementById("choice3").checked;
+			var choice4 = document.getElementById("choice4").checked;
+
+			if (choice1 == true && choice2 == false && choice3 == false && choice4 == true) {
+				alert("Correct!");
+			}
+			else {
+				alert("Incorrect");
+			}
+		}
+	</script>
+</body>
+</html>

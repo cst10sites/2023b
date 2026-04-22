@@ -1,0 +1,39 @@
+table, th, td{
+    border: 5px solid white;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px;
+    text-align: left;
+    font-size: large;
+}
+
+body {
+    font-family: Arial, Helvetica;
+    margin: 0px 100px;
+    background-image: url("https://www.teahub.io/photos/full/26-266134_abstract-backgrounds-design-light-desktop-images-hd-best.jpg");
+}
+.btn{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-style: solid;
+    border-color: cyan;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 1.25em;
+}
+a.btn:hover{
+    background-color: skyblue;
+    box-shadow: 5px  10px blue;
+}
+div.nav{
+    background-color: blue;
+    border-style: none;
+    box-shadow: none;
+}

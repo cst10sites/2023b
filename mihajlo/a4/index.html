@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+	<a class="btn" href="quiz.html">Quiz</a>
+	<div>
+<h1>Cookie Clicker</h1>
+<hr>
+<p><button class="reset" onclick="resetWatch()">Reset</button></p>
+<button onclick="updateCPS();"><img src="Cookie.png"></button>
+<p><span id="timeDisplay">Time</span></p>
+<p><span id="cpsDisplay">CPS</span></p>
+<p><span id="click"></span> Clicks</p>
+</div>
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+
+		startTime = new Date();
+		nClicks = nClicks + 1;
+	}
+ 
+	
+	else {
+		
+		var currentTime = new Date();		
+		var timeElapsed = (currentTime - startTime) / 1000;		
+		var CPS = (nClicks / timeElapsed);
+		nClicks = nClicks + 1;
+		document.getElementById('click').innerHTML =  nClicks;
+		document.getElementById('cpsDisplay').innerHTML = "CPS: " + CPS
+
+		 
+	}
+}
+
+
+		setInterval(updateTime, 100);
+
+function updateTime() {
+	if (nClicks > 0) {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000; // in seconds
+		document.getElementById('timeDisplay').innerHTML =
+		"<br>Time: " + timeElapsed;
+	}
+}
+
+	
+
+function resetWatch() {
+	location.reload();
+}
+
+
+		
+
+</script>
+</body>
+</html>
