@@ -1,0 +1,66 @@
+	a.btn {
+			/* <a class="btn" ...> */
+			background-color: whitesmoke;
+			color: black;
+			text-decoration: none;
+			display: inline-block;
+			padding: 15px 20px;
+			border-style: solid;
+			border-color: lightgrey;
+			border-radius: 15px;
+			font-size: 1em;
+		}
+
+	a.btn:hover {
+			background-color: grey;
+			box-shadow: 5px 10px black;
+		}
+
+
+	h2 {
+			text-decoration: underline;
+		}
+
+	body {
+			color: white;
+			font-family: "Trebuchet MS";
+			background-color: blueviolet;
+			text-align: center;
+			margin-top: 25px;
+		}
+
+
+	img { 
+			float: right;
+			margin-right: 70px;
+			margin-left: 70px;
+		}
+
+	input.btn {
+			/* <a class="btn" ...> */
+			background-color: whitesmoke;
+			color: black;
+			text-decoration: none;
+			display: inline-block;
+			padding: 15px 20px;
+			border-style: solid;
+			border-color: lightgrey;
+			border-radius: 15px;
+			font-size: 1em;
+		}
+
+	input.btn:hover {
+			background-color: grey;
+			box-shadow: 5px 10px black;
+		}
+
+	form {
+		text-align: left;
+		margin-left: 200px;
+		margin-right: 850px;
+		background-color: mediumpurple;
+		padding: 20px;
+		border-color: whitesmoke;
+		border-width: thick;
+		border-style: solid;
+	}

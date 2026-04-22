@@ -1,0 +1,30 @@
+body {
+	background-color: seagreen;
+	color: ghostwhite;
+	margin: 50px 100px;
+	font-family: "Trebuchet MS";
+}
+
+h2 {
+	text-align: center;
+	font-size: 3em;
+
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+div.center {
+  margin: 0;
+  position: absolute;
+  top: 44%;
+  left: 33%;
+}
+
+div.right {
+	margin: 50px 680px;
+}
+
+

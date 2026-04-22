@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="icon/x-image" href="favicon.ico">
+</head>
+<body>
+	<div class="nav">
+		<a class="btn" href="index.html">Home</a> &nbsp;
+		<a class="btn" href="achievements.html">Achievement</a> &nbsp;
+		<a class="btn" href="academy.html">Rafa Nadal Academy</a> &nbsp;
+		<a class="btn" href="quiz.html">Quiz</a> &nbsp;
+		<a class="btn" href="source.html">Sources</a> &nbsp;
+	</div>
+
+	<div class="intro">
+		<h1>Quiz</h1>
+		<h2>Test Your Knowledge</h2>
+		<img style="width: 50%" alt="nadal" src="https://wallsdesk.com/wp-content/uploads/2016/12/Rafael-Nadal-full-HD.jpg">
+		<p><i>"I learned during all my career to enjoy suffering." - Rafael Nadal</i></p>
+	</div>
+
+	<div class="contents">
+		<h3><u>Preview</u></h3>
+		<p>After reading all the information about Rafael Nadal, what did you learn? Check out the quiz below to test your knowdledge. Try not to switch between pages to get the correct answer, look over the information and remember them before starting this quiz.</p>
+	
+	<hr> 
+
+	<p>Click below to time how long it takes you to complete this quiz.</p>
+	<p id="timeDisplay"></p>
+	<p id="lapDisplay"></p>
+
+	<button onclick="startWatch()" id="lapButton">Start</button>
+	<button onclick="resetWatch()">Reset</button>
+	
+	<br> 
+	<br>
+	<br>
+	
+	<div class="quiz">
+		<form>
+			<label>"Losing is ____ my ____, ____ of losing is my enemy."</label><br>
+			<input type="radio" value="not, friend, scared" name="group">
+			<label>not, friend, scared</label><br>
+			<input type="radio" value="definetely, enemy, fear" name="group">
+			<label>definetely, enemy, fear</label><br>
+			<input id="correctAn" type="radio" value="not, enemy, fear" name="group">
+			<label>not, enemy, fear</label><br>
+			<input type="radio" value="not, enemy, hate" name="group">
+			<label>not, enemy, hate</label><br>
+			<input type="button" value="Submit" onclick="checkLos();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>When was Rafael Nadal born?</label><br>
+			<input id="correctAns" type="radio" value="June 3rd, 1986" name="group">
+			<label>June 3rd, 1986</label><br>
+			<input type="radio" value="July 4th, 1986" name="group">
+			<label>July 4th, 1986</label><br>
+			<input type="radio" value="May 3rd, 1986" name="group">
+			<label>May 3rd, 1986</label><br>
+			<input type="button" value="Submit" onclick="checkBorn();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>When did Rafael Nadal turn professional?</label><br>
+			<input type="radio" value="2000" name="group">
+			<label>2000</label><br>
+			<input type="radio" value="1999" name="group">
+			<label>1999</label><br>
+			<input type="radio" value="2002" name="group">
+			<label>2002</label><br>
+			<input id="correctAnsw" type="radio" value="2001" name="group">
+			<label>2001</label><br>
+			<input type="button" value="Submit" onclick="checkPro();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>What nickname has been given to Rafael Nadal?</label><br>
+			<input id="check1" type="checkbox" value="King of Clay">
+			<label>King of Clay</label>
+			<input id="check2" type="checkbox" value="The Rocket">
+			<label>The Rocket</label><br>
+			<input id="check3" type="checkbox" value="The Bull of Manacor">
+			<label>The Bull of Manacor</label>
+			<input id="check4" type="checkbox" value="Powforehand">
+			<label>Powforehand</label><br>
+			<input type="button" value="Submit" onclick="checkName();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>How many wins has Nadal won in Grand Slam Tournaments up to 2023?</label><br>
+			<input id="correctAnswe" type="radio" value="22" name="group">
+			<label>22</label><br>
+			<input type="radio" value="30" name="group">
+			<label>30</label><br>
+			<input type="radio" value="25" name="group">
+			<label>25</label><br>
+			<input type="radio" value="28" name="group">
+			<label>28</label><br>
+			<input type="button" value="Submit" onclick="checkWin();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>How many matches has Rafael Nadal played up to 2023?</label><br>
+			<input type="radio" value="140" name="group">
+			<label>140</label><br>
+			<input id="correctAnswer" type="radio" value="143" name="group">
+			<label>143</label><br>
+			<input type="radio" value="148" name="group">
+			<label>148</label><br>
+			<input type="radio" value="138" name="group">
+			<label>138</label><br>
+			<input type="button" value="Submit" onclick="checkMatch();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>What is the main purpose of Rafa Nadal Academy?</label><br>
+			<input id="check5" type="checkbox" value="Money making scheme">
+			<label>Money making scheme</label>
+			<input id="check6" type="checkbox" value="Facility for Nadal to train at">
+			<label>Facility for Nadal to train at</label><br>
+			<input id="check7" type="checkbox" value="Promote Nadal's name around the world">
+			<label>Promote Nadal's name around the world</label>
+			<input id="check8" type="checkbox" value="Give a chance to kids around the world to improve their tennis skills">
+			<label>Give a chance to kids around the world to improve their tennis skills</label><br>
+			<input type="button" value="Submit" onclick="checkPurpose();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>How big is Rafa Nadal Academy in square feet?</label><br>
+			<input type="radio" value="20,000" name="group">
+			<label>20,000</label><br>
+			<input id="correctAnswer1" type="radio" value="24,000" name="group">
+			<label>24,000</label><br>
+			<input type="radio" value="28,000" name="group">
+			<label>28,000</label><br>
+			<input type="radio" value="32,000" name="group">
+			<label>32,000</label><br>
+			<input type="button" value="Submit" onclick="checkBig();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>Which tennis star below attended Rafa Nadal Academy?</label><br>
+			<input id="check9" type="checkbox" value="Casper Ruud">
+			<label>Casper Ruud</label>
+			<input id="check10" type="checkbox" value="Novak Djokovic">
+			<label>Novak Djokovic</label><br>
+			<input id="check11" type="checkbox" value="Felix Auger-Aliassime">
+			<label>Felix Auger-Aliassime</label>
+			<input id="check12" type="checkbox" value="Bianca Andreescu">
+			<label>Bianca Andreescu</label><br>
+			<input type="button" value="Submit" onclick="checkStar();">
+			<input type="reset"><br>
+		</form>
+
+		<br>
+
+		<form>
+			<label>Type a few sentences on why you agree/disagree about Rafael Nadal being the best tennis player</label><br>
+			<textarea id="tennis" name="tennis" rows="4" cols="50">Start typing here.</textarea><br>
+			<input type="button" value="Submit" onclick="showUserText();">
+			<input type="reset"><br>
+		</form>
+
+	</div>
+
+</div>
+
+	<script>
+		// first
+		function checkLos() {
+			var correctAn = document.getElementById("correctAn").checked
+			alert(correctAn);
+		} // end first
+
+		// second
+		function checkBorn() {
+			var correctAns = document.getElementById("correctAns").checked
+			alert(correctAns);
+		} // end second
+
+		// third
+		function checkPro() {
+			var correctAnsw = document.getElementById("correctAnsw").checked
+			alert(correctAnsw);
+		} // end third
+
+		//fourth
+		function checkName() {
+		var choice1 = document.getElementById("check1").checked; // KC
+		var choice2 = document.getElementById("check2").checked; // TR
+		var choice3 = document.getElementById("check3").checked; // BM
+		var choice4 = document.getElementById("check4").checked; // PF
+
+		if (choice1 == true && choice2 == false && choice3 == true && choice4 == false) {
+			alert("Correct!");
+		}
+		else {
+			alert("Incorrect. Try again.");
+		}
+		} // end fourth
+
+		//fifth
+		function checkWin() {
+			var correctAnswe = document.getElementById("correctAnswe").checked
+			alert(correctAnswe);
+		} // end fifth
+
+		//sixth
+		function checkMatch() {
+			var correctAnswer = document.getElementById("correctAnswer").checked
+			alert(correctAnswer);
+		} // end sixth
+
+		//seventh
+		function checkPurpose() {
+		var choice5 = document.getElementById("check5").checked; // money
+		var choice6 = document.getElementById("check6").checked; // facility
+		var choice7 = document.getElementById("check7").checked; // promote
+		var choice8 = document.getElementById("check8").checked; // chance
+
+		if (choice5 == false && choice6 == true && choice7 == true && choice8 == true) {
+			alert("Correct!");
+		}
+		else {
+			alert("Incorrect. Try again.");
+		}
+		} // end seventh
+
+		//eighth
+		function checkBig() {
+			var correctAnswer1 = document.getElementById("correctAnswer1").checked
+			alert(correctAnswer1);
+		} // end eigth
+
+		//ninth
+		function checkStar() {
+		var choice9 = document.getElementById("check9").checked; // CR
+		var choice10 = document.getElementById("check10").checked; // ND
+		var choice11 = document.getElementById("check11").checked; // FA
+		var choice12 = document.getElementById("check12").checked; // BA
+
+		if (choice9 == true && choice10 == false && choice11 == true && choice12 == true) {
+			alert("Correct!");
+		}
+		else {
+			alert("Incorrect. Try again.");
+		}
+		} // end ninth
+
+		//tenth
+		function showUserText() {
+		var text = document.getElementById('tennis').value;
+		alert("Answer: " + text);
+	} // end First
+
+	var nClicks = 0;
+var startTime = new Date();
+
+function startWatch() {
+	if (nClicks == 0) {
+		document.getElementById('lapButton').innerHTML = "Start";
+		startTime = new Date();
+	}
+	
+	else {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000 // in seconds
+	
+	}
+
+	nClicks = nClicks + 1;
+
+} // end of startWatch
+
+function resetWatch() {
+	location.reload();
+
+} // end of resetWatch 
+
+// *** NEW IDEA: UPDATE STOPWATCH AUTOMATICALLY ***
+
+setInterval(updateTime, 100);
+// run updateTime() every 0.1 seconds
+
+function updateTime() {
+	if (nClicks > 0) {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000 // in seconds
+		document.getElementById('timeDisplay').innerHTML = timeElapsed;
+	}
+}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 3</title>
+  <link rel="icon" type="image/x-icon" href="dizzy.ico">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="all">
+  <div class="topnav">
+    <a href="head.html">Common HTML Tags Outside the &lt;body&gt;</a>
+    <div id="moreLinks">
+      <a href="index.html">Common HTML Tags Inside the &lt;body&gt;</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+	<h1>HTML/CSS Guide</h1>
+	<h2>Common HTML Tags Outside the &lt;body&gt;</h2>
+
+	<table style="width: 100%;">
+      <tr>
+        <th style="width: 33%;">Tag</th>
+        <th style="width: 33%;">Definition</th>
+        <th style="width: 33%;">Example</th>
+      </tr>
+
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>Document type declaration.</td>
+        <td></td>
+      </tr>
+
+       <tr>
+        <td>&lt;html lang="en"&gt;</td>
+        <td>Opens the HTML code and selects the language.</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+        <td>Tells the browser to use the utf-8 character encoding.</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>&lt;title&gt;&lt;/title&gt;</td>
+        <td>Title.</td>
+        <td><img alt="Title Example" style="width: 250px;" src="TitleExample.PNG"></td>
+      </tr>
+
+      <tr>
+        <td>&lt;style&gt;&lt;/style&gt;</td>
+        <td>Describes internal CSS.</td>
+        <td>&lt;style&gt;
+          <br>
+    body {
+      <br>
+    background-color: black;
+      <br>
+    color: white;
+      <br>
+    } &lt;/style&gt;</td>
+      </tr>
+
+      <tr>
+        <td>&lt;link&gt;</td>
+        <td>Refers to external CSS.</td>
+        <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+      </tr>
+
+      <tr>
+        <td>&lt;link&gt;</td>
+        <td>Include favicon.</td>
+        <td>&lt;link rel="icon" type="image/x-icon" href="dizzy.ico"&gt;
+          <br>
+          <img alt="Favicon" style="width: 50px;" src="Favicon.PNG"></td>
+      </tr>
+
+    </table>
+	</div>
+   <script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>

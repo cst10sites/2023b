@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+<style>
+		body {
+			margin: 50px 100px;
+		}
+
+
+
+		body {
+			background-color: lightyellow;
+			color: black;
+			margin: 30px 65px;
+			
+		}
+
+	.btn {
+			/* <a class="btn" ...> */
+			background-color: grey;
+			color: pink;
+			text-decoration: none;
+			display: inline-block;
+			padding: 12px 20px;
+			border-style: solid;
+			border-color: pink;
+			border-radius: 12px;
+			font-size: 1.25em;
+
+		}
+
+		a.btn:hover {
+			background-color: lightgrey;
+
+		}
+
+	</style>
+
+</head>
+
+	<body>
+	
+		 <div class="nav">
+
+		<a class="btn" href="index.html">Cookie Clicker</a>
+
+	</div>
+
+
+
+	<h1>HTML/CSS Quiz</h1>
+
+
+		<form>
+	    <label>What character is used to indicate an end tag?</label><br>
+	    <input id="correctLang" type="radio" value="HTML" name="group">
+	    <label>/</label><br>
+	    <input type="radio" value="CSS" name="group">
+	    <label>&lt;</label><br>
+	    <input type="radio" value="JavaScript" name="group">
+	    <label>*</label><br>
+	    <input type="radio" value="JavaScript" name="group">
+	    <label>#</label><br>
+	    <input type="button" value="Submit" onclick="checkLang();"><br> 
+		<input type="reset"><br> 
+	</form>
+
+	    
+
+  <script>
+    	// Example 1
+    	function showUserPassword() {
+    		var user = document.getElementById('user').value;
+    		var pwrd = document.getElementById('pwrd').value;
+    		// getElementById(...).innerHTML -> get value between HTML tags
+    		// getElementById(...).value -> get value from input type="text"
+    		alert("User: " + user + "\nPassword: " + pwrd); 
+    		// \n means new line
+
+    		// Quiz-Algorithm for short answers
+    		if (user == "img") {
+    			alert("Correct");
+    		}
+    		else {
+    			alert("Try again");
+    		}
+    	} // end of Example 1
+
+
+    	// Example 2
+    	function checkLang() {
+    		var correctAns = document.getElementById("correctLang").checked
+    		// .checked -> get T/F value for radio buttons 
+    		// alert(correctAns); // true or false
+
+    		if (correctAns == true) {
+    			alert("Correct!");
+    		}
+
+    		else {
+    			alert("Incorrect!");
+    		}
+
+    	} // end of Example 2
+
+    	// Example 3 
+    	function eggsAndHam() {
+    		var choice1 = document.getElementById("choice1").checked; // milk
+    		var choice2 = document.getElementById("choice2").checked; // juice
+    		var choice3 = document.getElementById("choice3").checked; // eggs
+    		var choice4 = document.getElementById("choice4").checked; // pork
+
+    		if (choice1 == false && choice2 == false && choice3 == true && choice4 == true) {
+    			alert("Green eggs and ham!");
+    		}
+    		else {
+    			alert("Grinch!");
+    		}
+    	} // end of Example 3
+
+
+    	// Example 4
+    	function checkCar() {
+    		var chosenCar = document.getElementById('carValue').value;
+    		// id in select, value in option
+
+    		document.getElementById('carDisplay').innerHTML = 
+    			"Mr. Kam does not drive a " + chosenCar;
+
+    	}
+
+
+
+
+    </script>
+</body>
+</html>
+
+

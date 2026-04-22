@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica;
+  margin: 0px 100px;
+  background-image: url(https://loveandspecs.com/wp-content/uploads/2020/08/cute-summer-desktop-laptop-computer-wallpaper-background-lemon.png);
+}
+
+a {
+  color: black;
+}
+
+
+div.topnav {
+  overflow: hidden;
+  background-color: lightcyan;
+  position: relative;
+}
+
+
+div.topnav #moreLinks {
+  display: none; /* to hide by default */
+  /* display: block to show by default */
+}
+
+div.topnav a {
+  color: darkslategray;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: pink;
+}
+
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+div.content {
+
+  padding: 25px;
+  color: black;
+  background: floralwhite;
+  /* rgba(red, green, blue, alpha);  
+     red/green/blue: 0...255, alpha = 0...1*/
+  
+}
+
+  table, th, td {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+

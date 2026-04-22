@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="spiral.ico">
+</head>
+<body>
+<div class="content">
+	<a class="btn" href="index.html"><strong>Cookie Clicker</strong></a>
+	<a class="btn" href="quiz.html"><strong>Quiz</strong></a>
+	<img style="margin-right: 150px;" src="https://pluspng.com/img-png/cookie-monster-png-hd-cookie-monster-transparent-png-sticker-459.png" alt="Cookie Monster">
+<h2>Cookie Clicker</h2>
+<button onclick="updateCPS();"><img style="width:200px;" src="https://t00.deviantart.net/Tt4lODtzCOo4qicDliW__Oj9WMU=/300x200/filters:fixed_height(100,100):origin()/pre00/8dfb/th/pre/i/2010/208/7/1/commision__animated_cookie_by_kittykatklub1.png" alt="Cookie"></button>
+<div><p id="cpsDisplay" style="font-weight: bold;"></p></div>
+<div><p id="totalClicks" style="font-weight: bold;"></p></div>
+<div><p id="totalTime" style="font-weight: bold;"></p></div>
+<div><a class="btn" onclick="resetWatch();"><strong>Reset</strong></a></div>
+</div>
+
+
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// first click
+		// 1. reset startTime
+		// 2. increase nClicks by 1
+	startTime = new Date();
+	nClicks = nClicks + 1;
+	}
+	else {
+		// subsequent clicks:
+		// 1. create variable currentTime
+		// 2. create variable timeElapsed and subtract start and currentTime
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+		// 5. increase nClicks by 1
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime)/1000;
+		nClicks = nClicks + 1;
+		document.getElementById('cpsDisplay').innerHTML = "Clicks per Second (CPS): " + (nClicks/timeElapsed);
+		document.getElementById('totalClicks').innerHTML = "Total Clicks: " + (nClicks);
+		document.getElementById('totalTime').innerHTML = "Time: " + (timeElapsed);
+		}
+	}
+
+	setInterval(updateTime, 100)
+//runs updateTime() every 0.1 seconds
+	
+function updateTime() {
+	if (nClicks > 0) {
+		var currentTime = new Date();
+		var timeElapsed= (currentTime - startTime) / 1000 //in seconds
+		document.getElementById('cpsDisplay').innerHTML = "Clicks per Second (CPS): " + (nClicks/timeElapsed);
+		document.getElementById('totalClicks').innerHTML = "Total Clicks: " + (nClicks);
+		document.getElementById('totalTime').innerHTML = "Time: " + (timeElapsed);
+	}
+}
+
+function resetWatch() {
+	location.reload();
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="spiral.ico">
+</head>
+<body>
+	<a class="btn" href="index.html"><strong>Cookie Clicker</strong></a>
+	<a class="btn" href="quiz.html"><strong>Quiz</strong></a>
+	<img style="margin-right: 97px;" src="https://cdn3.iconfinder.com/data/icons/pretty-office-part-10-simple-style/512/Test-paper.png" alt="Test Paper">
+	<h2>Quiz</h2>
+	<form>
+	    <label>What is the line break HTML tag?</label><br>
+	    <input type="radio" value="break" name="group">
+	    <label>&lt;break&gt;</label><br>
+		<input id="correctTag" type="radio" value="br" name="group">
+	    <label>&lt;br&gt;</label><br>
+	    <input type="radio" value="lb" name="group">
+	    <label>&lt;lb&gt;</label><br>
+	    <input type="radio" value="linebreak" name="group">
+	    <label>&lt;linebreak&gt;</label><br>
+	    <br>
+	    <input class="btn" type="button" style="font-weight: bold;" value="Submit" onclick="checkLang();">
+		<input class="btn" type="reset" style="font-weight: bold;"><br>
+	</form>
+	<br>
+	<form>
+	    <label>What is the correct HTML tag to display an image?</label>
+	    <select class="option" id="carValue" style="font-weight: bold;"><!--no input for dropdown-->
+	        <option class="option" value="image" style="font-weight: bold;">&lt;image&gt;</option>
+	        <option class="option" value="pic" style="font-weight: bold;">&lt;pic&gt;</option>
+	        <option id="img" class="option" value="img" style="font-weight: bold;">&lt;img&gt;</option>
+	        <option class="option" value="picture" style="font-weight: bold;">&lt;picture&gt;</option>
+	        <!-- id in select, value in option-->
+	    </select>
+	    <br>
+	    <br>
+	    <input class="btn" type="button" style="font-weight: bold;" value="OK" onclick="checkCar();">
+	    <input class="btn" type="reset" style="font-weight: bold;"><br> 
+	    <p id="carDisplay"></p>
+	</form>
+	
+    <script>
+
+	function checkLang() {
+    		var correctAns = document.getElementById("correctTag").checked
+    		// .checked -> get T/F value for radio buttons 
+    		// alert(correctAns); // true or false
+
+    		if (correctAns == true) {
+    			alert("Correct!");
+    		}
+    		else {
+    			alert("Wrong!")
+    		}
+    	}
+
+    function reset() {
+	location.reload();
+	}
+
+	function checkCar() {
+			var correctImg = document.getElementById("carValue").value	
+    		// id in select, value in option
+
+    		if (correctImg == "img") {
+    			document.getElementById('carDisplay').innerHTML = 
+    			"Correct!";
+    		}
+    		else {
+    			document.getElementById('carDisplay').innerHTML = 
+    			"Wrong!";
+    		}
+
+    	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<!--External CSS-->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="dizzy-strawberry.ico">
+<!--Internal CSS: moved to style.css-->
+<style></style>
+</head>
+<body>
+<div>
+</div>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../a3/head.html">Head Tags</a>
+    </div>
+    <div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML tags inside &lt;body&gt;</h2>
+
+    <table style="width: 100%;">
+
+            <tr>
+
+              <th>Tags</th>
+              <th>Definition</th>
+              <th>Example</th>
+
+            </tr>
+
+            <tr>
+
+            <td>&lt;p&gt;&lt;/p&gt;</td><!--Table data-->
+            <td>Paragraph</td>
+            <td><p>This is a paragraph.</p></td>
+
+          </tr>
+
+          <tr> 
+
+            <td>&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;</td>
+            <td>Headings</td>
+            <td><h1>This is heading 1.</h1></td>
+
+          </tr>
+
+          <tr> 
+
+            <td>&lt;ol&gt; <br> &lt;li&gt;...&lt;/li&gt; <br> &lt;/ol&gt;</td>
+            <td>Ordered list</td>
+            <td><ol><li>one</li> <li>two</li> <li>three</li></ol></td>
+
+          </tr>
+
+           <tr> 
+
+            <td>&lt;br&gt;</td>
+            <td>line break (creates another line)</td>
+            <td>Here <br> are <br> line <br> breaks </td>
+
+          </tr>
+
+           <tr> 
+
+            <td>&lt;strong&gt;</td>
+            <td>Emphasis on words</td>
+            <td>This is what <strong>strong</strong> does.</td>
+
+          </tr>
+
+           <tr> 
+
+            <td>&lt;em&gt;</td>
+            <td>Italicizes text</td>
+            <td>This is an example of an <em>italicized</em> text.</td>
+
+          </tr>
+
+          <tr> 
+
+            <td>&lt;sup&gt;&lt;/sup&gt;</td>
+            <td>Superscript</td>
+            <td>5<sup>2</sup></td>
+
+          </tr>
+
+            <tr>
+        <td>&lt;img src="link" alt="pic" style="width: px;"&gt;</td>
+        <td>Image</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg" alt="dog" style="width: 100px;"></td>
+      </tr>
+
+         <tr>
+        <td>&lt;a target="_blank" href="link"&gt;...&lt;/a&gt;</td>
+        <td>Hyperlink</td>
+        <td><p>This is a hyperlink to <a target="_blank" href="https://www.apple.com/">Apple</a></p></td>
+      </tr>
+
+        <tr>
+        <td>&lt;hr&gt;</td>
+        <td>Horizontal ruler</td>
+        <td><hr></td>
+      </tr>
+
+          
+
+
+            </table>
+
+
+  </div>
+
+</div>
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>
+

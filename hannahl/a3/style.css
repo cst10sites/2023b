@@ -1,0 +1,75 @@
+body {
+	background-image: url("https://wallpapercave.com/wp/J688AGh.jpg");
+	font-family: "Trebuchet MS";
+	color: ghostwhite;
+	margin: 50px 100px;
+}
+
+div.content {
+	padding: 25px;
+  color: ghostwhite;
+  background: rgba(30, 40, 60, 0.8);
+}
+
+div.nav {
+  padding: 15px;
+  background-color: black;
+}
+a.btn {
+  background-color: darkslategray;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 20px;
+  font-size: 1.25em;
+}
+
+a.btn:hover {
+    background-color: lightyellow;
+    box-shadow: 5px 5px black;
+}
+
+a.btn,h1, h2, p {
+  text-align: center;
+}
+
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+table, th, td {
+  border: 3px solid navajowhite;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, p {
+  font-size: 1.3em;
+}
+
+a {
+      color: deepskyblue;
+}
+
+a:visited {
+      color: lightskyblue;
+} 
+
+a:hover {
+      color: green;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 2.3em;
+}

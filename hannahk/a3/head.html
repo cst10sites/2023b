@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 4</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style></style>
+</head>
+<body>
+<div>
+</div>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../a3/head.html">head.html</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <!--content-->
+  <div class="content">
+
+   
+    <h1>HTML Guide</h1>
+    
+    <h2>Common HTML tags outside &lt;body&gt;</h2>
+  
+  
+<table style="width: 100%;"> 
+
+  <tr><!--table row-->
+            
+              <th>Tags</th>
+              <th>Definition</th>
+              <th>Example</th>
+
+            </tr>
+
+            <tr>
+
+            <td>&lt;!DOCTYPE html&gt;</td><!--Table data-->
+            <td>Tells the browser what kind of file it is.</td>
+            <td><p></p></td>
+
+          </tr>
+
+          <tr> 
+
+            <td>&lt;html lang="en"&gt;</td>
+            <td>Tells the browser what language it is.</td>
+            <td></td>
+
+          </tr>
+
+          <tr> 
+
+            <td>&lt;meta charset="UFT-8"&gt; <br> &lt;li&gt;...&lt;/li&gt; <br> &lt;/ol&gt;</td>
+            <td>Allows the browser to translate to other languages.</td>
+            <td></td>
+
+          </tr>
+
+           <tr> 
+
+            <td>&lt;title&gt;&lt;/title&gt;</td>
+            <td>Website title.</td>
+            <td></td>
+
+          </tr>
+
+           <tr> 
+
+            <td>&lt;style&gt;&lt;/style&gt;</td>
+            <td>Internal CSS (designing website within html file).</td>
+            <td></td>
+
+          </tr>
+
+           <tr> 
+
+            <td>&lt;link rel="stylesheet" href="file"&gt; &lt;style&gt;&lt;/style&gt;</td>
+            <td>External CSS (designing website outisde of html file).</td>
+            <td></td>
+
+          </tr>
+
+          <tr> 
+
+            <td>&lt;link rel="icon" type="image/x-icon" href="file"&gt;</td>
+            <td>Favicon (image beside title).</td>
+            <td></td>
+
+          </tr>
+        </table>
+
+</div>
+
+
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>

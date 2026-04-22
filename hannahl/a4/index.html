@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+	<h2>Cookie Clicker Game</h2>
+  	<h3>Try to click the cookie as fast as you can and the average amount of clicks per second will appear</h3>
+
+  	<div class="center">
+		<button onclick="updateCPS()"><img style="width:150px;" src="https://clipartcraft.com/images/cookie-clipart-transparent-background-9.png"></button>
+		<button onclick="resetWatch()">Reset</button>
+	</div>
+	<p id="cpsDisplay"></p>
+	<p id="timeDisplay"></p>
+	<p id="clickDisplay"></p>
+	<div class="right">
+		<img style="width:450px" src="https://i.pinimg.com/originals/9b/31/51/9b31512f5cae7cb7c396884eec164765.png">
+	</div>
+
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="quiz.html">here</a> to play the quiz.</p>
+
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// first click
+		// 1. reset startTime
+		// 2. increase nClicks by 1
+		startTime = new Date ();
+		nClicks = nClicks + 1;
+	}
+	else {
+		// subsequent clicks:
+		// 1. create variable currentTime
+		// 2. create variable timeElapsed and subtract start and currentTime
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+		// 5. increase nClicks by 1
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000
+		var CPS = (nClicks / timeElapsed)
+		document.getElementById('cpsDisplay').innerHTML = "Clicks Per Second: " + CPS;
+		nClicks = nClicks + 1;
+		document.getElementById('clickDisplay').innerHTML = "Total Clicks: " + nClicks;
+	}
+}
+
+function resetWatch() {
+	location.reload();
+	}
+
+setInterval(updateTime, 100);
+// run updateTime() every 0.1 seconds
+
+function updateTime() {
+	if (nClicks > 0) {
+		var currentTime = new Date();
+		var timeElapsed = (currentTime - startTime) / 1000 // in seconds
+		document.getElementById('timeDisplay').innerHTML = "Time: " + timeElapsed;
+	}
+}
+
+</script>
+</body>
+</html>
