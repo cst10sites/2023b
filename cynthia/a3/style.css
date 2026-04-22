@@ -1,0 +1,299 @@
+   <style>
+      /* Set the background color to a pale blue */
+      body {
+        background-color: #D2E2E9;
+      }
+ 
+      /* Set the font family and size */
+      body, h1, p {
+        font-family: monospace;, sans-serif;
+        font-size: 16px;
+      }
+ 
+      /* Add a border around the main content area */
+      #main {
+        border: 1px solid #B9D6F2;
+        padding: 10px;
+        background-color: #F2E9E4;
+      }
+ 
+      /* Style the headings with a pinkish-purple color */
+      h1, h2 {
+        color: #CBAACB;
+      }
+ 
+      /* Style the links with a soft purple color */
+      a {
+        color: #8F5C97;
+        text-decoration: none;
+      }
+ 
+      /* Style the links when hovering over them */
+      a:hover {
+        color: #6E3C6C;
+        text-decoration: underline;
+      }
+ 
+      /* Set the color of the text in paragraphs */
+      p {
+        color: #46344E;
+      }
+ 
+      /* Style the buttons with a pale pink color */
+      .button {
+        background-color: #F1C5C5;
+        border: none;
+        color: #6E3C6C;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+ 
+      /* Style the buttons when hovering over them */
+      .button:hover {
+        background-color: #D2B1B1;
+      }
+      nav { 
+
+  background-color: skyblue; /* Replace with your desired color */ 
+
+} 
+.custom-iframe { 
+
+  width: 100%; /* Set the width as desired */ 
+
+  height: 400px; /* Set the height as desired */ 
+
+  border: 1px solid #ccc; /* Add a border */ 
+
+  border-radius: 4px; /* Add border-radius for rounded corners */ 
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow */ 
+
+  /* Add any other desired CSS properties to style the iframe */ 
+
+} 
+    #custom-heading { 
+
+      color: black; /* Set the desired color */ 
+
+      font-size: 24px; /* Set the desired font size */ 
+
+      /* Add any other desired CSS properties */ 
+
+    } 
+      table { 
+
+      border-collapse: collapse; 
+
+    } 
+    table { 
+
+      background-color: white; /* Set the desired background color */ 
+
+    } 
+     
+
+    table, th, td { 
+
+      border: 1px solid black; 
+
+    } 
+
+     
+
+    th, td { 
+
+      padding: 8px; 
+
+      text-align: left; 
+
+    } 
+
+    /* Base Styles */ 
+
+    nav ul { 
+
+      list-style: none; 
+
+      padding: 0; 
+
+      margin: 0; 
+
+    } 
+
+     
+
+    nav ul li { 
+
+      display: inline-block; 
+
+      position: relative; 
+
+    } 
+
+     
+
+    nav ul li a { 
+
+      display: block; 
+
+      padding: 10px 20px; 
+
+      color: #333; 
+
+      text-decoration: none; 
+
+    } 
+
+     
+
+    /* Dropdown Styles */ 
+
+    nav ul li ul { 
+
+      display: none; 
+
+      position: absolute; 
+
+      top: 100%; 
+
+      left: 0; 
+
+      background-color: #f9f9f9; 
+
+      min-width: 160px; 
+
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+
+      z-index: 1; 
+
+    } 
+
+     
+
+    nav ul li:hover > ul { 
+
+      display: block; 
+
+    } 
+
+     
+
+    nav ul li ul li { 
+
+      width: 100%; 
+
+    } 
+
+     
+
+    nav ul li ul li a { 
+
+      padding: 8px 16px; 
+
+    } 
+  .small-paragraph { 
+      padding: 25px; 
+
+  font-size: 14px; 
+
+  line-height: 1; 
+
+  margin: 10px 0; 
+    background-color: ; 
+
+} 
+.list-container { 
+
+  text-align: center; 
+
+} 
+
+  
+    .video-container { 
+
+      width: 560px; 
+
+      height: 315px; 
+
+    } 
+.centered-list { 
+
+  display: inline-block; 
+
+  text-align: left; 
+
+} 
+nav ul { 
+
+    list-style-type: none; 
+
+    margin: 0; 
+
+    padding: 0; 
+
+} 
+
+  
+
+nav li { 
+
+    display: inline-block; 
+
+} 
+
+  
+
+nav a { 
+
+    display: block; 
+
+    padding: 10px 20px; 
+
+    text-decoration: none; 
+
+    color: #333333; 
+
+} 
+
+  
+
+.dropdown-content { 
+
+    display: none; 
+
+    position: absolute; 
+
+    background-color: #ffffff; 
+
+    min-width: 200px; 
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+
+    z-index: 1; 
+
+} 
+
+  
+
+.dropdown-content a { 
+
+    display: block; 
+
+    padding: 10px; 
+
+    text-decoration: none; 
+
+    color: #333333; 
+
+} 
+
+  
+
+.dropdown:hover .dropdown-content { 
+
+    display: block; 
+
+}
+    </style>

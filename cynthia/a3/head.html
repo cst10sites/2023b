@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Guide</title>
+<link rel="icon" type="image/png" href="https://www.nicepng.com/png/detail/160-1605659_kawaii-cute-japan-rilakkuma-korilakkuma-cuteness-cute-rilakkuma.png">
+<!--External CSS-->
+<link rel="stylesheet" href="style.css">
+<!--Internal CSS: moved to style.css-->
+<style></style>
+</head>
+<body style="background-image: url('https://i.pinimg.com/564x/57/71/98/57719819ffc7f97f4f82c1d1456c0f1b.jpg ');">
+      <nav> 
+
+    <ul> 
+
+      <li><a href="index.html">Home</a></li> 
+
+      <li> 
+
+        <a href="#head.html">HTML Guide</a> 
+
+      </li> 
+</ul>
+  </nav> 
+  <h1>HTML Guide</h1>
+  <h2>Common HTML Tags outside &lt;body&gt;</h2>
+
+   <table> 
+
+    <tr> 
+
+      <th>tag</th> 
+
+      <th>definition</th> 
+
+      <th>example(s)</th> 
+
+    </tr> 
+
+    <tr> 
+
+      <td>&lt;!DOCTYPE html&gt;</td> 
+
+      <td>the tag to start an html file</td> 
+
+      <td>this file uses this tag!</td> 
+
+    </tr> 
+
+    <tr> 
+
+      <td>&lt;html lang="en"&gt;</td> 
+
+      <td>set the html file language to english!</td> 
+
+      <td>this file uses this tag!</td> 
+
+    </tr> 
+    <tr> 
+
+      <td>&lt;meta charset="UTF-8"&gt;</td> 
+
+      <td>tells the browser to use the utf-8 character encoding when translating machine code into human-readable text</td> 
+
+      <td>this file uses this tag!</td>
+   
+
+    </tr>
+  
+<tr>
+      <td>&lt;title&gt;&lt;/title&gt;</td> 
+
+      <td>gives a title to the html file</td> 
+
+      <td>this file has a title!</td>
+   
+
+    </tr> 
+    <tr>
+      <td>&lt;style&gt;&lt;/style&gt;</td> 
+
+      <td>internal css is used to define styles for a specific html file</td> 
+
+      <td>...</td>
+   
+
+    </tr>
+    <tr>
+
+      <td>&lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;</td> 
+
+      <td>external css is used to maintain constant styles throughout multiple html files</td> 
+
+      <td>this file uses external css!</td>
+   
+
+    </tr> 
+        <tr> 
+
+      <td>&lt;link rel="icon" type="image/png" href="favicon.png"&gt; </td> 
+
+      <td>this tag is used to set a favicon for the webpage!</td> 
+
+      <td>this file uses a favicon!</td>
+   
+
+    </tr> 
+
+  </table> 
+
+
+
+
+
+<!--JavaScript will be explored later-->
+<script>
+    var dropdowns = document.querySelectorAll('nav ul li'); 
+
+     
+
+    for (var i = 0; i < dropdowns.length; i++) { 
+
+      dropdowns[i].addEventListener('mouseenter', function () { 
+
+        var dropdown = this.querySelector('ul'); 
+
+        dropdown.style.display = 'block'; 
+
+      }); 
+
+       
+
+      dropdowns[i].addEventListener('mouseleave', function () { 
+
+        var dropdown = this.querySelector('ul'); 
+
+        dropdown.style.display = 'none'; 
+
+      }); 
+
+    } 
+</script>
+
+</body>
+</html>

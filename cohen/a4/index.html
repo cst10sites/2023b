@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="">
+
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<button onclick="updateCPS();"><img src="https://www.nicepng.com/png/detail/3-34513_cookies-clipart-transparent-background-cookies-clipart.png"></button>
+<br>
+<button onclick="reset();">Reset</button>
+<p id="cpsDisplay"></p>
+
+<hr>
+
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+  if (nClicks == 0) {
+    startTime = new Date();
+   
+    nClicks += 1
+  }
+  else {
+   
+    var currentTime = new Date();
+    var timeElapsed = (currentTime - startTime) / 1000;
+    var cps = nClicks / timeElapsed
+    document.getElementById('cpsDisplay').innerHTML =
+      "<br>cps " +cps;
+      nClicks += 1;
+ }
+ nClicks - nClicks + 1;
+}
+  function reset(){
+     location.reload();
+   }
+
+</script>
+</body>
+</html>

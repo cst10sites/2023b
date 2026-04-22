@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Assignment 4</title>
+
+        <link rel="stylesheet" type="text/css" href="">
+
+        <!--create style.css and change to href="style.css"-->
+
+    </head>
+
+    <body>
+
+        <h2>HTML/CSS Quiz</h2>
+
+        <p>What is the correct tag for a paragraph in HTML?</p>
+
+        <form>
+
+            <input type="radio" id="choice1" name="choice" value="1">
+
+            <label for="choice1">&lt;p&gt;</label><br>
+
+            <input type="radio" id="choice2" name="choice" value="2">
+
+            <label for="choice2">&lt;img&gt;</label><br>
+
+            <input type="radio" id="choice3" name="choice" value="3">
+
+            <label for="choice3">src="paragraph"</label><br>
+
+            <input type="radio" id="choice4" name="choice" value="4">
+
+            <label for="choice4">&lt;h1&gt;</label><br>
+
+            <input type="submit" value="Submit" onclick="handleSubmit(event)">
+
+        </form>
+
+        <hr>
+
+        <h2>Cookie Clicker</h2>
+
+        <!--possibly replace quiz.html with index.html-->
+
+        <p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+
+        <script>
+
+             function handleSubmit(event) {
+
+                event.preventDefault();
+
+                var radios = document.getElementsByName("choice");
+
+                radios.forEach(function(radio) {
+
+                    if (radio.checked) {
+
+                        if (radio.value == "1") {
+
+                            alert("Correct!😄");
+
+                        }
+
+                        else {
+
+                            alert("Incorrect!😔");
+
+                        }
+
+                    }
+
+                });
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

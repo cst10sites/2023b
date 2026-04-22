@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Cookie Clicker Game</title>
+
+</head>
+
+<body>
+
+	<h1>Cookie Clicker Game</h1>
+
+	<div style="display: flex; justify-content: center;">
+		<img id="js-cookie" height="200" src="https://illustoon.com/photo/4500.png">
+	</div>
+
+	<p id="js-score">0</p>
+
+	<p id="js-cps">CPS: 0</p>
+
+	<p id="js-steps">Elapsed Time: 0</p>
+
+	<div style="display: flex; justify-content: center;">
+		<button id="js-reset">Reset</button>
+	</div>
+
+	<div class="quiz" style="display: flex; justify-content: center;">
+		<p>Click <a href="quiz.html">here</a> to do the quiz.</p>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		var reset = document.getElementById("js-reset");
+
+		var cookie = document.getElementById("js-cookie");
+
+		var score = document.getElementById("js-score");
+
+		var cps = document.getElementById("js-cps");
+
+		var startTime = Date.now();
+
+		var count = 0;
+
+		var stepsValue = 0;
+
+
+
+		setInterval(function() {
+
+			console.log('stepsValue:', stepsValue);
+
+	    	stepsValue++;
+
+	    	steps = document.getElementById("js-steps");
+
+	    	steps.innerHTML = "Elapsed Time: " + stepsValue;
+
+		}, 1000);
+
+
+
+
+
+		cookie.addEventListener("click", function() {
+
+			if(count == 0) {
+
+				count++;
+
+				startTime = Date.now();
+
+				score.innerHTML = count;
+
+			}
+
+			else {
+
+				count++;
+
+				score.innerHTML = count;
+
+				var currentTime = Date.now();
+
+				var timeElapsed = (currentTime - startTime) / 1000;
+
+				var cpsValue = count / timeElapsed;
+
+				cps.innerHTML = "CPS: " + cpsValue.toFixed(2);
+
+			}
+
+			
+
+		});
+
+
+
+		reset.addEventListener("click", function() {
+
+			console.log("reset clicked");
+
+			count = 0;
+
+			score.innerHTML = 0;
+
+			stepsValue = 0;
+
+			steps.innerHTML = "Elapsed Time: 0";
+
+			cps.innerHTML = "CPS: 0";
+
+		});
+
+	</script>
+
+</body>
+
+</html>
+

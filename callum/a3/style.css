@@ -1,0 +1,50 @@
+        .table-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    blockquote {
+  /* Text formatting */
+  font-style: italic;
+  color: #333;
+  
+  /* Borders and padding */
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  
+  /* Margins */
+  margin: 10px 0;
+  
+  /* Background */
+  background-color: #f9f9f9;
+}
+
+      
+    h1 {
+      font-size: 36px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+  
+    h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .a {
+      text-align: center;
+      font-size: 24px;
+    } 

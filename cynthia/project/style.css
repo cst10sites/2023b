@@ -1,0 +1,283 @@
+body { 
+
+    font-family: monospace; 
+
+    background-color: #D7E5F0; 
+
+    color: #333333; 
+
+    margin: 0; 
+
+} 
+
+  
+.large-text {
+    font-size: 30px;
+
+}
+custom-font {
+    font-family: monospace;
+}
+header { 
+
+    background-color: antiquewhite; 
+
+    padding: 20px; 
+
+} 
+  table { 
+
+    border-collapse: collapse; /* Merge adjacent borders into a single border */ 
+
+    width: 55%; /* Set table width to 100% of its container */ 
+
+  } 
+
+  
+
+  th, td { 
+
+    border: 1px solid black; /* Set a 1px solid black border for table headers and data cells */ 
+
+    padding: 8px; /* Add padding for content within cells */ 
+
+    text-align: left; /* Align text to the left within cells */ 
+
+  } 
+  
+.table-container {
+    display:flex;
+    justify-content: center;
+}
+h1 { 
+
+    font-size: 24px; 
+
+    margin: 0; 
+
+} 
+
+nav { 
+
+  background-color: skyblue; /* Replace with your desired color */ 
+
+} 
+
+  
+
+nav ul { 
+
+  list-style-type: none; 
+
+  margin: 0; 
+
+  padding: 0; 
+
+} 
+
+  
+
+nav li { 
+
+  display: inline-block; 
+
+  margin-right: 10px; 
+
+} 
+
+  
+
+nav li a { 
+
+  color: floralwhite; /* Replace with your desired color */ 
+
+  text-decoration: none; 
+
+  padding: 5px 10px; 
+
+} 
+
+  
+
+nav li a:hover { 
+
+  background-color: royalblue; /* Replace with your desired color for hover effect */ 
+
+} 
+  .small-paragraph { 
+      padding: 25px; 
+
+  font-size: 14px; 
+
+  line-height: 1; 
+
+  margin: 10px 0; 
+    background-color: ; 
+
+} 
+.list-container { 
+
+  text-align: center; 
+
+} 
+
+  
+    .video-container { 
+
+      width: 560px; 
+
+      height: 315px; 
+
+    } 
+.centered-list { 
+
+  display: inline-block; 
+
+  text-align: left; 
+
+} 
+nav ul { 
+
+    list-style-type: none; 
+
+    margin: 0; 
+
+    padding: 0; 
+
+} 
+
+  
+
+nav li { 
+
+    display: inline-block; 
+
+} 
+
+  
+
+nav a { 
+
+    display: block; 
+
+    padding: 10px 20px; 
+
+    text-decoration: none; 
+
+    color: #333333; 
+
+} 
+
+  
+
+.dropdown-content { 
+
+    display: none; 
+
+    position: absolute; 
+
+    background-color: #ffffff; 
+
+    min-width: 200px; 
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+
+    z-index: 1; 
+
+} 
+
+  
+
+.dropdown-content a { 
+
+    display: block; 
+
+    padding: 10px; 
+
+    text-decoration: none; 
+
+    color: #333333; 
+
+} 
+
+  
+
+.dropdown:hover .dropdown-content { 
+
+    display: block; 
+
+}
+.image-text-section { 
+
+    display: flex; 
+
+    align-items: center; 
+
+    justify-content: center; 
+
+} 
+
+  
+
+.image-container { 
+
+    flex: 1; 
+
+    max-width: 50%; 
+
+} 
+
+  
+
+.image-container img { 
+
+    max-width: 100%; 
+
+    height: auto; 
+
+    display: block; 
+
+} 
+
+  
+
+.text-container { 
+
+    flex: 1; 
+
+    padding: 0 20px; 
+
+} 
+
+  
+
+.text-container h2 { 
+
+    font-size: 24px; 
+
+    margin-bottom: 10px; 
+
+} 
+
+  
+
+.text-container p { 
+
+    font-size: 16px; 
+
+    line-height: 1.5; 
+
+}  
+
+.image-container img { 
+
+    display: block; 
+
+    transform: scaleX(-1); /* Fthe image horizontally */ lip 
+
+} 
+
+
+
+  
+

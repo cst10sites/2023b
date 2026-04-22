@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<style>
+body {
+margin: 50px 100px;
+}
+</style>
+
+
+
+
+
+
+<!--Example 2-->
+
+<h1>Quiz</h1>
+<form>
+    <label>What does HTML stand for</label><br>
+    <input id="choice1" type="checkbox" value="High Train Microsoft Language">
+    <label>High Train Microsoft Language</label>
+    <input id="choice2" type="checkbox" value="HyperText Mine Lemon">
+    <label>HyperText Mine Lemon</label><br>
+    <input id="choice3" type="checkbox" value="HyperText Markup Language">
+    <label>HyperText Markup Language</label>
+    <input id="choice4" type="checkbox" value="Him Tennis Make Lugage">
+    <label>Him Tennis Make Lugage</label><br>
+    <input type="button" value="Submit" onclick="HTML();"><br>
+        <input type="reset"><br>
+
+</form>
+<BR>
+
+<form>
+    <label>What does CSS stand for:</label><br>
+    <input id="correctLang" type="radio" value="HTML" name="group">
+    <label>Cascading Style Sheets</label><br>
+    <input type="radio" value="CSS" name="group">
+    <label>Canada style sphere</label><br>
+    <input type="radio" value="JavaScript" name="group">
+    <label>Computer Style Sheets</label><br>
+    <input type="button" value="Submit" onclick="checkLang();"><br> 
+    <input type="reset"><br> 
+</form>
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+
+
+
+    <script>
+   
+   function HTML() {
+   var choice1 = document.getElementById("choice1").checked; 
+   var choice2 = document.getElementById("choice2").checked; 
+   var choice3 = document.getElementById("choice3").checked; 
+   var choice4 = document.getElementById("choice4").checked; 
+
+    if (choice1 == false && choice3 == true && choice2 == false && choice4 == false) {
+alert("Correct");
+}
+else {
+alert("Incorrect");
+}
+   
+   }
+// Example 2
+   function checkLang() {
+ var correctAns = document.getElementById("correctLang").checked
+    // .checked -> get T/F 
+    // alert(correctAns); // 
+
+    if (correctAns == true) {
+   alert("CORRECT ;)");
+   } else{alert("WRONG :(")}
+}
+
+    </script>
+</body>
+</html>

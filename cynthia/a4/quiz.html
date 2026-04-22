@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<style>
+		body {
+			margin: 50px 100px;
+			background-color: #FAE9AC;
+			font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	   
+
+	<!--Example 3-->
+	<h3><center>HTML + CSS + JAVASCRIPT<center></h3>
+	<form>
+	    <label>What is/are the valid code(s)?</label><br>
+	    <input id="choice1" type="checkbox" value="%ltchat>">
+	    <label>&ltchat></label><br>
+	    <input id="choice2" type="checkbox" value="&ltchangefunction>">
+	    <label>&ltchangefunction></label><br>
+	    <input id="choice3" type="checkbox" value="&lth2>">
+	    <label>&lth2></label><br>
+	    <input id="choice4" type="checkbox" value="&ltinputtypebutton">
+	    <label>&ltinput type = "button"></label><br>
+	    <input type="button" value="Check" onclick="eggsandham()"><br> 
+		<input type="reset"><br> 
+	</form>
+
+	
+
+    <script>
+    	
+    	function eggsandham() {
+    		var ch1 = document.getElementById("choice1").checked; 
+    		var ch2 = document.getElementById("choice2").checked; 
+    		var ch3 = document.getElementById("choice3").checked; 
+    		var ch4 = document.getElementById("choice4").checked; 
+
+    		if (ch1 == false && ch2 == false && ch3 == true && ch4 == true) {
+    			alert("correct!! :)");
+    		}
+    		else {
+    			alert("sorry wrong answer :( try again!");
+    		}
+    	}
+    </script>
+    <h3><center>Cookie Clicker Game</center></h3>
+    <p><center>Click <a href="cookie.html">here</a> to play the cookie clicker game!</center></p>
+</body>
+</html>

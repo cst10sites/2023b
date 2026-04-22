@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.WpHEJHsOu6l3XDefjV8IIgAAAA?pid=ImgDet&rs=1">
+<link rel="stylesheet" type="text/css" href="">
+<!--create style.css and change to href="style.css"-->
+
+<style>
+		body { 
+        background-color: #FAE9AC;
+        font-family: monospace;
+
+		}
+	</style>
+    <script> 
+
+        var cookies = 0; 
+
+        var cps = 0; 
+
+        var clicks = 0; 
+
+        var prevCookies = 0; 
+
+        var startTime = new Date().getTime(); 
+
+  
+
+        function clickCookie() { 
+
+            cookies++; 
+
+            clicks++; 
+
+            updateDisplay(); 
+
+        } 
+
+  
+
+        function buyUpgrade(cpsIncrease, cost) { 
+
+            if (cookies >= cost) { 
+
+                cookies -= cost; 
+
+                cps += cpsIncrease; 
+
+                console.log("Upgrade purchased!"); 
+
+            } else { 
+
+                console.log("Not enough cookies to buy this upgrade."); 
+
+            } 
+
+            updateDisplay(); 
+
+        } 
+
+  
+
+        function updateDisplay() { 
+
+            document.getElementById("cookies").textContent = "Current Cookies: " + cookies; 
+
+            document.getElementById("cps").textContent = "CPS: " + cps.toFixed(2); 
+
+            document.getElementById("clicks").textContent = "Total Clicks: " + clicks; 
+
+            document.getElementById("time").textContent = "Time Spent: " + calculateTimeElapsed(startTime); 
+
+        } 
+
+  
+
+        function calculateTimeElapsed(startTime) { 
+
+            var currentTime = new Date().getTime(); 
+
+            var timeElapsed = currentTime - startTime; 
+
+            var seconds = Math.floor(timeElapsed / 1000); 
+
+            var minutes = Math.floor(seconds / 60); 
+
+            seconds %= 60; 
+
+            return minutes + "m " + seconds + "s"; 
+
+        } 
+
+  
+
+        function run() { 
+
+            setInterval(function() { 
+
+                var currentCookies = cookies; 
+
+                cps = currentCookies - prevCookies; 
+
+                prevCookies = currentCookies; 
+
+                updateDisplay(); 
+
+            }, 1000);  // Update CPS every second 
+
+        } 
+
+    </script>   
+</head>
+<body onload="run()">  
+<h2><center>COOKIE CLICKER GAME</center></h2>
+<p><center>Click the cookie as fast as you can and see how many you can click it per second!</center></p>
+<div class="center-button">
+<button onclick="clickCookie();"><img style="width:200px;" src="https://purepng.com/public/uploads/medium/purepng.com-cookiescookiessnacksbaked-snacksflour-cookieschocolate-cookies-1411527249039qktv5.png"></button>
+</div>
+   <p id="cookies"></p> 
+
+    <p id="cps">CPS: 0</p> 
+
+    <p id="clicks"></p> 
+
+    <p id="time"></p> 
+
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="quiz.html">here</a> to play the quiz.</p>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="icon" type="image/png" href="https://www.nicepng.com/png/detail/160-1605659_kawaii-cute-japan-rilakkuma-korilakkuma-cuteness-cute-rilakkuma.png">
+<link rel="stylesheet" href="./style.css">
+<style></style>
+</head>
+<body style="background-image: url('https://i.pinimg.com/564x/57/71/98/57719819ffc7f97f4f82c1d1456c0f1b.jpg ');">
+  <nav> 
+
+    <ul> 
+
+      <li><a href="#index.html">Home</a></li> 
+
+      <li> 
+
+        <a href="head.html">HTML Guide</a> 
+
+      </li> 
+    </ul>
+
+  </nav> 
+
+    <h1>HTML/CSS Guide</h1>
+   <h2>Common HTML Tags</h2> 
+
+   <table> 
+
+    <tr> 
+
+      <th>&lt;body&gt; tags</th> 
+
+      <th>definition</th> 
+
+      <th>example(s)</th> 
+
+    </tr> 
+
+    <tr> 
+
+      <td>&lt;p&gt;&lt;/p&gt;</td> 
+
+      <td>paragraph/writing</td> 
+
+      <td>this is a paragraph</td> 
+
+    </tr> 
+
+    <tr> 
+
+      <td>&lt;img src="link" alt="pic"&gt;</td> 
+
+      <td>image</td> 
+
+      <td><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/220623_%EC%84%B8%EB%B8%90%ED%8B%B4_SEVENTEEN.jpg" alt="pic" width="20%" height="auto"></td> 
+
+    </tr> 
+    <tr> 
+
+      <td>&lt;a href="link">…&lt;/a&gt;</td> 
+
+      <td>hyperlink to a new page</td> 
+
+      <td>click <a href="https://www.youtube.com/watch?v=-GQg25oP0S4" target="_blank">me</a>!</td>
+   
+
+    </tr>
+  
+<tr>
+      <td>&lt;ol&gt;<br>
+        &lt;li&gt;&lt;/li&gt;<br>
+        &lt;/ol&gt;    </td> 
+
+      <td>ordered list!</td> 
+
+      <td><ol>
+        <li>the list goes on..</li>
+        <li></li>
+        <li></li>
+      </ol></td>
+   
+
+    </tr> 
+    <tr>
+      <td>&lt;ul&gt;<br>
+        &lt;li&gt;&lt;/li&gt;<br>
+        &lt;/ul&gt;    </td> 
+
+      <td>unordered list!</td> 
+
+      <td><ul>
+        <li>the list goes on..</li>
+        <li></li>
+        <li></li>
+      </ul></td>
+   
+
+    </tr>
+    <tr>
+
+      <td>&lt;br&gt;</td> 
+
+      <td>line break</td> 
+
+      <td><br><p>this paragraph is after the tag</p></td>
+   
+
+    </tr> 
+        <tr> 
+
+      <td>&lt;h1&gt; to &lt;h6&gt;</td> 
+
+      <td>headings to different levels (h1 is the highest level)</td> 
+
+      <td><h1 id="custom-heading">H1</h1> <h6>H6</h6></td>
+   
+
+    </tr> 
+        <tr> 
+
+      <td>&lt;button&gt; &lt;/button&gt;</td> 
+
+      <td>just a regular button</td> 
+
+      <td><button>button</button></td>
+   
+
+    </tr> 
+        <tr> 
+
+      <td>&lt;strong&gt;&lt;/strong&gt;</td> 
+
+      <td>emphasizes a word or set of words</td> 
+
+      <td><strong>hi</strong></td>
+   
+
+    </tr> 
+            <tr> 
+
+      <td>&lt;hr&gt;</td> 
+
+      <td>horizontal ruler</td> 
+
+      <td><hr> </td>
+   
+
+    </tr> 
+
+  </table> 
+    <script>
+    var dropdowns = document.querySelectorAll('nav ul li'); 
+
+     
+
+    for (var i = 0; i < dropdowns.length; i++) { 
+
+      dropdowns[i].addEventListener('mouseenter', function () { 
+
+        var dropdown = this.querySelector('ul'); 
+
+        dropdown.style.display = 'block'; 
+
+      }); 
+
+       
+
+      dropdowns[i].addEventListener('mouseleave', function () { 
+
+        var dropdown = this.querySelector('ul'); 
+
+        dropdown.style.display = 'none'; 
+
+      }); 
+
+    } 
+    </script>
+
+</body>
+</html>
