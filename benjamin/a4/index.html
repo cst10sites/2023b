@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="faviconcookie.ico">
+</head>
+<body>
+	<div>
+  	<div class="topnav">
+    <a href="index.html">Cookie Clicker</a>
+    <div id="moreLinks">
+      <a href="quiz.html">Quiz</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">^</a>
+  </div>
+  <div class="content">
+	<h1>Cookie Clicker</h1>
+	<p id="clickDisplay" style="font-weight: bold;">Clicks: 0</p>
+	<p id="cpsDisplay" style="font-weight: bold;">CPS: 0</p>
+	<button onclick="startTime()" id="button" style="background: rgba(255, 255, 255, 0.05);
+	border: none;"><img style="width:400px;" src="https://pngimg.com/uploads/cookie/cookie_PNG13659.png" alt="cookie"></button>
+	<br>
+	<button onclick="resetTime()">Reset</button>
+	<p id="timeDisplay" style="font-weight: bold;">Time: 0</p>
+	</div>
+</div>
+	<script>
+		var nClicks = 0;
+		var startingTime = new Date();
+		setInterval(updateTime, 100)
+		function updateTime() {
+			if (nClicks > 1){
+				var currentTime = new Date();
+				var timeElapsed = (currentTime - startingTime) / 1000;
+				document.getElementById('timeDisplay').innerHTML = "Time: " + timeElapsed;
+				document.getElementById('cpsDisplay').innerHTML = "CPS: " + (nClicks / timeElapsed).toFixed(2);
+			}
+		}
+		function startTime() {
+			if (nClicks == 0) {
+				startingTime = new Date();
+				nClicks++;
+				document.getElementById('clickDisplay').innerHTML = "Clicks: " + nClicks;
+			}
+			else {
+				var currentTime = new Date();
+				var timeElapsed = (currentTime - startingTime) / 1000;
+				document.getElementById('timeDisplay').innerHTML = "Time: " + timeElapsed;
+				document.getElementById('clickDisplay').innerHTML = "Clicks: " + nClicks;
+				document.getElementById('cpsDisplay').innerHTML = "CPS: " + (nClicks / timeElapsed).toFixed(2);
+			}
+			nClicks++;
+		}
+		function resetTime() {
+			document.getElementById('timeDisplay').innerHTML = "Time: 0";
+			document.getElementById('clickDisplay').innerHTML = "Clicks: 0";
+			document.getElementById('cpsDisplay').innerHTML = "CPS: 0";
+			nClicks = 0;
+			timeElapsed = 0;
+			startingTime = new Date();
+			currentTime = new Date();
+		}
+		function showHideMenu() {
+  			var links = document.getElementById("moreLinks");
+  			if (links.style.display == "block") {
+    			links.style.display = "none";  // hide
+  			}
+  			else {
+    			links.style.display = "block"; // show
+  			}
+}
+	</script>
+
+</body>
+</html>

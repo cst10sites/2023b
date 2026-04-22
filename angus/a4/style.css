@@ -1,0 +1,23 @@
+body {
+	background-color: rgba(50, 0, 80, 1);
+	color: white;
+	font-family: comicsans;
+	margin: 50px 100px;
+}
+div {
+	background-color: grey;
+	padding: 20px;
+	border-color: black;
+	border-width: thick; /* thin */
+	border-style: solid; /* dashed */
+	box-shadow: 5px 10px darkgrey;
+}
+a {
+	color: blue;
+}
+a:visited {
+	color: maroon;
+}
+a:hover {
+	color: yellow;
+}

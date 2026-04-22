@@ -1,0 +1,46 @@
+body {
+  background-color: rgba(50, 0, 80, 1);
+  color: black;
+  font-family: Trebuchet MS;
+  margin: 50px 100px;
+}
+a {
+ color: blue;
+}
+a:visited {
+  color: maroon;
+}
+a:hover {
+  color: yellow;
+}
+table, th, td {
+  border: 2px solid black;
+}
+table {
+  border-collapse: collapse;
+}
+table.score, th.score, td.score {
+  border: 3px dashed blue;
+}
+th, td {
+  padding: 5px;
+  text-align: left; /* center; */
+}
+div {
+  background-color: grey;
+  padding: 20px;
+  border-color: black;
+  border-width: thick; /* thin */
+  border-style: solid; /* dashed */
+  box-shadow: 10px 15px darkgrey;
+  color: black;
+}
+div.eg {
+  background-color: red;
+  padding: 20px;
+  border-color: lightgreen;
+  border-width: thick; /* thin */
+  border-style: dashed; /* dashed */
+  box-shadow: 5px 5px darkred;
+  color: lightblue;
+}

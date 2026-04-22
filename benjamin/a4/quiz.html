@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<div>
+  	<div class="topnav">
+    	<a href="index.html">Cookie Clicker</a>
+    <div id="moreLinks">
+      <a href="quiz.html">Quiz</a>
+    </div>
+    	<a class="icon" onclick="showHideMenu()">^</a>
+  	</div>
+	<div class="content">
+	<h1>Quiz</h1>
+	<form>
+    	<label>Which of these tags belong in the head?</label><br>
+    	<input id="choice1" type="checkbox" value="style">
+    	<label>&lt;style&gt;</label>
+    	<input id="choice2" type="checkbox" value="title">
+    	<label>&lt;title&gt;</label><br>
+    	<input id="choice3" type="checkbox" value="paragraph">
+    	<label>&lt;p&gt;</label>
+    	<input id="choice4" type="checkbox" value="iframe">
+    	<label>&lt;iframe&gt;</label><br>
+    	<input type="button" value="Check" style="background-color: lightgreen;" onclick="headTags();">
+		<input type="Reset" style="background-color: red;"><br> 
+	</form>
+	<br>
+	<form>
+    <label>Which of the following allows an image to be displayed?</label>
+    <select id="imageQuiz"><!--no input for dropdown-->
+        <option value="image">&lt;image&gt;</option>
+        <option value="images">&lt;images&gt;</option>
+        <option id="<img>" value="<img>">&lt;img&gt;</option>
+        <option value="picture">&lt;picture&gt;</option>
+    </select>
+    <br>
+    <input type="button" value="Check" onclick="checkDrop();">
+</form>
+<p id="dropDisplay"></p>
+</div>
+</div>
+<script>
+	function headTags() {
+    		var choice1 = document.getElementById("choice1").checked
+    		var choice2 = document.getElementById("choice2").checked
+    		var choice3 = document.getElementById("choice3").checked
+    		var choice4 = document.getElementById("choice4").checked
+    		
+    		if (choice4 == false && choice3 == false && choice1 == true && choice2 == true) {
+    			alert("Correct!");
+    		}
+    		else {
+    			alert("Wrong answer.");
+    		}
+    	}
+    	function checkDrop() {
+    		var answerDrop = "<img>"
+    		var chosenInput = document.getElementById('imageQuiz').value
+    		if (chosenInput == answerDrop) {
+    			document.getElementById('dropDisplay').innerHTML = "That is the correct answer!";
+    		}
+    		else {
+    		document.getElementById('dropDisplay').innerHTML = "That is not the correct answer.";
+    		}
+    	}
+</script>
+</body>
+</html>

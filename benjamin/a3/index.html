@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style></style>
+</head>
+<body>
+<div>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../a3/head.html">Head</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()"><i class="arrow down"></i></a>
+  </div>
+  <div class="content">
+  	<h1 style="text-align: center;">HTML/CSS Guide</h1>
+  	<h2 style="text-align: center;">Common HTML Tags inside &lt;body&gt;</h2>
+    <table style="width: 100%;">
+      <tr><!--Table row-->
+        <th style="width: 20%; color: aqua;">Tag</th><!--Table header-->
+        <th style="width: 30%; color: aqua;">Definition</th>
+        <th style="width: 50%; color: aqua;">Example</th>
+      </tr>
+
+      <tr>
+        <td>&lt;a&gt;</td><!--Table data-->
+        <td>Create a hyperlink</td>
+        <td><a target="_blank" href="https://www.youtube.com">This</a> is a hyperlink</td>
+      </tr>
+
+      <tr>
+        <td>&lt;img&gt;</td><!--Table data-->
+        <td>Shows an image via a link</td>
+        <td><img alt="Scenery" style="width:25%" src="https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-pictures-1080p-widescreen-nature-free-download.jpg"></td>
+      </tr>
+
+      <tr>
+        <td>&lt;p&gt;&lt;/p&gt;</td><!--Table data-->
+        <td>Creates a paragraph.</td>
+        <td>This is a paragraph!!</td>
+      </tr>
+
+      <tr>
+        <td>&lt;h1&gt;&lt;/h1&gt;</td><!--Table data-->
+        <td>Creates a heading.</td>
+        <td><h1>This is a heading.</h1></td>
+      </tr>
+
+      <tr>
+        <td>&lt;hr&gt;</td><!--Table data-->
+        <td>Creates a horizantal ruler to separate information.</td>
+        <td>Like<hr>here</td>
+      </tr>
+
+      <tr>
+        <td>&lt;br&gt;</td><!--Table data-->
+        <td>Creates a line break.</td>
+        <td>Done like<br>this</td>
+      </tr>
+
+      <tr>
+        <td>&lt;strong&gt;&lt;/strong&gt;</td><!--Table data-->
+        <td>Bolds the text.</td>
+        <td>This <strong>text</strong> is bolded.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;ol&gt;&lt;/ol&gt;</td><!--Table data-->
+        <td>Creates an ordered list.</td>
+        <td style="text-align: left;"><ol><li>This</li><li>is</li><li>an</li><li>ordered</li><li>list</li></ol></td>
+      </tr>
+
+      <tr>
+        <td >&lt;ul&gt;&lt;/ul&gt;</td><!--Table data-->
+        <td>Creates an unordered list.</td>
+        <td style="text-align: left;"><ul><li>This</li><li>is</li><li>an</li><li>unordered</li><li>list</li></ul></td>
+      </tr>
+
+      <tr>
+        <td>&lt;iframe&gt;&lt;/iframe&gt;</td><!--Table data-->
+        <td>iframe creates an embed.</td>
+        <td><iframe width="330" height="175" src="https://www.youtube.com/embed/A6zVBerrAZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+      </tr>
+	</table>
+  </div>
+</div>
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>
+

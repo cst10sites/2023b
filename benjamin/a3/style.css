@@ -1,0 +1,77 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/503594.jpg");
+  font-family: Garamond;
+  margin: 0px 100px;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: darkslateblue;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.topnav #myLinks {
+  display: none;
+}
+
+div.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+div.topnav a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+div.topnav a.icon:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+div.content {
+  padding: 10px;
+  background: rgba(0, 0, 80, 0.5);
+  color: white;
+  /* rgba(red, green, blue, alpha); r/g/b = 0...255, alpha=0..1* */
+}
+
+table {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+table, th, td {
+  border: 2px solid lightgoldenrodyellow;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+}
+td {
+  padding: 3px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);

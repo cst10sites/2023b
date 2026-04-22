@@ -1,0 +1,43 @@
+body {
+	text-align: center;
+	font-family: Garamond;
+	background-image: url('https://wallpapercave.com/wp/wp3055482.jpg');
+	background-size: cover;
+}
+div.topnav {
+  overflow: hidden;
+  background-color: royalblue;
+  position: relative;
+  margin: 0px 50px;
+}
+
+div.topnav #myLinks {
+  display: none;
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lightblue;
+}
+
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.content {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0px 50px;
+  /* rgba(red, green, blue, alpha); r/g/b = 0...255, alpha=0..1* */
+}

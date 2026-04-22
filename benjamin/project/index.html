@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <title>World War I</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li class="dropdown">
+          <button class="dropbtn">Countries</button>
+          <div class="dropdown-content">
+            <a href="germany.html">Germany</a>
+            <a href="france.html">France</a>
+            <a href="italy.html">Italy</a>
+            <a href="russia.html">Russia</a>
+            <a href="austrohungary.html">Austro-Hungary</a>
+            <a href="britain.html">Britain</a>
+          </div>
+        </li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+  <br><br><br>
+  <div class="intro">
+    <h1 style="text-align: center; font-size: 50px;">World War I</h1>
+    
+    <br><br><br>
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="artilleryImg.jpg" alt="artillery">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://preview.redd.it/ywwfag4niizz.jpg?auto=webp&s=a9579e357a326869cc9fa1860647249977a98acd" alt="">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://kidskonnect.com/wp-content/uploads/2015/02/german-trenches.jpg" alt="">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://media.defense.gov/2013/Aug/15/2000920617/-1/-1/0/130815-F-BB999-001.JPG" alt="">
+        <div class="info">
+        </div>
+      </div>
+      <div class="slide">
+        <img src="https://static01.nyt.com/images/2014/06/30/blogs/20140630-WWILENS-slide-OV88/20140630-WWILENS-slide-OV88-superJumbo.jpg" alt="">
+        <div class="info">
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+    <br><br><br>
+    <p>The Great War was the first international conflict, involving most of Europe, Asia, and North America. This war
+      pitted the Central Powers—Germany, Austro-Hungary, and Turkey—against the Allies—France, USA, Russia, Italy, and
+      Britain. World War I led to the downfall of 4 great empires(Germany, Russia, Ottoman Empire and Austro-Hungary).
+    </p>
+    <br><br><br>
+    <h2 style="text-align: center;">Outbreak</h2>
+    <p>On June 28th, 1914, in the capital of Bosnia, Sarajevo, Archduke Franz Ferdinand, heir to the Austrian throne,
+      was assassinated by a member(Gavrilo Princip) of a Serbian terrorist group(Black Hand). This was the spark that
+      would engulf Europe with war for 4 years. Germany had given Austria a blank cheque, which would give their empire
+      unconditional support for whatever action they take to punish Serbia. The Russians had an alliance with Serbia,
+      and France had an alliance with Russia. Italy however, had a treaty with Austria to defend them, not to support
+      them. Austria had given Serbia an outrageous demand, as a way to wage war. During the summer of 1914, Austria
+      would declare war on Serbia, and Germany would declare war on Russia and France.</p>
+      <div style="text-align: center;"><img src="dukeOfAustria.jpg" alt="duke"></div>
+    <br><br><br>
+    <h2 style="text-align: center;">Outcome</h2>
+    <p>The war caused millions of deaths and caused destructions that still exist today. Many places in Europe are still
+      littered with unexploded ordnance, and shells from artillery. The treaty of Versailles demanded territory, war
+      reparations, and colonies from the Germans, and this treaty would later be the cause of another World War.</p>
+  </div>
+  <script>
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+    
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 5000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+</body>
+
+</html>

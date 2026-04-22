@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style></style>
+</head>
+<body>
+<div>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../a3/head.html">Head</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()"><i class="arrow down"></i></a>
+  </div>
+  <div class="content">
+    <h1 style="text-align: center;">HTML Guide</h1>
+    <h2 style="text-align: center;">Common HTML Tags outside &lt;body&gt;</h2>
+    <table style="width: 100%;">
+      <tr><!--Table row-->
+        <th style="width: 20%; color: aqua;">Tag</th><!--Table header-->
+        <th style="width: 30%; color: aqua;">Definition</th>
+        <th style="width: 50%; color: aqua;">Example</th>
+      </tr>
+
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td><!--Table data-->
+        <td>Defines the document type.</td>
+        <td>&lt;!DOCTYPE html&gt;</td>
+      </tr>
+
+      <tr>
+        <td>&lt;html lang="en-CA"&gt;</td><!--Table data-->
+        <td>Defines the language of the document.</td>
+        <td>&lt;html lang="en-CA"&gt;</td>
+      </tr>
+
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td><!--Table data-->
+        <td>Defines which unicode is used to encode characters.</td>
+        <td>Can encode 1,112,064 characters (Most languages and symbols).</td>
+      </tr>
+
+      <tr>
+        <td>&lt;title&gt;&lt;/title&gt;</td><!--Table data-->
+        <td>Creates a title for the document</td>
+        <td>The tab of this website contains the title.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;style&gt;&lt;/style&gt;</td><!--Table data-->
+        <td>The style tag creates internal CSS.</td>
+        <td>&lt;style&gt;<br>body {<br>color: grey;<br>}&lt;/style&gt;<br>This makes text in the body grey.</td>
+      </tr>
+
+      <tr>
+        <td>&lt;link&gt;</td><!--Table data-->
+        <td>Links the External CSS to this file</td>
+        <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+      </tr>
+
+      <tr>
+        <td>&lt;link&gt;</td><!--Table data-->
+        <td>Links a favicon to this file</td>
+        <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>

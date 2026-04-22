@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 4</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<div>
+			<h2>Cookie Clicker</h2>
+			<h2><button onclick="resetCPS();">Reset</button></h2>
+			<hr>
+			<h2>HTML/CSS/JS Quiz</h2>
+			<p>Click <a href="quiz.html">here</a> to play the quiz.</p>
+		</div>
+		<br><br><br>
+		<div>
+		<button onclick="updateCPS();"><img style="width:300px;" src="cookie.jfif"></button>
+		<img alt="logo" style="width: 400px;" src="grandma.jfif">
+		</div>
+		<br><br><br>
+		<div>
+		<p id="cpsDisplay"></p>
+		<p id="totalClicks"></p>
+		<p id="time"></p>
+		</div>
+		<br><br><br>
+
+		<img alt="logo" style="width: 400px;" src="oip.jfif">
+		<img alt="logo" style="width: 400px;" src="modfk.jfif">
+
+		<script>
+
+			var nClicks = 0;
+			var startTime = new Date();
+			var currentTime = new Date();
+			var timeElapsed = 0;
+			var CPS = 0;
+			document.getElementById('cpsDisplay').innerHTML = 'CPS 0'
+			document.getElementById('totalClicks').innerHTML = 'Clicks 0'
+			document.getElementById('time').innerHTML = 'Time 0' 
+
+			setInterval(updateItems, 50)
+
+			function updateItems() {
+				if (nClicks != 0) {
+					currentTime = new Date();
+					timeElapsed = currentTime - startTime;
+					CPS = (nClicks/timeElapsed)*1000;
+					document.getElementById('cpsDisplay').innerHTML = 'CPS ' + CPS
+					document.getElementById('totalClicks').innerHTML = 'Clicks ' + nClicks
+					document.getElementById('time').innerHTML = 'Time ' + timeElapsed / 1000 
+				}
+			}
+
+			function updateCPS() {
+				if (nClicks == 0) {	
+					startTime = new Date();
+					nClicks++;
+				} // first click
+
+				else {				
+					nClicks++;
+				} // subsequent clicks
+			}
+
+			function resetCPS() {
+			nClicks = 0;
+			startTime = new Date();
+			currentTime = new Date();
+			timeElapsed = 0;
+			CPS = 0;
+			document.getElementById('cpsDisplay').innerHTML = 'CPS ' + CPS
+			document.getElementById('totalClicks').innerHTML = 'Clicks ' + nClicks
+			document.getElementById('time').innerHTML = 'Time ' + timeElapsed
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--code check https://validator.w3.org/#validate_by_input-->
+<!--1em is standard paragraph size-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Quiz</title>
+<!--download any favicon drom favicon.io-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" type="image/x-icon" href="quiz.ico">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<h2>HTML Quiz</h2>
+			<hr>
+			<h2>Click speed test</h2>
+			<p>Click <a href="index.html">here</a> to play the click speed test.</p>
+		</div>
+		<br><br><br>
+		<div>
+			<form>
+				<label>Answer with one word abbreviations and in lowercase</label><br>
+			    <label>what 3 letter item is used to display a image:</label><br>
+			    <input type="text" id="image"><br>
+			    <label>what 1 letter item is used to send a viewer to another website:</label><br>
+			    <input type="text" id="link"><br>
+			    <label>what 2 letter item is the largest text headder:</label><br>
+			    <input type="text" id="header1"><br>
+			    <label>what 2 letter item is the smallest text headder:</label><br>
+			    <input type="text" id="header6"><br>
+			    <label>what is your social security number:</label><br>
+			    <input type="text" id="password"><br>
+			    <input type="button" value="Submit" onclick="display();">
+			    <input type="reset"><br>
+			</form>
+		</div>
+		<br><br><br>
+		<div>
+			<form>
+			    <label>Please list: Your mother's maiden name, Your first house, Your first pet, Where you went on your honeymoon, The colour of shirt you are wearing, And you and your children's names.</label><br>
+			    <textarea id="w3review" name="w3review" rows="4" cols="50">submit information here.</textarea>
+			    <br>
+			    <input type="button" value="Submit" onclick="fakeDisplay();">
+			</form>
+		</div>
+		<br><br><br>
+		<div>
+			<img alt="logo" style="width: 400px;" src="surreal-meme-joint-have-you-seen-the-future-this-man-is-watching-the-s-pongge.jfif">
+			<img alt="logo" style="width: 400px;" src="surreal-memes-dank-memes.jfif">			
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<img alt="logo" style="width: 1000px;" src="hampter.jfif">
+
+		<script>
+				var image = 0
+				var link = 0
+				var header1 = 0
+				var header6 = 0
+				var totalCorrect = 0
+
+			function display() {
+				image = document.getElementById('image').value;
+				link = document.getElementById('link').value;
+				header1 = document.getElementById('header1').value;
+				header6 = document.getElementById('header6').value;
+				totalCorrect = 0
+
+				if (image == "img"){
+					totalCorrect++
+				}
+				if (link == "a"){
+					totalCorrect++
+				}
+				if (header1 == "h1"){
+					totalCorrect++
+				}
+				if (header6 == "h6"){
+					totalCorrect++
+				}
+
+				alert(totalCorrect * 25 + '% correct')
+			}
+			function fakeDisplay() {
+				alert('thank you for submitting')
+			}
+		</script>
+	</body>
+</html>

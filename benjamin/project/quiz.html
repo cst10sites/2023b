@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<div id="navbar">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="timeline.html">Timeline</a></li>
+				<li class="dropdown">
+					<button class="dropbtn">Countries</button>
+					<div class="dropdown-content">
+						<a href="germany.html">Germany</a>
+						<a href="france.html">France</a>
+						<a href="italy.html">Italy</a>
+						<a href="russia.html">Russia</a>
+						<a href="austrohungary.html">Austro-Hungary</a>
+						<a href="britain.html">Britain</a>
+					</div>
+				</li>
+				<li><a href="quiz.html">Quiz</a></li>
+			</ul>
+		</nav>
+	</div>
+	<br><br><br>
+	<div class="intro" style="text-align: center;">
+		<h1>Quiz</h1>
+		<form>
+			<label>Which of these countries belong to the Triple Alliance?</label><br>
+			<input id="choice1" type="checkbox" value="Austro-Hungary">
+			<label>Austro-Hungary</label>
+			<input id="choice2" type="checkbox" value="Germany">
+			<label>Germany</label><br>
+			<input id="choice3" type="checkbox" value="France">
+			<label>France</label>
+			<input id="choice4" type="checkbox" value="Britain">
+			<label>Britain</label><br>
+		</form>
+		<p id="select1cor" style="color: lightgreen;"></p>
+		<p id="select1inc" style="color: red;"></p>
+		<br>
+		<form>
+			<label>Which of these countries belong to the Triple Entente?</label><br>
+			<input id="choice5" type="checkbox" value="Austro-Hungary">
+			<label>Austro-Hungary</label>
+			<input id="choice6" type="checkbox" value="Germany">
+			<label>Germany</label><br>
+			<input id="choice7" type="checkbox" value="France">
+			<label>France</label>
+			<input id="choice8" type="checkbox" value="Britain">
+			<label>Britain</label><br>
+		</form>
+		<p id="select2cor" style="color: lightgreen;"></p>
+		<p id="select2inc" style="color: red;"></p>
+		<br>
+		<form>
+			<label>Which of these weapons were used by the Germans?</label><br>
+			<input id="choice9" type="checkbox" value="Mondragón">
+			<label>Mondragón Rifle</label>
+			<input id="choice10" type="checkbox" value="Gewehr">
+			<label>Gewehr 98</label><br>
+			<input id="choice11" type="checkbox" value="Madsen">
+			<label>Madsen Machine Gun</label>
+			<input id="choice12" type="checkbox" value="Martini">
+			<label>Martini-Henry</label><br>
+		</form>
+		<p id="select3cor" style="color: lightgreen;"></p>
+		<p id="select3inc" style="color: red;"></p>
+		<br>
+		<form>
+			<label>Which of the following is the first battle in WW1?</label>
+			<select id="battleQuiz">
+				<option value="ardennes">Battle of Ardennes</option>
+				<option value="marne">Battle of the Marne</option>
+				<option value="liege">Battle of Liège</option>
+				<option value="somme">Battle of the Somme</option>
+			</select>
+			<br>
+		</form>
+		<p id="dropDisplay1cor" style="color: lightgreen;"></p>
+		<p id="dropDisplay1inc" style="color: red;"></p>
+		<br>
+		<form>
+			<label>What is the name of the last Offensive?</label>
+			<select id="battleQuiz2">
+				<option value="hundred">Hundred Days Offensive</option>
+				<option value="spring">Spring Offensive</option>
+				<option value="kaiser">Kaiserschlacht</option>
+				<option value="fall">Fall Offensive</option>
+			</select>
+			<br>
+		</form>
+		<p id="dropDisplay2cor" style="color: lightgreen;"></p>
+		<p id="dropDisplay2inc" style="color: red;"></p>
+		<br>
+		<form>
+			<label>What country created the first tank with a rotating turret?</label>
+			<select id="battleQuiz3">
+				<option value="germany">Germany</option>
+				<option value="usa">USA</option>
+				<option value="france">France</option>
+				<option value="britain">Britain</option>
+			</select>
+			<br>
+		</form>
+		<p id="dropDisplay3cor" style="color: lightgreen;"></p>
+		<p id="dropDisplay3inc" style="color: red;"></p>
+		<input type="button" value="Check All" onclick="checkAll();">
+		<p id="score"></p>
+		<p id="tryagain"></p>
+		<br>
+	</div>
+	<script>
+		function checkAll() {
+			var count = 0;
+			var choice1 = document.getElementById("choice1").checked
+			var choice2 = document.getElementById("choice2").checked
+			var choice3 = document.getElementById("choice3").checked
+			var choice4 = document.getElementById("choice4").checked
+
+			if (choice4 == false && choice3 == false && choice1 == true && choice2 == true) {
+				document.getElementById('select1cor').innerHTML = "Correct";
+				document.getElementById('select1inc').innerHTML = "";
+				count++;
+			}
+			else {
+				document.getElementById('select1cor').innerHTML = "";
+				document.getElementById('select1inc').innerHTML = "Incorrect";
+			}
+			var choice5 = document.getElementById("choice5").checked
+			var choice6 = document.getElementById("choice6").checked
+			var choice7 = document.getElementById("choice7").checked
+			var choice8 = document.getElementById("choice8").checked
+
+			if (choice7 == true && choice8 == true && choice5 == false && choice6 == false) {
+				document.getElementById('select2cor').innerHTML = "Correct";
+				document.getElementById('select2inc').innerHTML = "";
+				count++;
+			}
+			else {
+				document.getElementById('select2cor').innerHTML = "";
+				document.getElementById('select2inc').innerHTML = "Incorrect";
+			}
+			var choice9 = document.getElementById("choice9").checked
+			var choice10 = document.getElementById("choice10").checked
+			var choice11 = document.getElementById("choice11").checked
+			var choice12 = document.getElementById("choice12").checked
+
+			if (choice10 == true && choice11 == true && choice9 == true && choice12 == false) {
+				document.getElementById('select3cor').innerHTML = "Correct";
+				document.getElementById('select3inc').innerHTML = "";
+				count++;
+			}
+			else {
+				document.getElementById('select3cor').innerHTML = "";
+				document.getElementById('select3inc').innerHTML = "Incorrect";
+			}
+			var answerDrop = "liege"
+			var chosenInput = document.getElementById('battleQuiz').value
+			if (chosenInput == answerDrop) {
+				document.getElementById('dropDisplay1cor').innerHTML = "Correct";
+				document.getElementById('dropDisplay1inc').innerHTML = "";
+				count++;
+			}
+			else {
+				document.getElementById('dropDisplay1inc').innerHTML = "Incorrect";
+				document.getElementById('dropDisplay1cor').innerHTML = "";
+			}
+			var answerDrop = "hundred"
+			var chosenInput = document.getElementById('battleQuiz2').value
+			if (chosenInput == answerDrop) {
+				document.getElementById('dropDisplay2cor').innerHTML = "Correct";
+				document.getElementById('dropDisplay2inc').innerHTML = "";
+				count++;
+			}
+			else {
+				document.getElementById('dropDisplay2inc').innerHTML = "Incorrect";
+				document.getElementById('dropDisplay2cor').innerHTML = "";
+			}
+			var answerDrop = "france"
+			var chosenInput = document.getElementById('battleQuiz3').value
+			if (chosenInput == answerDrop) {
+				document.getElementById('dropDisplay3cor').innerHTML = "Correct";
+				document.getElementById('dropDisplay3inc').innerHTML = "";
+				count++;
+			}
+			else {
+				document.getElementById('dropDisplay3inc').innerHTML = "Incorrect";
+				document.getElementById('dropDisplay3cor').innerHTML = "";
+			}
+			document.getElementById('score').innerHTML = count + "/6";
+			if (count != 6) {
+				document.getElementById('tryagain').innerHTML = "Try Again.";
+			}
+		}
+	</script>
+</body>
+
+</html>
