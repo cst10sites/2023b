@@ -1,0 +1,286 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>La Bayadère - Storyline</title>
+	<link rel="icon" type="image/jpg" sizes="16x16" href="flower.jpg">
+	
+	<style>
+		img {
+  border: 10px solid #E58A77;
+}
+ 
+		body {
+		
+			background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-roseanna.png");
+			color: black;
+			margin:25px 125px;
+			font-family: "Trebuchet MS";
+		}
+
+		div {
+			background-color:indianred;
+			padding:20px;
+			border-color: white;
+			border-width: thick; /*thin*/
+			border-style: dotted; /*dashed*/ /*dotted*/
+			box-shadow: 5px 10px darkred;
+		}
+
+		h1, h2 {
+			color:black;
+			
+		}
+
+
+
+		
+		/* buttons */
+		a.btn {
+			/* <a class="btn" ...> */
+			background-color: lightsalmon;
+			color: black;
+			text-decoration: none;
+			display: inline-block;
+			padding: 15px 25px;
+			border-style: solid;
+			border-color: indianred;
+			border-radius: 25px;
+			font-size: 3em;
+		}
+
+		.btn:hover {
+  background-color: #4CAF50;
+  color: lightsalmon;
+
+		
+	</style>
+</head>
+<body>
+	<center>
+			<h1 style="font-family: Lucida Handwriting"><strong>La Balaydère</strong></h1>
+	<div class ="nav">
+		<a class="btn"  href="index.html" style="font-family:Gabriola">Home</a>
+		<a class="btn"  href="history.html" style="font-family:Gabriola">History</a>
+		<a class="btn"  href="characters.html" style="font-family:Gabriola">Characters</a>
+		<a class="btn"  href="plot.html" style="font-family:Gabriola">Plot</a>
+		<a class="btn"  href="quiz.html" style="font-family:Gabriola">Quiz</a>
+		
+	</div>
+
+	<h1 style="font-family:papyrus">Quiz</h1>
+	<p style="font-family: Century Gothic">Test your knowledge with this <strong><em>simple</em></strong> quiz:</p> 
+	<img alt="balaydere" style="width:50%;" src="https://2011.bolshoi.ru/upload/iblock/003/003cf93a92f1abd7523f616971528424.jpg">
+
+
+
+
+<!--Question 1-->
+<h2 style="font-family: Gabriola">Question 1</h2>
+
+<form>
+    <label style="font-family: Georgia, serif">When and where was La Balaydère first preformed?</label><br>
+    <input  type="radio" value="1977, Paris" name="group">
+    <label style="font-family: Georgia, serif">1977, Paris</label><br>
+
+    <input type="radio" value="1877, Moscow" name="group"> 
+    <label style="font-family: Georgia, serif">1877, Moscow</label><br>
+
+    <input id="correctLang" type="radio" value="1877, St Petersburg" name="group"> 
+    <label style="font-family: Georgia, serif">1877, St Petersburg</label><br>
+
+   <input type="button" value="Submit" onclick="checkLang()";><br>
+	<input type="reset"><br> 
+</form>
+
+<h2 style="font-family: Gabriola">Question 2</h2>
+
+<form>
+    <label style="font-family: Georgia, serif">Which statement about the ballet is true?</label><br>
+
+    <input  type="radio" value="Solor loves The High Brahmin" name="group">
+    <label style="font-family: Georgia, serif">Solor loves The High Brahmin.</label><br>
+
+     <input id="correctLang2" type="radio" value="Nikiya is in love with Solor" name="group"> 
+    <label style="font-family: Georgia, serif">Nikiya is in love with Solor.</label><br>
+
+
+    <input type="radio" value="The High Brahmin is betrothed to Gamzatti" name="group"> 
+    <label style="font-family: Georgia, serif">The High Brahmin is betrothed to Gamzatti.</label><br>
+
+   
+   <input type="button" value="Submit" onclick="checkLang2()";><br>
+	<input type="reset"><br> 
+</form>
+
+<h2 style="font-family: Gabriola">Question 3</h2>
+
+<form>
+    <label style="font-family: Georgia, serif">What does balaydere translate to?</label><br>
+
+    <input  type="radio" value="Queen" name="group">
+    <label style="font-family: Georgia, serif">Queen.</label><br>
+
+     <input  type="radio" value="High status royalty member" name="group">
+    <label style="font-family: Georgia, serif">High status royalty member.</label><br>
+
+    <input type="radio" value="king" name="group"> 
+    <label style="font-family: Georgia, serif">King.</label><br>
+
+    <input type="radio" value="ruler" name="group"> 
+    <label style="font-family: Georgia, serif">Ruler.</label><br>
+
+    <input id="correctLang3" type="radio" value="Temple dancer" name="group"> 
+    <label style="font-family: Georgia, serif">Temple dancer.</label><br>
+
+   
+   <input type="button" value="Submit" onclick="checkLang3()";><br>
+	<input type="reset"><br> 
+</form>
+
+<h2 style="font-family: Gabriola">Question 4</h2>
+
+<form>
+    <label style="font-family: Georgia, serif">Who composed the music for La Balaydere?</label><br>
+
+     <input id="correctLang4" type="radio" value="Ludwig Minkus" name="group"> 
+    <label style="font-family: Georgia, serif">Ludwig Minkus.</label><br>
+
+
+    <input  type="radio" value="Agrippina Vaganova" name="group">
+    <label style="font-family: Georgia, serif">Agrippina Vaganova.</label><br>
+
+
+    <input type="radio" value="Marius Petipa" name="group"> 
+    <label style="font-family: Georgia, serif">Marius Petipa.</label><br>
+
+  
+   
+   <input type="button" value="Submit" onclick="checkLang4()";><br>
+	<input type="reset"><br> 
+</form>
+
+
+<h2 style="font-family: Gabriola">Question 5</h2>
+
+<form>
+    <label style="font-family: Georgia, serif">From left to right who are the characters in the image above?</label><br>
+    <input  type="radio" value="Gamzatti, Nikiya" name="group">
+    <label style="font-family: Georgia, serif">Gamzatti, Nikiya.</label><br>
+
+    <input type="radio" value="Nikiya, Solor" name="group"> 
+    <label style="font-family: Georgia, serif">Nikiya, Solor.</label><br>
+
+    <input id="correctLang5" type="radio" value="Nikiya, Gamzatti" name="group"> 
+    <label style="font-family: Georgia, serif">Nikiya, Gamzatti.</label><br>
+
+    <input type="radio" value="Gamzatti, Solor" name="group"> 
+    <label style="font-family: Georgia, serif">Gamzatti, Solor.</label><br>
+
+   <input type="button" value="Submit" onclick="checkLang5()";><br>
+	<input type="reset"><br> 
+</form>
+
+<h2 style="font-family: Lucida Handwriting">End of quiz. Thanks for trying your best!</h2>
+
+
+<script>
+
+    	//Question 1
+function checkLang(){
+	var correctAns = document.getElementById("correctLang").checked
+	//.checked -> get T/F value for radio buttons
+	//alert(correctAns); true or false
+    
+	if (correctAns == true){
+		alert("Correct! Good Job!");
+	}
+	else {
+		alert("Incorrect. Try again.");
+	}
+
+
+} // end of Question 1
+
+//Question 2
+function checkLang2(){
+	var correctAns = document.getElementById("correctLang2").checked
+	//.checked -> get T/F value for radio buttons
+	//alert(correctAns); true or false
+    
+	if (correctAns == true){
+		alert("Correct! Good Job!");
+	}
+	else {
+		alert("Incorrect. Try again.");
+	}
+
+
+} // end of Question 2
+
+
+//Question 3
+function checkLang3(){
+	var correctAns = document.getElementById("correctLang3").checked
+	//.checked -> get T/F value for radio buttons
+	//alert(correctAns); true or false
+    
+	if (correctAns == true){
+		alert("Correct! Good Job!");
+	}
+	else {
+		alert("Incorrect. Try again.");
+	}
+
+
+} // end of Question 3
+
+
+//Question 4
+function checkLang4(){
+	var correctAns = document.getElementById("correctLang4").checked
+	//.checked -> get T/F value for radio buttons
+	//alert(correctAns); true or false
+    
+	if (correctAns == true){
+		alert("Correct! Good Job!");
+	}
+	else {
+		alert("Incorrect. Try again.");
+	}
+
+
+} // end of Question 4
+
+//Question 5
+function checkLang5(){
+	var correctAns = document.getElementById("correctLang5").checked
+	//.checked -> get T/F value for radio buttons
+	//alert(correctAns); true or false
+    
+	if (correctAns == true){
+		alert("Correct! Good Job!");
+	}
+	else {
+		alert("Incorrect. Try again.");
+	}
+
+
+} // end of Question 5
+
+
+	
+	
+
+
+
+
+
+</script>
+	
+</center>
+</body>
+</html>

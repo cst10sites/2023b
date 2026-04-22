@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignement 3</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css">
+<!--External CSS-->
+<link rel="stylesheet" href="style.css">
+<!--Internal CSS: moved to style.css-->
+<style></style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="head.html">Head</a>
+
+  </div>
+  <h1>HTML Guide</h1>
+  <h2>Common HTML Tags</h2>
+<div>
+
+  
+  <!--content-->
+  <div class="content">
+    <h1>Homepage</h1>
+    
+    <h1>Table</h1>
+    <table style="width: 100%;">
+      <tr><!--table row-->
+        <!--table header: first row only, optinal: define column width-->
+        <th style="width: 40%;">Tag</th>
+        <th style="width: 100%;">Definition</th>
+        <th style="width: 50%;">Example</th>
+      </tr>
+      <tr>
+        <td>&nbsp; &lt;!DOCTYPE html&gt;</td><!--table data-->
+        <td>Document Type Declaration. It informs the web browser about the type and version of HTML used in building the web document.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&nbsp;&lt;html lang="en"&gt;</td><!--table data-->
+        <td>To specify the ISO language code. For example, if the content language is English, then the language code should be “en”.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td> &nbsp;&lt;meta charset="UTF-8"&gt;</td><!--table data-->
+        <td>Specifies the character encoding for the HTML document.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&nbsp;&lt;title&gt;&lt;/title&gt;</td>
+        <td>The name of the webpage/website.</td>
+        <td><img alt="Example" style="width:300px;" src="title.png"></td>
+      </tr>
+      <tr>
+        <td>&lt;style&gt;&lt;/style&gt;</td>
+        <td>Internal CSS usues the &lt;style&gt; tag to define a unique style for a single HTML page.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+        <td>External CSS uses this tag to define the style for many HTML pages. </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;</td>
+        <td>A favicon image is the heart displayed to the left of the page title in the browser tab.</td>
+        <td><img alt="Example" style="width:300px;" src="title.png"></td>
+      </tr>
+    </table>
+    
+  </div>
+</div>
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>

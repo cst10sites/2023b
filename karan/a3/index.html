@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<style></style>
+</head>
+<body>
+<div>
+  <div class="topnav">
+    <a onclick="showHideMenu()">Contents</a>
+    <div id="moreLinks">
+      <a href="head.html">HTML outside &lt;body&gt;</a>
+      <a href="index.html">HTML inside &lt;body&gt;</a>
+    </div>
+  </div>
+
+<br>
+
+  <div class="content">
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML Tags inside &lt;body&gt;</h2>
+
+    <table style="width: 100%;">
+  <tr>
+    <th style="width: 34%;">Tag</th>
+    <th style="width: 33%;">Definition</th>
+    <th style="width: 33%;">Examples</th>
+  </tr>
+
+  <tr>
+    <td>&lt;p&gt;&lt;/p&gt;</td> 
+    <td>The &lt;p&gt; tag creates a new paragraph in which you can write in.</td>
+    <td>
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p></td>
+  </tr>
+
+  <tr>
+    <td>&lt;div&gt;&lt;/div&gt;</td> 
+    <td>The &lt;div&gt; tag sections off anything inside of it from anything outside in the html document.</td>
+    <td>
+   <div class="divex">
+   	<p>&nbsp;&nbsp;Anything inside here is part of the div.</p>
+   </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&lt;span&gt;&lt;/span&gt;</td> 
+    <td>The &lt;span&gt; tag allows you to select and edit a section of text.</td>
+    <td>Here is an example. You can make the word "<span>Water</span>" blue by using the &lt;span&gt; tag.</td>
+  </tr>
+
+  <tr>
+    <td>&lt;a href="link"&gt;…&lt;/a&gt;</td>
+    <td>The &lt;a&gt; tag allows you to create a hyperlink to somewhere.</td>
+    <td>Here is a hyperlink to <a class="tube" target="_blank" href="https://www.youtube.com/">Youtube</a>.</td>
+  </tr>
+
+  <tr>
+    <td>&lt;h1&gt;&lt;/h1&gt;</td>
+    <td>The &lt;h1&gt; tag allows you to create a header. you can change the size of the header by changing the number in the tag beside the "h".</td>
+    <td><h1>Header 1</h1>
+      <h6>Header 6</h6></td>
+  </tr>
+
+  <tr>
+    <td>&lt;ol&gt;
+&lt;li&gt;…&lt;/li&gt;
+    &lt;/ol&gt;</td> 
+    <td>The &lt;ol&gt; tag creates an ordered list. Put the items you want in the list inside &lt;li&gt; tags. you can make the list unordered by using the &lt;ul&gt; tag instead.
+    </td>
+    <td>Here is an example.<ol><li>Bananas</li><li>Apples</li><li>etc…</li></ol></td>
+  </tr>
+
+  <tr>
+    <td>&lt;hr&gt;</td>
+    <td>The &lt;hr&gt; tag allows you to create a line that goes along horizontally.</td>
+    <td>
+      Here is an example.
+      <hr>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&lt;img src="link" alt="..."&gt;</td>
+    <td>The &lt;img&gt; tag allows you to add an image in your site.</td>
+    <td>Here is an example.
+      <img src="https://webstockreview.net/images/cube-clipart-dimensional-3.png" alt="cube">
+
+    </td>
+  </tr>
+
+  <tr>
+    <td>&lt;strong&gt;&lt;/strong&gt;</td> 
+    <td>The &lt;strong&gt; tag makes the text inside of it bold. If you are using a text to speech reader to view the site, the speaker will also put a strong emphasis on the text inside of the tag.</td>
+    <td>Here is an example of the <strong>&lt;strong&gt;</strong> tag.</td>
+  </tr>
+
+  <tr>
+    <td>&lt;iframe src="link"&gt;&lt;/iframe&gt;</td> 
+    <td>the &lt;iframe&gt; tag allows you to embed something inside of your site.</td>
+    <td>Here is an example.
+<iframe  src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </td>
+  </tr>
+
+</table>
+
+   
+  </div>
+<br>
+</div>
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>

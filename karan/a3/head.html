@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<style>
+  p.sample {
+    font-family: helvetica;
+    color: darkslateblue;
+    background-color: whitesmoke;
+  }
+</style>
+</head>
+<body>
+<div>
+  <div class="topnav">
+    <a onclick="showHideMenu()">Contents</a>
+    <div id="moreLinks">
+      <a href="head.html">HTML outside &lt;body&gt;</a>
+      <a href="index.html">HTML inside &lt;body&gt;</a>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="content">
+    <h1>HTML Guide</h1>
+    <h2>Common HTML Tags outside &lt;body&gt;</h2>
+
+<table style="width: 100%;">
+  <tr>
+    <th style="width: 34%;">Tag</th>
+    <th style="width: 33%;">Definition</th>
+    <th style="width: 33%;">Examples</th>
+  </tr>
+
+  <tr>
+    <td>&lt;!DOCTYPE html&gt;</td> 
+    <td>This tag tells your browser what type of document the site is.</td>
+    <td>All HTML documents have this tag at the very top of its code. View the source code of this site by pressing "Ctrl + U".
+      <br>
+      <br>
+      <img class="doctype" src="doctype.png" alt="doctype"></td>
+  </tr>
+
+  <tr>
+    <td>&lt;html lang="en"&gt;&lt;/html&gt;</td> 
+    <td>The &lt;html&gt; tag contains all the other tags of your html document other than the "!DOCTYPE" tag. the "lang="en"" part sets the language of your site to english.</td>
+    <td>This sites language is English, or "en". Another language you could use is French, or "fr". 
+      <br>
+      <br>
+      <img class="lang" src="lang.png" alt="lang"></td>
+  </tr>
+
+  <tr>
+    <td>&lt;meta charset="UTF-8"&gt;</td> 
+    <td>This tag sets the character encoding of your site.</td>
+    <td>UTF-8 contains characters for most of the languages and symbols that you could possibly need.
+      <br>
+      <br>
+<img class="charset" src="charset.png" alt="charset"></td>
+  </tr>
+
+  <tr>
+    <td>&lt;title&gt;…&lt;/title&gt;</td>
+    <td>The &lt;title&gt; tag allows you to create a title for your document.</td>
+    <td>This sites title is "Assignment 3" and can be seen at the top of the browser.
+      <br>
+      <br>
+       <img class="title" src="icon.png" alt="title"></td>
+  </tr>
+
+  <tr>
+    <td>&lt;style&gt;&lt;/style&gt;</td>
+    <td>The &lt;style&gt; tag allows you to edit the internal CSS of your site, such as the shape, size, placement and colour of different aspects of your site. </td>
+    <td>
+      <br>
+      <img class="style" src="stylesample.png" alt="style">
+      <p class="sample">[Sample Text]</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>&lt;link rel="stylesheet" href="file name"&gt;</td> 
+    <td>This tag tells the site to refer to another file to get the CSS from externally. This can be useful when trying to edit multiple pages of your site, by allowing you to just edit one CSS file rather than all documents.</td>
+    <td>This site refers to the file "style.css" for its CSS.
+      <br>
+      <br>
+      <img class="link" src="link.png" alt="style.css"></td>
+  </tr>
+
+  <tr>
+    <td>&lt;link rel="icon" type="image/x-icon" href="icon file name"&gt;</td>
+    <td>This tag allows you to have an icon for your site next to the title.</td>
+    <td>This sites icon is a clipboard.
+      <br>
+      <br>
+      <img class="icon" src="icon.png" alt="icon"></td>
+  </tr>
+
+</table>
+
+  </div>
+
+</div>
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+</body>
+</html>

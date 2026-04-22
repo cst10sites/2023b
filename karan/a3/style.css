@@ -1,0 +1,115 @@
+body {
+  font-family: Helvetica;
+  margin: 0px 100px;
+  background-color: whitesmoke;
+}
+
+a {
+  color: steelblue;
+}
+
+a.tube:hover {
+  color: darkblue;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: steelblue;
+  position: relative;
+}
+
+div.topnav #moreLinks {
+  display: none; 
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lightsteelblue;
+}
+
+div.content {
+  padding: 25px;
+  color: black;
+  background-color: lightsteelblue;
+  
+}
+
+table, th, td {
+  border: 2px solid steelblue;
+}
+
+table {
+  border-collapse: collapse;
+
+}
+
+th, td {
+  padding: 5px;
+  text-align: left; 
+}
+
+div.divex {
+  border: 2px dashed red;
+  background-color: whitesmoke;
+}
+
+div.divex:hover {
+  background-color: lightcoral;
+}
+
+span {
+  color: blue;
+}
+
+img {
+  width: 220px;
+  height: 200px;
+}
+
+iframe {
+  width: 360px;
+  height: 200px;
+}
+
+img.doctype {
+  width: 290px;
+  height: 40px;
+}
+
+img.title {
+  width: 290px;
+  height: 70px;
+}
+
+img.link {
+  width: 290px;
+  height: 170px;
+}
+
+img.charset {
+  width: 290px;
+  height: 118px;
+}
+
+img.lang {
+  width: 290px;
+  height: 78px;
+}
+
+img.icon {
+  width: 290px;
+  height: 70px;
+}
+
+img.style {
+  width: 290px;
+  height: 110px;
+}

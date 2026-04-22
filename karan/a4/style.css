@@ -1,0 +1,48 @@
+div.topnav {
+  overflow: hidden;
+  background-color: salmon;
+  position: relative;
+   box-shadow: -5px 6px black;
+}
+
+div.topnav #moreLinks {
+  display: none; 
+   
+}
+
+div.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+   
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lightsalmon;
+   
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0px 100px;
+  background-color: darkslategray;
+  color: black;
+}
+
+div.main {
+  background-color: salmon;
+  color: black;
+  padding: 20px 30px; 
+    box-shadow: -5px 6px black;
+}
+
+div.cookie {
+  background-color: salmon;
+  color: black;
+  padding: 20px 30px;
+  text-align: center;
+   box-shadow: -5px 6px black;
+}

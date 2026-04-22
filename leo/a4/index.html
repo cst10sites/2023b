@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assingment 5</title>
+
+</head>
+<body>
+	<h3>HTML Quiz</h3>
+	<form>
+	    <label>What does HTML stand for?</label><br>
+
+	    <input type="radio" value="HTML" name="group">
+	    <label>Home Tool Markup Language</label><br>
+
+	    <input type="radio" value="CSS" name="group">
+	    <label>Hyper Textlink Markup Language</label><br>
+
+	    <input id="correctLang" type="radio" value="JavaScript" name="group">
+	    <label>Hyper Text Markup Language</label><br>
+
+	    <input type="radio" value="JavaScript" name="group">
+	    <label>Hyperlinks and Text Markup Language</label><br>
+	    <br>
+
+	    	    <input type="button" value="Submit" onclick="checkLang();"><br> 
+
+		<input type="reset"><br> 
+</form>
+<forn>
+<br>
+<h3>CSS Quiz</h3><br>
+
+<label>Which HTML attribute is used to define inline styles?</label><br>
+		
+		<input type="checkbox" value="HTML" name="group">
+	    <label>styles </label><br>
+
+	    <input id="correctGood" type="checkbox" value="JavaScript" name="group">
+	    <label>style</label><br>
+
+	    <input type="checkbox" value="JavaScript" name="group">
+	    <label>font</label><br>
+
+	    <input type="checkbox" value="JavaScript" name="group">
+	    <label>class</label><br>
+	    <br>
+
+
+	    <input type="button" value="Submit" onclick="checkLang();"><br> 
+		
+		<input type="reset"><br> 
+</form>
+<h3>Cookie Clicker</h3>
+<p>Click <a href="index.html">here</a> to play the game.</p>
+<script>
+function checkLang() {
+    		var correctAns = document.getElementById("correctLang").checked
+
+
+    		if (correctAns == true) {
+    			alert("Correct!");
+    		}
+    		
+    		if (correctAns == false) {
+    			alert("Wrong! Try again.")
+    		}
+
+
+    	}
+
+
+
+
+
+</script>
+</body>
+<html>

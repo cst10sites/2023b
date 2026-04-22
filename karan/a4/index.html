@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+<link rel="icon" type="image/x-icon" href="favicon1.ico">
+</head>
+<body>
+
+
+  <div class="topnav">
+    <a onclick="showHideMenu()">Contents</a>
+    <div id="moreLinks">
+      <a href="cookie.html">Cookie Clicker</a>
+      <a href="index.html">HTML Quiz</a>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+
+
+
+
+
+
+<div class="main">
+<h2>HTML Quiz</h2>
+
+<form>
+	    <label>Select all options that can make your text <strong>bold</strong>.</label><br>
+	    <input id="choice1" type="checkbox" value="bold">
+	    <label>&lt;bold&gt;...&lt;/bold&gt;</label><br>
+	    <input id="choice2" type="checkbox" value="strong">
+	    <label>&lt;strong&gt;...&lt;/strong&gt;</label><br>
+	    <input id="choice3" type="checkbox" value="span">
+	    <label>&lt;span style="text-emphasis: bold;"&gt;...&lt;/span&gt;</label><br>
+	    <input id="choice4" type="checkbox" value="b">
+	    <label>&lt;b&gt;...&lt;/b&gt;</label><br><br>
+	    <input type="button" value="OK" onclick="checkAns();"><br> 
+	    <input type="reset" onclick="resetOne();"><br>
+
+	</form>
+
+	 <p id="answerThing">&nbsp;</p>
+
+
+
+<form>
+	    <label>What is the HTML tag you use to create a numbered list?</label>
+	    <select id="ansValue">
+	        <option value="ul">&lt;ul&gt;...&lt;/ul&gt;</option>
+	        <option value="list">&lt;list style="list-format: numbered;"&gt;...&lt;/list&gt;</option>
+	        <option value="nl">&lt;nl&gt;...&lt;/nl&gt;</option>
+	        <option value="ol">&lt;ol&gt;...&lt;/ol&gt;</option>
+	    </select>
+	    <br><br>
+	    <input type="button" value="OK" onclick="checkAnsTwo();"><br>
+	    <input type="reset" onclick="resetTwo();"><br> 
+	</form>
+	<p id="answerThingTwo">&nbsp;</p><br>
+
+
+<form>
+	    <label>What does HTML stand for?</label><br>
+	    <input type="radio" value="hypertextmarkinglang" name="group">
+	    <label>Hyper Text Marking Language</label><br>
+	    <input id="correctLang" type="radio" value="hypertextmarkuplang" name="group">
+	    <label>Hyper Text Markup Language</label><br>
+	    <input type="radio" value="hyperlinktextmarkuplang" name="group">
+	    <label>Hyperlink Text Markup Language</label><br><br>
+	    <input type="button" value="OK" onclick="checkAnsThree();"><br> 
+		<input type="reset" onclick="resetThree();"><br> 
+	</form>
+	<p id="answerThingThree">&nbsp;</p>
+
+</div>
+<br>
+
+<script>
+	
+	function resetThree() {
+		document.getElementById("answerThingThree").innerHTML = "<br>";
+	}
+
+	function resetTwo() {
+		document.getElementById("answerThingTwo").innerHTML = "<br>";
+	}
+
+	function resetOne() {
+		document.getElementById("answerThing").innerHTML = "<br>";
+	}
+
+
+
+function checkAns() {
+    		var choice1 = document.getElementById("choice1").checked; 
+    		var choice2 = document.getElementById("choice2").checked; 
+    		var choice3 = document.getElementById("choice3").checked; 
+    		var choice4 = document.getElementById("choice4").checked; 
+
+    		if (choice1 == false && choice2 == true && choice3 == false && choice4 == true) {
+    			document.getElementById("answerThing").innerHTML = "Correct.";
+
+
+    		}
+
+
+    		else {
+
+    			document.getElementById("answerThing").innerHTML = "Incorrect. Try again.";
+
+    		}
+
+    	}
+
+
+
+function checkAnsTwo() {
+    		var chosenAns = document.getElementById('ansValue').value;
+
+    		if (chosenAns == "ol") {
+
+
+    		document.getElementById('answerThingTwo').innerHTML = "Correct.";
+    	}
+
+    		else {
+    		document.getElementById('answerThingTwo').innerHTML = "Incorrect. Try again.";
+    	}
+
+	}
+
+
+
+function checkAnsThree() {
+    		var correctAns = document.getElementById("correctLang").checked
+    	
+    		if (correctAns == true) {
+    			document.getElementById("answerThingThree").innerHTML = "Correct.";
+    		}
+
+    		else {
+    			document.getElementById("answerThingThree").innerHTML = "Incorrect. Try again.";
+    		}
+
+    	}
+
+
+
+
+	function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

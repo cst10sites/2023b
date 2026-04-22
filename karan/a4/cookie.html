@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a onclick="showHideMenu()">Contents</a>
+    <div id="moreLinks">
+      <a href="cookie.html">Cookie Clicker</a>
+      <a href="index.html">HTML Quiz</a>
+    </div>
+  </div>
+
+<br>
+<br>
+
+<div class="cookie">
+
+<h2>Cookie Clicker</h2>
+
+<p>Click the cookie to start!</p>
+
+<img onclick="updateCPS();" src="https://www.pngarts.com/files/4/Cookie-PNG-Pic.png" alt="Cookie" style="width: 200px;">
+
+<p id="cpsDisplay"></p>
+<p id="clickDisplay"></p>
+<p id="elapsedDisplay"></p>
+
+<button onclick="resetWatch();">Reset</button>
+
+</div>
+<br>
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+
+function updateCPS() {
+
+	if (nClicks == 0) {
+
+		startTime = new Date();
+		nClicks = nClicks + 1;
+
+		// first click
+		// 1. reset startTime
+		// 2. increase nClicks by 1
+	}
+
+	if (nClicks > 0) {
+
+		var currentTime = new Date();
+
+		var timeElapsed = (currentTime - startTime) / 1000; 
+
+		var cps = (nClicks - 1) / timeElapsed;
+
+		document.getElementById('cpsDisplay').innerHTML = "Clicks Per Second = " + cps;
+		document.getElementById('clickDisplay').innerHTML = "Clicks = " + (nClicks - 1);
+		document.getElementById('elapsedDisplay').innerHTML = "Time Passed = " + timeElapsed + " seconds";
+
+		nClicks = nClicks + 1;
+
+		// subsequent clicks:
+		// 1. create variable currentTime
+		// 2. create variable timeElapsed and subtract start and currentTime
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+		// 5. increase nClicks by 1
+
+		
+	}
+
+}
+
+function resetWatch() {
+location.reload();
+}
+
+
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+setInterval(updateTime, 100)
+
+function updateTime() {
+if (nClicks > 0) {
+var currentTime = new Date();
+var timeElapsed = (currentTime - startTime) / 1000; // in seconds
+
+document.getElementById('timeDisplay').innerHTML = timeElapsed;
+}	
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "UTF-8">
+	<title>Assignment 4</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<style>
+		body {
+			matgin: 50px 100px;
+			background: palegoldenrod;
+		}
+	</style>
+</head>
+<body>
+	<h1>Quiz</h1>
+	
+
+
+<!--Question 1-->
+<h3>Radio Button</h3>
+<form>
+    <label>What is the correct HTML for inserting an image?</label><br>
+    <input  type="radio" value="<img href="image.gif alt="MyImage>" name="group">
+    <label>&lt;img href="image.gif alt="MyImage" &gt;</label><br>
+    <input type="radio" value="<imgage scr="image.gif alt="MyImage>" name="group">
+    <label>&lt;image scr="image.gif alt="MyImage" &gt;</label><br>
+    <input id="correctLang" type="radio" value="<img scr="image.gif alt="MyImage>" name="group">
+    <label>&lt;img scr="image.gif alt="MyImage" &gt;</label><br>
+    <input type="button" value="Submit" onclick="checkLang()";><br> 
+	<input type="reset"><br> 
+</form>
+
+
+
+<!--Question 2-->
+<h3>Checkboxes</h3>
+<form>
+    <label>What kind of pet do you want?</label><br>
+    <input id="choice1" type="checkbox" value="Dog">
+    <label>Dog</label>
+    <input id="choice2" type="checkbox" value="Cat">
+    <label>Cat</label><br>
+    <input id="choice3" type="checkbox" value="Frog">
+    <label>Frog</label>
+    <input id="choice4" type="checkbox" value="Snake">
+    <label>Snake</label><br>
+    <input type="button" value="Submit" onclick="reptiles();"><br> 
+	<input type="reset"><br> 
+</form>
+
+<!--Question 3-->
+<h3>Dropdown Menu</h3>
+<form>
+    <label>What Hogwarts house is the best?</label>
+    <select id="house"><!--no input for dropdown-->
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Slytherin">Slytherin</option>
+        <!--- id in select, value in option -->
+    </select>
+   <br>
+    <input type="button" value="Ok" onclick="checkHouse();">
+    <input type="reset"><br> 
+</form>
+<p id="houseDisplay">2022&copy;</p>
+
+
+<hr>
+<h2>Cookie Clicker</h2>
+<p>Click <a href="cookie.html">here</a> to play Cookie Clicker.</p>
+<script>
+    	
+
+    	//Question 1
+function checkLang(){
+	var correctAns = document.getElementById("correctLang").checked
+	//.checked -> get T/F value for radio buttons
+	//alert(correctAns); true or false
+    
+	if (correctAns == true){
+		alert("Correct! Good Job!");
+	}
+	else {
+		alert("Incorrect. Try again.");
+	}
+
+
+} // end of Question 1
+
+	// Question 2
+	function reptiles() {
+		var choice1 = document.getElementById("choice1").checked; //dog
+		var choice2 = document.getElementById("choice2").checked; //cat
+		var choice3 = document.getElementById("choice3").checked; //frog
+		var choice4 = document.getElementById("choice4").checked; //snake
+
+		if(choice1 == false && choice2 == false && choice3 == true && choice4 == true) {
+			alert("WOW you like reptiles! BTW snakes can't feel love");
+		}
+		else {
+			alert("Studies have shown that pets benafit your metal health!");
+		}
+
+	}
+
+	//Question 3
+	function checkHouse(){
+		var house = document.getElementById('house').value;
+		// id in select, value in option
+
+
+
+		document.getElementById('houseDisplay').innerHTML = "The best house is not " + house;
+
+	}
+
+
+
+
+
+</script>
+</body>
+</html>
