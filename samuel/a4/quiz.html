@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--create style.css and change to href="style.css"-->
+</head>
+
+<body>
+
+    <h2>HTML/CSS Quiz</h2>
+    <div>
+        <form>
+            <label>Which html tag is incorrect?</label><br>
+            <input id="incorrectTag" type="radio" value="&gt;\p&lt;" name="group">
+            <label>&gt;\p&lt;</label><br>
+            <input type="radio" value="&gt;p&lt;" name="group">
+            <label>&gt;p&lt;</label><br>
+            <input type="radio" value="&gt;/p&lt;" name="group">
+            <label>&gt;/p&lt;</label><br>
+            <input type="button" value="Submit" onclick="checkAnswer();"><br>
+            <input type="reset"><br>
+        </form>
+    </div>
+
+    <hr>
+    <h2>Cookie Clicker</h2>
+    <img src="images/cookie - Copy.png" style="height: 70px; border-width: 5px;">
+    <p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+
+    <script>
+        function checkAnswer() {
+    var correctAns = document.getElementById("incorrectTag").checked
+
+    if (correctAns == true) {
+        alert("Correct");
+    }
+    else {
+        alert("Incorrect, reset and try again.");
+    }
+        }
+    </script>
+</body>
+
+</html>

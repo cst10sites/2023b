@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(255, 192, 219);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    line-height: 1.5;
+    font-size: 18px;
+    background-image: url(images/abstract-purple-pink-cloud.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table {
+    background-color: rgb(216, 0, 0);
+    width: 90%;
+    margin-left: auto;
+    margin-right: 400px;
+    table-layout: fixed;
+}
+
+th {
+    background-color: rgb(255, 154, 154);
+    font-size: 20px;
+}
+
+td {
+    background-color: rgb(255, 193, 193);
+    padding: 5px;
+    height: 240px;
+}
+
+.horizontal-row {
+    margin-left: -47px;
+    background-color: rgb(142, 36, 36);
+    height: 3px;
+}
+
+img {
+    width: 250px;
+    border-radius: 4px;
+    padding: 2px;
+    transition: all 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.6);
+    border: 5px solid rgb(240, 52, 52);
+    padding: 0px;
+}
+
+#rectangle {
+    background-color: rgb(255, 131, 160);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    padding-left: 10px;
+    box-shadow: 4px 7px rgb(241, 105, 137);
+    margin-right: 10px;
+}
+
+.data-hr {
+    height: 2px;
+    background-color: black;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+a.btn {
+    background-color: plum;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 3px solid rgb(192, 125, 192);
+    display: inline-block;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    color: rgb(212, 64, 212);
+}
+a.btn:hover {
+    background-color: blueviolet;
+    color: lavender;
+    border-color: rgb(227, 133, 164);
+    box-shadow: 2px 2px rgb(244, 117, 146);
+    transform: scale(1.2);
+}
+
+#para {
+   background-color: rgb(255, 131, 160);
+   padding: 10px 12px;
+   width: fit-content;
+   border: 3px solid rgb(234, 70, 109);
+   border-radius: 15px;
+   font-style: italic;
+   font-size: 1.1em;
+}

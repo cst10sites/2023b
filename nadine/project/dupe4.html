@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joji </title>
+<link rel = "icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="dupe.css">
+<style>
+body{
+    font-family: Serif;
+  margin: 0px 100px;
+  font-family: Serif;
+  /*https://wallpaperaccess.com/full/1155052.jpg background url*/
+  background-attachment: fixed;
+  background-image: url("https://diy-magazine.s3.amazonaws.com/d/diy/Artists/J/Joji/Joji.jpg");
+
+    margin: -30px -30px 30px -30px;
+    padding: 25px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+
+
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: black; /* inherit; */
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+
+}
+
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+ a.button {
+	padding: 15px 10% 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-style: solid;
+	border-color: LigtGrey;
+	float: left;
+	color: LightGrey;
+	background-color: #0039e6;
+}
+
+
+.question{
+  font-size: 50px;
+  margin-bottom: 10px;
+   font-family: Serif;
+
+  padding: 10px;
+
+}
+.answers {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  font-family: Serif;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+	font-size: 22px;
+   font-family: Serif;
+	background-color: silver;
+	color: Black;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-color: LightGrey;
+   margin-top: 3%;
+ 
+}
+
+button:hover{
+	background-color: #0039e6;
+	color: Silver;
+}
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 17%;
+ 
+
+}
+
+ a.button {
+	padding: 15px 10% 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-style: solid;
+	border-color: LigtGrey;
+	float: left;
+	color: LightGrey;
+	background-color: #0039e6;
+
+}
+
+
+
+
+
+body, html {
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+a {
+  color: white;
+}
+
+
+p, h1, h2, tr, td, th {
+  color: white;
+}
+
+
+div {
+	background-color: #0039e6;
+	opacity: 100%;
+	color: LightGrey;
+	text-align: center;
+
+
+
+
+
+	}
+}
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="youtube.html">Youtube Career</a>
+  <div class="dropdown">
+    <button class="dropbtn">Albums
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tongues.html">In Tongues</a>
+      <a href="ballads.html">Ballads 1</a>
+      <a href="nectar1.html">Nectar</a>
+      <a href="smith1.html">Smithereens</a>
+
+    </div>
+  </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+ <button class="dropbtn">Quiz
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="quizsonghtml.html">Guess the Song!</a>
+      <a href="dupe4.html">About Joji</a>
+
+
+
+</div>
+    </div>
+  </div> 
+</div>
+
+
+    </div>
+
+    </div>
+
+  </div>
+   
+
+  </div>
+
+
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<br>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+
+    </div>
+
+
+
+
+
+<script>
+
+
+(function(){
+  // Functions
+  function buildQuiz(){
+    // variable to store the HTML output
+    const output = [];
+
+    // for each question...
+    myQuestions.forEach(
+      (currentQuestion, questionNumber) => {
+
+        // variable to store the list of possible answers
+        const answers = [];
+
+        // and for each available answer...
+        for(letter in currentQuestion.answers){
+
+          // ...add an HTML radio button
+          answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+          );
+        }
+
+        // add this question and its answers to the output
+        output.push(
+          `<div class="slide">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          </div>`
+        );
+      }
+    );
+
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join('');
+  }
+
+  function showResults(){
+
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+    // keep track of user's answers
+    let numCorrect = 0;
+
+    // for each question...
+    myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+      // find selected answer
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+      // if answer is correct
+      if(userAnswer === currentQuestion.correctAnswer){
+        // add to the number of correct answers
+        numCorrect++;
+
+        // color the answers green
+        answerContainers[questionNumber].style.color = '#33ffff';
+      }
+      // if answer is wrong or blank
+      else{
+        // color the answers red
+        answerContainers[questionNumber].style.color = 'red';
+      }
+    });
+
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+  }
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove('active-slide');
+    slides[n].classList.add('active-slide');
+    currentSlide = n;
+    if(currentSlide === 0){
+      previousButton.style.display = 'none';
+    }
+    else{
+      previousButton.style.display = 'inline-block';
+    }
+    if(currentSlide === slides.length-1){
+      nextButton.style.display = 'none';
+      submitButton.style.display = 'inline-block';
+    }
+    else{
+      nextButton.style.display = 'inline-block';
+      submitButton.style.display = 'none';
+    }
+  }
+
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  // Variables
+  const quizContainer = document.getElementById('quiz');
+  const resultsContainer = document.getElementById('results');
+  const submitButton = document.getElementById('submit');
+  const myQuestions = [
+    {
+      question: "What was Joji's name as a Youtube comedian?",
+      answers: {
+        a: "George Miller",
+        b: "Green Guy",
+        c: "Filthy Frank"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Where was Joji born?",
+      answers: {
+        a: "Tokyo",
+        b: "Osaka",
+        c: "Kyoto",
+      },
+      correctAnswer: "b"
+    },
+	{
+      question: "How many official albums has Joji made?",
+      answers: {
+    a: "6",
+    b: "4",
+		c: "7",
+		d: "3",
+      },
+      correctAnswer: "b"
+    },
+	{
+      question: "When year was Nectar Released?",
+      answers: {
+        a: "2019",
+        b: "2021",
+        c: "2020",
+      },
+      correctAnswer: "c"
+    },
+	{
+      question: "Name an album that is NOT from Joji",
+      answers: {
+        a: "Pink Guy",
+        b: "Chloe Burbank",
+        c: "Pink Year",
+      },
+      correctAnswer: "c"
+    }	 
+  ];
+
+  // Kick things off
+  buildQuiz();
+
+  // Pagination
+  const previousButton = document.getElementById("previous");
+  const nextButton = document.getElementById("next");
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  // Show the first slide
+  showSlide(currentSlide);
+
+  // Event listeners
+  submitButton.addEventListener('click', showResults);
+  previousButton.addEventListener("click", showPreviousSlide);
+  nextButton.addEventListener("click", showNextSlide);
+})();
+	
+
+</script>
+</body>
+</html>

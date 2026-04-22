@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joji </title>
+<link rel = "icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+
+
+
+  font-family: Serif;
+  background-color: #f5ce8a;
+  background-attachment: fixed;
+    border-color:white;
+    border-width:thick; /*thin*/
+    border-style:dashed; /*dashed*/
+
+    margin: -30px -30px 30px -30px;
+    padding: 25px;
+
+
+  }
+
+body, html {
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+
+}
+a {
+  color: #0c1e54;
+}
+
+
+h1 {
+  color:black;
+  font-size:5em;
+}
+
+
+h2 {
+  color:black;
+  font-size:3em;
+}
+
+
+p {
+  color:black;
+  font-size:2em;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="youtube.html">Youtube Career</a>
+  <div class="dropdown">
+    <button class="dropbtn">Albums
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="tongues.html">In Tongues</a>
+      <a href="ballads.html">Ballads 1</a>
+      <a href="nectar1.html">Nectar</a>
+      <a href="smith1.html">Smithereens</a>
+
+    </div>
+  </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+ <button class="dropbtn">Quiz
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="quizsonghtml.html">Guess the Song!</a>
+      <a href="dupe4.html">About Joji</a>
+
+</div>
+    </div>
+  </div> 
+</div>
+
+
+    </div>
+
+    </div>
+
+  </div>
+   
+
+  </div>
+  
+<div class="imgcontainer">
+<img id="imgSlideshow" src="joji1.png" style="width:100%" alt="slideshow of images"> 
+<div class="onimage"> 
+</div>
+
+
+
+
+<div class="content" >
+  <ul>
+
+<center><h2>Description</h2></center>
+<li><p> George Kusonoki Miller, known as <strong>Joji</strong>, <strong>Filthy Frank</strong>, and <strong>Pink Guy</strong> is a Japanese singer-songwriter, former comedian, and Youtuber. Miller integrates the R&B, lo-fi and trip hop genres that eventually rebranded him as a serious artist after years of establishing an Internet personality. </p></li>
+
+<li><p> Born in Osaka, Joji left Japan and travelled to the United States at the age of 18. He built a massive online following in the early 2010s with his comedy skits, with his <em>Harlem Shake</em> becoming a viral phenomenon. Eventually, George grew out of the characters he played, claiming that naturally as he got older, he got tired of that humour. While Joji had a passion for music, he would incorporate it in his Pink Guy era but were mostly comical. As a result, he began writing music that was compelling with its moody tones and authentic lyricism. In 2017, George came up with a new stage name, Joji.</p></li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+
+
+/*Image slideshow*/
+var images = new Array();
+// file names of images
+    images[0] = "joji1.png"; 
+    images[1] = "joji2.png";
+    images[2] = "joji3.png";
+
+     setInterval("changeImage()", 2000); //change every 2 seconds
+     var x=0;
+
+     function changeImage()
+     {
+            document.getElementById("imgSlideshow").src=images[x]
+            x++;
+            if (images.length == x) 
+            {
+             x = 0;
+            }
+     }
+
+
+
+
+     
+</script>
+
+</body>
+</html>

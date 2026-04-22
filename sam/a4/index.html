@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML/CSS/JS Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id ="quizBod">
+	<div id="headersqui">
+		<h1>  HTML/ CSS / JS Quiz </h1>
+	</div>
+	<div id="squish">
+		<div id="quiz">
+			<!-- Quiz Start-->
+
+
+			<form>
+				<label>What is your name?</label><br>
+				<input type="text" id="user"><br>
+				<input type="button" value="Submit " onclick="submitAns3()">	
+				<input type="reset"><br>
+
+			</form>
+
+
+			<form>
+				<label> What type of file name extension belongs to HTML? </label><br>
+				<input type="radio" value="css" name="group">
+				<label>.css</label><br>
+				<input id="correctFile" type="radio" value="html" name="group">
+				<label>.html</label><br>
+				<input type="radio" value="js" name="group">
+				<label>.js</label><br>
+				<input type="radio" value="com" name="group">
+				<label>.com</label><br>
+				<input type="button" value="Submit" onclick="submitAns1()">	
+				<input type="reset"><br>
+
+			</form>
+
+
+			<form>
+				<label>What does CSS do?</label> <br>
+				<input id="choice1" type="checkbox" value="images">
+				<label> Make Images </label> <br>
+				<input id="choice2" type="checkbox" value="border">
+				<label> Makes Borders </label> <br>
+				<input id="choice3" type="checkbox" value="Style">
+				<label> Styles your page </label><br>
+				<input type="button" value=" Submit" onclick="submitAns2()">	
+				<input type="reset"><br>
+			</form>
+
+
+
+
+			
+
+		</div><!-- Quiz End-->
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+<div class="link">
+	<hr>
+	<h2>Cookie Clicker</h2>
+	<p>Click <a href="cookie.html">here</a> to play Cookie Clicker.</p>
+</div>
+
+
+
+<script>
+	function submitAns1() {
+		var TvFCheck = document.getElementById('correctFile').checked
+
+		if (TvFCheck == true) {
+			alert('You got it correct!')
+		}
+		else {
+			alert('You got it wrong :(')
+		}
+
+	}
+
+	function submitAns2() {
+		var choice1 = document.getElementById('choice1').checked
+		var choice2 = document.getElementById('choice2').checked
+		var choice3 = document.getElementById('choice3').checked
+
+		if (choice1 == false && choice2 == true && choice3 == true){
+			alert('You got it correct!')
+		}
+		else {
+			alert('You got it wrong.. :(')
+		}
+	}
+
+	function submitAns3() {
+		var user = document.getElementById('user').value
+		alert("Hello " + user + "!")
+	}
+
+
+</script>
+
+</body>
+</html>

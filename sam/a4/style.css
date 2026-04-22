@@ -1,0 +1,72 @@
+
+#cookieBody {
+	margin: 0px 100px 0px;
+}
+
+
+body {
+	text-align: center;
+	font-family: Trebuchet MS;
+	background-color: #945538;
+	color: #362717;
+}
+
+.link {
+	padding: 0px 0px 10px;
+}
+
+
+
+
+
+hr {
+	height: 2px;
+	background-color: #4a2b1c;
+	border: none;
+}
+
+#cookieHeader {
+	font-size: 5em;
+	background-color: burlywood;
+}
+
+#cookie {
+	border: none;
+	background-color: #945538;
+}
+
+#cpsDisplay {
+	font-size: 2em;
+}
+
+#quizBod {
+	margin: 0px 100px 0px ;
+}
+
+#quiz {	
+	background-color: burlywood;
+	padding: 10px 50px 10px 20px;
+}
+
+
+#squish {
+	margin: 0px 200px;
+	font-size: 1.5em;
+}
+
+
+#cookDiv {
+	background-color: burlywood;
+	padding: 10px 50px 10px 20px;
+}
+
+
+h1 {
+	font-size: 4em;
+	background-color: #c7996b;
+	border: solid 5px #b27334;
+}
+
+#headersqui {
+	margin: 0px 200px;
+}

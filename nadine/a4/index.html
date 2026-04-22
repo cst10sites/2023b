@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<style>
+    body {
+        background-color: palevioletred;
+        color: white;
+    }
+    #counter{
+        color: white;
+    }
+    #reset{
+        color:blue;
+
+    }
+
+
+    
+
+</style>
+<link rel="stylesheet" type="text/css" href="">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<img style = "width:200px;" onclick="updateCPS();" src = "cookie.png" id = "cookie">
+<p> Cookie Clicked: <span id= "counter">0</span> </p>
+<p>Clicks per second: <p id="cpsDisplay"></p></p>
+<button id ="reset" onclick = "reset()" > Reset </button>
+
+
+
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="quiz.html">here</a> to play the quiz.</p>
+
+
+<script>             
+
+// global variables
+var Clicks = 0;
+var startTime = new Date();
+
+
+function updateCPS() {
+    if (Clicks == 0) {
+        // first click
+        // 1. reset startTime
+        startTime = new Date();
+        // 2. increase nClicks by 1
+        Clicks = Clicks + 1;
+    }
+    else {
+        // subsequent clicks:
+        // 1. create variable currentTime
+        var currentTime = new Date();
+        // 2. create variable timeElapsed and subtract start and currentTime
+        var timeElapsed = (currentTime - startTime) / 1000 // in seconds
+        // 3. calculate CPS = nClicks ÷ timeElapsed
+        var updateCPS = (Clicks / timeElapsed) / 1000
+        //    BUT timeElapsed be measured in seconds (not milliseconds)
+        // 4. display CPS using id
+        counter.innerHTML = Clicks;
+        document.getElementById('cpsDisplay').innerHTML = (Clicks / timeElapsed);
+        // 5. increase nClicks by 1
+        Clicks = Clicks + 1;
+
+    }
+}
+
+
+function reset(){
+    Clicks = 0;
+    counter.innerHTML = Clicks;
+}
+
+</script>
+
+</html>
+
+

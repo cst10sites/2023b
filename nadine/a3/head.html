@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel = "icon" type="image/x-icon" href="favicon.ico">
+<!--External CSS-->
+<link rel="stylesheet" href="styles.css">
+<!--Internal CSS: moved to style.css-->
+<style></style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="head.html">Head</a>
+
+  </div>
+<h1>HTML Guide</h1>
+<h2>Common HTML Tags</h2>
+  
+  <!--content-->
+  <div class="content">
+
+    <h1>Table</h1>
+    <table style="width: 100%;">
+      <tr><!--table row-->
+        <!--table header: first row only, optinal: define column width-->
+        <th style="width: 40%;">Tag</th>
+        <th style="width: 100%;">Definition</th>
+        <th style="width: 30%;">Examples</th>
+      </tr>
+      <tr>
+        <td>&lt;!DOCTYPE html&gt;</td><!--table data-->
+        <td>A declaration that tells the browser what version of HTML the document is written in.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;html lang="en"&gt;</td><!--table data-->
+        <td>Tells the browser that all content on the page is English.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td><!--table data-->
+        <td>Covers almost all of the characters and symbols in the world.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;</td>
+        <td>Defines the name of the document.
+          <td><img alt="example" style="width:300px;" src= "Screenshot(16).png"></td>
+      
+        <tr>
+        <td>&lt;style&gt;</td>
+        <td>Internal CSS uses the tag &lt;style&gt; to define a unique style for a single HTML page.</td>
+        <td></td>
+      </tr>
+      <tr>
+      <td>&lt;link rel="stylesheet" href="styles.css"&gt; 
+      <td>External CSS uses the style sheet tag to define the style for many HTML pages.</td>
+      <td></td>
+    </tr>
+    <tr>
+    <td>&lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;</td>
+    <td> A favicon is an image is displayed to the left of the page title.</td>
+    <td><img alt="example" style="width:300px;" src="Screenshot(16).png">
+      </tr>
+    </table>
+    
+  </div>
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>

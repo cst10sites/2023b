@@ -1,0 +1,96 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    pointer-events: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url(images/wallpaperThree.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    border-radius: 56%;
+    border-width: 7px;
+    border-color: rgb(190, 120, 14);
+    border-style: solid;
+    transition: transform 0.2s ease;
+}
+
+img:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+img.clicked {
+    transform: scale(0.9);
+}
+
+h1 {
+    background-color: rgb(229, 187, 136);
+    padding: 5px;
+    font-size: 50px;
+    box-shadow: 3px 5px rgb(200, 150, 120);
+    border-radius: 5px;
+    -webkit-text-stroke: rgb(92, 66, 28);
+    -webkit-text-stroke-width: 3px;
+    color:white;
+}
+
+button {
+    color: rgb(85, 49, 13);
+    background-color: bisque;
+    border-color: rgb(171, 120, 44);
+    border-radius: 50%;
+    border-width: 5px;
+    padding: 26px 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    transition: all 0.15s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    padding: 28px 1px;
+}
+
+#cookie:active {
+    transform:scale(0.95)
+}
+
+p {
+    display:table;
+    margin:0px auto 0px auto;
+    padding: 5px;
+    font-size: 22px;
+    background-color: rgb(229, 187, 136);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 4px rgb(171, 120, 44);
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+h2 {
+    display:table;
+    margin:0px auto 0px auto;
+    padding: 5px;
+    font-size: 30px;
+    background-color: rgb(229, 187, 136);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 4px rgb(171, 120, 44);
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+#cps {
+    margin-bottom: 5px;
+}
+
+hr {
+    background-color: black;
+    height: 3px;
+}

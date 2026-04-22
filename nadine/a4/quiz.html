@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel = "icon" type="image/x-icon" href="favicon.ico">
+<!--dizzy.ico was downloaded into lesson3 folder -->
+<!--download any favicon from favicon.io-->
+
+<style>
+
+body{
+    background-color: skyblue;
+    color: white;
+    font-family: Calibri;
+    margin: 50px 100px; /* top/bottom left/right  */
+    padding: 25px;
+
+    border-color:white;
+    border-width:thick; /*thin*/
+    border-style:dashed; /*dashed*/
+    }
+
+div {
+    background-color:plum;
+    padding: 20px;
+    border-color:white;
+    border-width:thick; /*thin*/
+    border-style:solid; /*dashed*/
+    box-shadow:5px 10px /*you can use - as well*/ violet;
+    }
+
+    a{
+	color:blue;
+	}
+
+	label {
+color: white;
+font-size:1.5em;
+}
+
+h1 {
+color: white;
+font-size:1.5em;
+}
+
+h3 {
+color: white;
+font-size:1.7em;
+}
+
+p {
+color: white;
+font-size:1.5em;
+}
+
+h2 {
+color: white;
+font-size:2.4em;
+}
+	
+
+	<style>
+		body {
+			margin: 50px 100px;
+		}
+	</style>
+
+
+<h2>Quiz</h2>
+
+
+
+
+	<!--Example 2-->
+	<h3>Question 1</h3>
+	<form>
+	    <label>What does HTML stand for?</label><br>
+	    <input type="radio" value="Hyperlinks and Text Markup Language" name="group">
+	    <label>Hyperlinks and Text Markup Language</label><br>
+	    <input id="correctLang" type="radio" value="Hypertext Markup Language" name="group">
+	    <label>Hypertext Markup Language</label> <br>
+	    <input type="radio" value="Home Tool Markup Language" name="group">
+	    <label>Home Tool Markup Language</label>
+	   
+	    <br>
+	    <input type="button" value="Submit" onclick="checkLang();"><br> 
+		<input type="reset"><br> 
+	</form>
+
+	<!--Example 3-->
+	<h3>Question 2</h3>
+	<form>
+	    <label>Inside which HTML element do we put the JavaScript?</label><br>
+	    <input id="choice1" type="checkbox" value="&lt;script&gt;">
+	    <label>&lt;script&gt;</label>
+	    <input id="choice2" type="checkbox" value="&lt;js&gt;">
+	    <label>&lt;js&gt;</label><br>
+	    <input id="choice3" type="checkbox" value="&lt;javascript&gt;">
+	    <label>&lt;javascript&gt;</label> 
+	    <br>
+	    <input type="button" value="Submit" onclick="script();"><br> 
+		<input type="reset"><br> 
+	</form>
+
+	
+<script>
+
+function checkLang() {
+	var correctAns = document.getElementById("correctLang").checked
+	// .checked -> get T/F value for radio buttons 
+	// alert(correctAns); // true or false
+
+	if (correctAns == true) {
+		alert("Correct!");
+
+	} else {
+		alert("Wrong! Try again.");
+	}
+
+} // end of Example 2
+
+// Example 3 
+function script() {
+	var choice1 = document.getElementById("choice1").checked; // milk
+	var choice2 = document.getElementById("choice2").checked; // juice
+	var choice3 = document.getElementById("choice3").checked; // eggs
+
+	if (choice1 == true && choice2 == false && choice3 == false) {
+		alert("Correct!");
+	} else {
+		alert("Wrong! Try again.");
+	}
+
+
+}
+    
+    	
+
+</script>
+
+<p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+</body>
+</html>
+
+
