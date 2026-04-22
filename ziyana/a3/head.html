@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 3</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>&nbsp;</p>
+<div class="topnav">
+    <a href="index.html">Head</a>
+    <div id="moreLinks">
+      <a class="btn" href="../a3/index.html">Home</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+<h1>HTML/CSS Guide</h1>
+<h2> Common HTML Tags outside &lt;body&gt;</h2>
+
+<table style="width: 70%;">
+      <tr><!--table row-->
+        <th style="width: 50%;">Definition</th><!--table header: first row only-->
+        <th style="width: 20%;">Tag</th>
+        <th style="width: 30%">Examples</th>
+      </tr>
+
+      <tr>
+       
+      <tr>
+        <td> &lt;!DOCTYPE html&gt;</td><!--table data-->
+        <td>Doctype html is used to define what type of HTML is being used.</td>
+        <td> <!DOCTYPE html> This tag was used in this code.</td>
+      </tr>
+     
+     <tr>
+      <td> &lt;html lang="en"&gt;</td>
+      <td>lang="..." is used to determine the language the website will be in.</td>
+      <td>This tag was used in this code.</td>
+    </tr>
+
+    <tr>
+      <td>&lt;meta charset="UTF-8"&gt;</td>
+      <td>This tag makes almost every character in different languages available.</td>
+      <td><p lang="ar">अरबी के लिए</p></td>
+    </tr>
+
+    <tr>
+      <td> &lt;title&gt; &lt;/title&gt;</td>
+      <td>This is the title of the website.</td>
+      <td>The title appears at the top of the page. In this case, the title is "Asssignment 3".</td>
+    </tr>
+
+    <tr>
+      <td>Style= properties you want your text to have.</td>
+      <td>&lt;tagname style="property:value;"&gt;</td>
+      <td><p style="color:red;">This is a red paragraph.</p></td>
+    </tr>
+
+    <tr>
+      <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+      <td>Style css is used to describe the website design.</td>
+      <td>style.css is used in head and body of this website</td>
+    </tr>
+
+    <tr>
+      <td>This tag allows you to add an icon to the tab of your website.</td>
+      <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico&gt;</td>
+      <td>If you look at the top of this webpage, you can see this.<img src="C:\Users\1311314\OneDrive - Board of Education of SD 39 (Vancouver)\CST 10\html5css3\a3\favicon.ico" style="width:20%"></td>
+    </tr>
+    <tr>
+
+  </table>
+</body>
+
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+
+
+

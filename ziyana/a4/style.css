@@ -1,0 +1,64 @@
+  body {
+  font-family: Arial, Helvetica;
+  margin: 0px 100px;
+  color: limegreen;
+  background-image: url("https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+}
+
+a{
+  color: yellow;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+div.topnav #moreLinks {
+  display: none; /* to hide by default */
+  /* display: block to show by default */
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: limegreen;
+  background-color: limegreen;
+}
+
+div.topnav a.icon {
+  background: limegreen;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+div.content {
+    padding: 25px;
+  color: white;
+  background: rgba(0, 0, 80, 0.5);
+  /* rgba(red, green, blue, alpha);  
+     red/green/blue: 0...255, alpha = 0...1*/
+    
+}
+
+table, th, td {
+  border: 2px solid limegreen;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}

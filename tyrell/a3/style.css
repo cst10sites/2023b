@@ -1,0 +1,55 @@
+body {
+  color: black;
+  font-family: Arial, Helvetica;
+margin: 0px 100px;
+ background-image: url("https://wallpapertag.com/wallpaper/full/f/8/3/288377-free-technology-background-2560x1400.jpg");
+}
+  div.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+  position: relative;
+}
+div.topnav #moreLinks {
+  display: none; /* to hide by default */
+  /* display: block to show by default */
+}
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+div.topnav a:hover {
+  color: black;
+  background-color: lightgoldenrodyellow;
+}
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.content {
+    padding: 25px;
+  color: white;
+  background: rgba(0, 0, 80, 0.5);
+  /* rgba(red, green, blue, alpha);  
+     red/green/blue: 0...255, alpha = 0...1*/
+}
+table, th, td {
+  border: 2px solid cyan;
+ vertical-align: middle;
+}
+td 
+{
+    height: 50px; 
+    width: 50px;
+}
+
+#cssTable td 
+{
+    text-align: center; 
+    vertical-align: middle;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+<h2>HTML/CSS Quiz</h2>
+<form>
+    <label>What is the correct HTML code for an image?</label><br>
+    <input id="choice1" type="checkbox" value="wrong1">
+    <label>&lt;img source="https://lol.png"&gt;</label>
+    <input id="choice2" type="checkbox" value="wrong2">
+    <label>&lt;img href="https://lol.png"&gt;</label><br>
+    <input id="choice3" type="checkbox" value="correct">
+    <label>&lt;img scr="https://lol.png"&gt;</label>
+    <input id="choice4" type="checkbox" value="wrong3">
+    <label>&lt;img link="https://lol.png"&gt;</label><br>
+    <input type="button" value="Check" onclick="eggsAndHam();"><br> 
+    <input type="reset"><br> 
+</form>
+
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+
+<script>
+    function eggsAndHam () {
+        var choice1 = document.getElementById("choice1").checked; // milk
+        var choice2 = document.getElementById("choice2").checked; // juice
+        var choice3 = document.getElementById("choice3").checked; // eggs
+        var choice4 = document.getElementById("choice4").checked; // pork
+
+        if (choice1 == false && choice2 == false && choice3 == true && choice4 == false) {
+            alert("Winner Winner Chicken Dinner!");
+        }
+        else {
+            alert("Wrong!");
+        }
+        }   
+</script>
+</body>
+</html>

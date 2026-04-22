@@ -1,0 +1,132 @@
+<!DOCTYPE html><!-- The page with Tags examples and definitions-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>a3</title>
+<!--External CSS-->
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/xcon" href="toast.ico">
+<!--Internal CSS: moved to style.css-->
+<style>
+
+
+  a.btn{background-color:lightblue ;
+      text-decoration:none;
+      display:inline-block;
+      padding:15px 25px;
+      border-style:solid;
+      border-color:white;
+      border-radius:35px;
+      font-size:1.3em;
+      color:white;
+
+
+
+
+    }
+
+
+    a.btn:hover{background-color:hotpink;
+        text-decoration:none;
+      display:inline-block;
+      padding:15px 25px;
+      border-style:solid;
+      border-color:black;
+      border-radius:35px;
+      font-size:1.3em;
+      color:black;
+}
+
+
+div.ex{background-color:hotpink; color:darkblue;}
+
+a.example:visited{color:orange; }
+
+    </style>
+</head>
+<body>
+
+  
+  <!--content-->
+  <div class="content">
+    <h1>Common HTML Tags Inside &lt;body&gt;</h1>
+      <br><br><br>
+   <a class="btn" href="index.html">Non &lt;body&gt; Tags </a>
+
+
+    <h1>Table</h1>
+    <table style="width: 50%;">
+      <tr><!--table row-->
+        <!--table header: first row only, optinal: define column width-->
+        <th style="width: 60%;">Tags</th>
+        <th style="width: 20%;">Definitions</th>
+        <th style="width: 20%;">Examples</th>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt;</td><!--table data-->
+        <td>The biggest header</td>
+        <td><h1>h1 heading </h1></td>
+      </tr>
+      <tr>
+        <td>&lt;h2&gt;</td><!--table data-->
+        <td>The second biggest header</td>
+        <td><h2>h2 heading</h2></td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td><!--table data-->
+        <td>The standard regular text</td>
+        <td>Here it is</td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt;</td><!--table data-->
+        <td>Links to other pages or websites</td>
+        <td><a target="target_blank"class="example"href="https://www.youtube.com/">This goes to Youtube</td>
+      </tr>
+      <tr>
+        <td>&lt;hr&gt;</td><!--table data-->
+        <td>Is a horizontal ruler that makes a break in the text</td>
+        <td>Like<hr>This</td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td><!--table data-->
+        <td>Makes a customizable division of your page</td>
+        <td><div class="ex">This is customized using the&lt;div&gt; tag</div></td>
+      </tr>
+      <tr>
+        <td>&lt;table&gt;</td><!--table data-->
+        <td>Makes a table like the one this information is in</td>
+        <td>&lt;-----</td>
+      </tr>
+      <tr>
+        <td>&lt;tr&gt;</td><!--table data-->
+        <td>Makes another row down in a table</td>
+        <td>The row this information is in</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td><!--table data-->
+        <td>Makes another column across in a table</td>
+        <td>---&gt;</td>
+        <td> Heres another part of the table</td>
+      </tr>
+      <tr>
+        <td>&lt;iframe&gt;</td><!--table data-->
+        <td>Puts someone elses website in yours</td>
+        <td><iframe width="250" height="150" src="https://mrkam.ca" ></iframe></td>
+      </tr>
+    </table>
+    
+  </div>
+</div>
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>

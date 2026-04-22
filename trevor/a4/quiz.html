@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<style>
+body {
+margin: 50px 100px;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+<h1>Quiz</h1>
+<h3>Radio Buttons</h3>
+    <form>
+        <label>what is htmls primary use</label><br>
+        <input id="correctLang" type="radio" value="websites" name="group">
+        <label>websites</label><br>
+        <input type="radio" value="baking cookies" name="group">
+        <label>baking cookies</label><br>
+        <input type="radio" value="baking cookies" name="group">
+        <label>baking cake</label><br>
+        <input type="button" value="Submit" onclick="checkLang();"><br> 
+        <input type="reset"><br> 
+    </form>
+    <br>
+<form>
+   <label>who regulates the website standards(pick one)</label><br>
+   <input id="choice1" type="checkbox" value="mr kam">
+   <label>mr kam</label>
+    <input id="choice2" type="checkbox" value="w3 schools">
+   <label>w3 schools</label><br>
+   <input id="choice3" type="checkbox" value="mr kam">
+    <label>mr kam</label>
+    <input id="choice4" type="checkbox" value="mr kam">
+    <label>mr kam</label><br>
+    <input type="button" value="Check" onclick="skyColour();"><br>
+    <input type="reset"><br>
+
+</form>
+<br><br>
+<p><a href="index.html">Back</a></p>
+
+
+    <script>
+   
+function skyColour() {
+    var choice1 = document.getElementById("choice1").checked; // milk
+    var choice2 = document.getElementById("choice2").checked; // juice
+    var choice3 = document.getElementById("choice3").checked; // eggs
+    var choice4 = document.getElementById("choice4").checked; // pork
+
+    if (choice1 == false && choice2 == true && choice3 == false && choice4 == false) {
+    alert("Yep");
+    }
+    else {
+    alert("No");
+    }
+   
+    }
+    function checkLang() {
+            var correctAns = document.getElementById("correctLang").checked
+            // .checked -> get T/F value for radio buttons 
+            // alert(correctAns); // true or false
+
+            if (correctAns == true) {
+                alert("yes");
+            } else{alert("no")}}
+
+
+
+    </script>
+</body>
+</html>

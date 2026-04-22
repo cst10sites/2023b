@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie Clicker</title>
+	 <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div>
+		<div class = "topnav">
+			<a href="index.html">Cookie Clicker</a>
+			<div id= "moreLinks">
+				<a href= "./quiz.html">Food Quiz</a>
+		</div>
+		<a class = "icon" onclick="showHideMenu()">...</a>
+	</div>
+	<div class="content">
+	</div>
+	<h1>Food Quiz</h1>
+</div>
+
+<form>
+	<label> What type of food is best?:</label><br>
+	<input type="radio" value="Pizza" name="group">
+	<label>Pizza</label><br>
+	<input id= "correctFood" type="radio" value="Sushi" name="group">
+	<label>Sushi</label><br>
+	<input type="radio" value="Hot Dogs" name="group">
+	<label>Hot Dogs</label><br>
+	<input type="button" value="submit" onclick="checkFood();"><br>
+	<input type="reset"><br>
+</form>
+
+<script>
+	function showHideMenu() {
+		var links = document.getElementById("moreLinks")
+		if (links.style.display == "block") {
+			links.style.display = "none"; 
+		} else {
+			links.style.display = "block"; 
+		}
+	}
+
+	function checkFood() {
+	 var correctFood = document.getElementById('correctFood').checked;
+	 if (correctFood == true) {
+	 	alert("Sushi is the right Answer!");
+	 }
+
+	 else {
+
+	 	alert("Your Opinion is Wrong");
+	 }
+	}
+
+
+	</script>
+</body>
+</html>

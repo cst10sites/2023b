@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Wikibooks_simple_pages.svg/180px-Wikibooks_simple_pages.svg.png">
+</head>
+<body>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../a3/head.html">outside &lt;body&gt; Tags</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  <div class="content">
+  <h1><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">HTML/CSS Guide</span></h1>
+  <h2><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Common HTML Tags inside &lt;body&gt;</span></h2>
+  <div class="table1">
+  <table style="width: 50%;">
+      <tr><!--table row-->
+        <!--table header: first row only, optinal: define column width-->
+        <th style="width: 30%;"><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Tags</span></th>
+        <th style="width: 40%;"><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Definition</span></th>
+        <th style="width: 30%;"><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Example</span></th>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;...&lt;/p&gt;</td>
+        <td>This is a Paragraph, it can separate big sections of text.</td>
+        <td><p>This is one paragraph.</p><p>This is ANOTHER paragraph.</p></td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt;...&lt;/h1&gt;</td>
+        <td>This is a Heading. It's the biggest sized heading but the sizing can still be changed.</td>
+        <td><h1>Heading</h1></td>
+      </tr>
+      <tr>
+        <td>&lt;img...&gt;</td>
+        <td>The &lt;img...&gt; creates a image and you can control the sizing and other stuff inside the individual code. </td>
+        <td><img alt="Blueberry" style="width: 100%;" src="https://th.bing.com/th/id/R.88e49a9fd8c03b9f347e73f2881f228c?rik=xFQdzlXo5wbTpg&riu=http%3a%2f%2fnatureridgehomes.com%2fwp-content%2fuploads%2f2015%2f07%2fdsc_0767.jpg&ehk=N69FZwCH39wcy1aag62397xqp7H5l73rKPRNZucPQ04%3d&risl=&pid=ImgRaw&r=0"></td>
+      </tr>
+      <tr>
+        <td>&lt;a...&gt;...&lt;/a&gt;</td>
+        <td>This is how you create a hyperlink.</td>
+        <td>Click <a target="_blank" href="https://www.apple.com">here</a> to go to the apple webiste.</td>
+      </tr>
+      <tr>
+        <td>&lt;span&gt;...&lt;/span&gt;</td>
+        <td>It adds Inline CSS to specific text of your choosing.</td>
+        <td><span style="color: limegreen;">Hello, how are you?</span></td>
+      </tr>
+      <tr>
+        <td>&lt;br&gt;...&lt;/br&gt;</td>
+        <td>This is to separate things with a "blank ruler" or a blank line.</td>
+        <td><p>This <br> <br>is one whole paragraph even though it is separated.</p></td>
+      </tr>
+      <tr>
+        <td>&lt;hr&gt;...&lt;/hr&gt;</td>
+        <td>This is a horizontal ruler/line, it will make a horizontal line across your screen.</td>
+        <td><h3>HELLO</h3> <hr> <h3>HELLO AGAIN</h3></td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;...&lt;/div&gt;</td>
+        <td>The div element is a container that can be used to section off the webpage with boxes.</td>
+        <td><div class="topnav"><p>This is one div.</p></div> <br> <div class="topnav"><p>This is another div.</p></div></td>
+      </tr>
+      <tr>
+        <td>&lt;em&gt;...&lt;/em&gt;</td>
+        <td>The &lt;em&gt; tag is used to define emphasized text. The content inside is displayed in italic. When the text is read out loud it will be read emphasized.</td>
+        <td><em>This is emphasized.</em></td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt;...&lt;/strong&gt;</td>
+        <td>This makes the text look bolded but when the text is read out loud it is read in a stronger manner.</td>
+        <td><strong>This is strong.</strong></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</div>
+</body>
+</html>

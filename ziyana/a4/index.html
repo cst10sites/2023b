@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie Clicker</title>
+	 <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div>
+		<div class = "topnav">
+			<a href="index.html">Cookie Clicker</a>
+			<div id= "moreLinks">
+				 <a href="./quiz.html">Food Quiz</a>
+		</div>
+		<a class = "icon" onclick="showHideMenu()">...</a>
+	</div>
+	<div class="content">
+	</div>
+</div>
+<h1>Cookie Clicker</h1>
+<button onclick ="updateCPS();"><img alt ="Cookie" style="width: 200px;" src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/7/25/0/FNM_090112-Mix-and-Match-Classic-Cookies-Recipe-03_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371607143890.jpeg"></button>
+<button onclick="resetWatch()">Reset</button>
+<p>Time: <span id="timeDisplay">0</span></p>
+<p>Clicks: <span id="totalClicks">0</span></p>
+<p>Clicks per Second: <span id="cpsDisplay">0</span></p>
+<p id="updateCPS"></p>
+
+<script>
+	// global
+	var nClicks = 0;
+	var startTime = new Date();
+
+	function showHideMenu() {
+		var links = document.getElementById("moreLinks")
+		if (links.style.display == "block") {
+			links.style.display = "none"; 
+		}
+		else {
+			links.style.display = "block"; 
+		}
+	}
+
+	setInterval(updateTime, 100);
+
+
+	function updateTime() {
+		if (nClicks> 0) {
+			var currentTime = new Date();
+			var timeElapsed = (currentTime-startTime)/1000 
+			document.getElementById('timeDisplay').innerHTML = timeElapsed;
+		}
+	}
+
+		
+
+
+		
+
+
+
+	function updateCPS() {
+		if (nClicks == 0) {
+			startTime = new Date();
+			nClicks = nClicks + 1;
+			document.getElementById('totalClicks').innerHTML = nClicks;
+			nClicks = nClicks + 1;
+		}
+
+
+		else {
+			document.getElementById('totalClicks').innerHTML = nClicks;
+			nClicks = nClicks + 1;
+			var currentTime = new Date();
+			var timeElapsed = (currentTime - startTime)/1000;
+			document.getElementById('cpsDisplay').innerHTML = nClicks/timeElapsed;
+		}
+
+	}
+	
+	function resetWatch() {
+		location.reload();
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Wikibooks_simple_pages.svg/180px-Wikibooks_simple_pages.svg.png">
+</head>
+<body>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a href="../a3/head.html">outside &lt;body&gt; Tags</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  <div class="content">
+	<h1>HTML Guide</h1>
+	<h2>Common HTML Tags outside &lt;body&gt;</h2>
+  <table style="width: 50%;">
+      <tr><!--table row-->
+        <!--table header: first row only, optinal: define column width-->
+        <th style="width: 30%;"><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Tags</span></th>
+        <th style="width: 40%;"><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Definition</span></th>
+        <th style="width: 30%;"><span style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Example</span></th>
+      </tr>
+            <tr>
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>This shows how the computer should display the information on the website.</td>
+        <td>This website is in &lt;!DOCTYPE html&gt;</td>
+      </tr>
+            <tr>
+        <td>&lt;html lang="en"&gt;</td>
+        <td>This changes what language the website in displayed in.</td>
+        <td>This is english.</td>
+      </tr>
+            <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+        <td>This lets you use all sorts a different characters.</td>
+        <td>•)!(@#&☻♀, and many more.</td>
+      </tr>
+            <tr>
+        <td>&lt;title&gt;...&lt;/title&gt;</td>
+        <td>This creates the title of the page located at the top of your screen.</td>
+        <td>The title for this website is "Assignment 3".</td>
+      </tr>
+            <tr>
+        <td>body {}</td>
+        <td>This is internal css, and it sets up how the website looks like the colour, background, fonts, etc.</td>
+        <td>Body {color; white;} this will change the font colour too white.</td>
+      </tr>
+            <tr>
+        <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+        <td>This makes the website use the css in the "style.css" folder. Its useful for a website with more than one page.</td>
+        <td>Body {color; white;} but this would be located in style.css.</td>
+      </tr>
+            <tr>
+        <td>&lt;link rel="icon" type="image/x-icon" href="..."&gt;</td>
+        <td>This is what controls the fav icon, or in other words, the logo beside the title.</td>
+        <td>The little guide books beside my title at the top of the screen.</td>
+      </tr>
+  <script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</div>
+</body>
+</html>

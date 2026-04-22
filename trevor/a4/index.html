@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+
+<style>
+	
+	body {
+			margin: 30px 70px;
+		}
+</style>
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<button onclick="updateCPS();"><img style="width:500px"; src="https://purepng.com/public/uploads/large/purepng.com-cookiescookiessnacksbaked-snacksflour-cookieschocolate-cookies-1411527249039ulhcg.png" border="0" id="cookie"></button>
+<br><br><br>
+<button onclick="resetWatch()">Reset</button>
+<p id="Clicks">Clicks</p>
+<br>
+<p id="CPS">Clicks Per Second</p>
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="quiz.html">here</a> to play the quiz.</p>
+
+
+
+<script>
+
+var nClicks = 0;
+var startTime = new Date();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// first click
+		// 1. reset startTime
+		// 2. increase nClicks by 1
+         startTime = new Date(); 
+         nClicks+=1
+
+	}
+
+	else {
+		// subsequent clicks:
+		// 1. create variable currentTime
+		// 2. create variable timeElapsed and subtract start and currentTime
+		// 3. calculate CPS = nClicks ÷ timeElapsed 
+		//    BUT timeElapsed be measured in seconds (not milliseconds)
+		// 4. display CPS using id
+		// 5. increase nClicks by 1
+
+	  var currentTime = new Date();
+  	  var timeElapsed = currentTime - startTime
+  	  var clicksPerSecond = nClicks / timeElapsed * 1000 
+  	  document.getElementById('Clicks').innerHTML = "Clicks <br>" + nClicks;
+  	  document.getElementById('CPS').innerHTML = "Clicks Per Second <br>" + clicksPerSecond;
+
+
+		nClicks +=1
+		
+
+	  }
+	}
+	function resetWatch(){
+
+     
+  	  location.reload(); 
+
+}
+	
+
+</script>
+</body>
+</html>

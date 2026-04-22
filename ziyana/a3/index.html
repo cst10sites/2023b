@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 3</title>
+</head>
+	 <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <p>&nbsp;</p>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+      <a class="btn" href="../a3/head.html">Head</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+<h1>HTML/CSS Guide</h1>
+<h2> Common HTML Tags</h2>
+
+<table style="width: 70%;">
+      <tr><!--table row-->
+        <th style="width: 33%;">Definition</th><!--table header: first row only-->
+        <th style="width: 33%;">Tag</th>
+        <th style="width: 33%">Examples</th>
+      </tr>
+
+      <tr>
+        <td> Hyperlink = go to another page</td>
+        <td>&lt;a href="link"&gt;…&lt;/a&gt;</td><!--table data-->
+        <td> Cick <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqE85jfh7w_nMPM3KJ4aKRbJb_J71QAhgVQ&usqp=CAU">here</a> to see an image of a cat</td>
+      </tr>
+     
+     <tr>
+      <td>Paragraph= Text you want to apear on the screen</td>
+      <td>&lt;p&gt;...&lt;/p&gt;</td>
+      <td> <p> Hi this is a paragraph</p> <p>Hi this is another paragraph</p></td>
+    </tr>
+
+    <tr>
+      <td>Image= inserting a image</td>
+      <td>&lt;img alt="name" style="width: ..%;" src="link"&gt;</td>
+      <td><img alt="cat" style="width: 70%%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqE85jfh7w_nMPM3KJ4aKRbJb_J71QAhgVQ&usqp=CAU"></td>
+    </tr>
+
+    <tr>
+      <td>Text sizes= when ou want to define your text size.</td>
+      <td> &lt;H1&gt; &lt;/H1&gt;, &lt;H2&gt; &lt;/H2&gt;...</td>
+      <td><h1> Hi</h1><h2> Hi</h2> </td>
+    </tr>
+
+    <tr>
+      <td>Table</td>
+      <td>&lt;table&gt;</p><p>&lt;tr&gt;</p><p>&lt;td&gt;</p><p>&lt;td&gt;</p><p>&lt;/tr&gt;</p><p>&lt;/table&gt;</td>
+      <td><table class="score" style="width: 50%;">
+                  <tr class="score"><!--table row-->
+                    <!--table header: first row only, optinal: define column width-->
+                    <th class="score" style="width: 60%;">School</th>
+                    <th class="score" style="width: 20%;">Wins</th>
+                    <th class="score" style="width: 20%;">Losses</th>
+                  </tr>
+                  <tr class="score">
+                    <td class="score">Kitsilano</td><!--table data-->
+                    <td class="score">4</td>
+                    <td class="score">1</td>
+                  </tr>
+                  <tr class="score">
+                    <td class="score">Point Grey</td><!--table data-->
+                    <td class="score">4</td>
+                    <td class="score">2</td>
+                  </tr>
+                  <tr class="score">
+                    <td class="score">Lord Bing</td><!--table data-->
+                    <td class="score">1</td>
+                    <td class="score">3</td>
+                  </tr>
+                </table></td>
+    </tr>
+
+    <tr>
+      <td>Line Breaks= when you want to start a new line.</td>
+      <td>&lt;br&gt;</td>
+      <td><p> You use <br>&lt;br&gt; <br> when you want a line break</td>
+    </tr>
+
+    <tr>
+      <td>Bold= when you want your text to be in bold.</td>
+      <td>&lt;b&gt; &lt;/b&gt;</td>
+      <td> <b> you use &lt;b&gt; when you want text bolded.</b></td>
+    </tr>
+    <tr>
+      <td>Italic= when you want your text to be in Italic.</td>
+      <td>&lt;i&gt; &lt;/i&gt;</td>
+      <td><i>This text is Italic</i></td>
+    </tr>
+
+    <tr>
+      <td>Unordered lists= Bullet Point List</td>
+      <td>&lt;ul&gt; &lt;li&gt; &lt;/li&gt;  &lt;/ul&gt;</td>
+      <td><ul>
+        <li>Bullet</li>
+        <li>Points</li>
+        <li>Are Fun</li>
+      </ul>
+        </td>
+    </tr>
+
+    <tr>
+      <td>Ordered List= Numbered list.</td>
+      <td> &lt;ol&gt; &lt;li&gt; &lt;/li&gt;  &lt;/ol&gt;</td>
+      <td>
+        <ol>
+          <li> Water</li>
+          <li> Tea </li>
+          <li> Coffee </li>
+      </td>
+    </tr>
+    </table>
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none";  // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
